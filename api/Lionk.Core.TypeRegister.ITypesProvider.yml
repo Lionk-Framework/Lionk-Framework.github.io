@@ -1,0 +1,297 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.TypeRegister.ITypesProvider
+  commentId: T:Lionk.Core.TypeRegister.ITypesProvider
+  id: ITypesProvider
+  parent: Lionk.Core.TypeRegister
+  children:
+  - Lionk.Core.TypeRegister.ITypesProvider.GetTypes
+  - Lionk.Core.TypeRegister.ITypesProvider.NewTypesAvailable
+  langs:
+  - csharp
+  - vb
+  name: ITypesProvider
+  nameWithType: ITypesProvider
+  fullName: Lionk.Core.TypeRegister.ITypesProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ITypesProvider
+    path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.TypeRegister
+  summary: Interface which define a types provider.
+  example: []
+  syntax:
+    content: public interface ITypesProvider
+    content.vb: Public Interface ITypesProvider
+- uid: Lionk.Core.TypeRegister.ITypesProvider.NewTypesAvailable
+  commentId: E:Lionk.Core.TypeRegister.ITypesProvider.NewTypesAvailable
+  id: NewTypesAvailable
+  parent: Lionk.Core.TypeRegister.ITypesProvider
+  langs:
+  - csharp
+  - vb
+  name: NewTypesAvailable
+  nameWithType: ITypesProvider.NewTypesAvailable
+  fullName: Lionk.Core.TypeRegister.ITypesProvider.NewTypesAvailable
+  type: Event
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NewTypesAvailable
+    path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+    startLine: 14
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.TypeRegister
+  summary: Event raised when a new type is available.
+  example: []
+  syntax:
+    content: event EventHandler<TypesEventArgs> NewTypesAvailable
+    return:
+      type: System.EventHandler{Lionk.Core.TypeRegister.TypesEventArgs}
+    content.vb: Event NewTypesAvailable As EventHandler(Of TypesEventArgs)
+- uid: Lionk.Core.TypeRegister.ITypesProvider.GetTypes
+  commentId: M:Lionk.Core.TypeRegister.ITypesProvider.GetTypes
+  id: GetTypes
+  parent: Lionk.Core.TypeRegister.ITypesProvider
+  langs:
+  - csharp
+  - vb
+  name: GetTypes()
+  nameWithType: ITypesProvider.GetTypes()
+  fullName: Lionk.Core.TypeRegister.ITypesProvider.GetTypes()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetTypes
+    path: src/Lib/Lionk.Core/Model/Types/TypesProvider/ITypesProvider.cs
+    startLine: 24
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.TypeRegister
+  summary: Gets all types from the provider.
+  example: []
+  syntax:
+    content: IEnumerable<Type> GetTypes()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A collection of types.
+    content.vb: Function GetTypes() As IEnumerable(Of Type)
+  overload: Lionk.Core.TypeRegister.ITypesProvider.GetTypes*
+references:
+- uid: Lionk.Core.TypeRegister
+  commentId: N:Lionk.Core.TypeRegister
+  href: Lionk.html
+  name: Lionk.Core.TypeRegister
+  nameWithType: Lionk.Core.TypeRegister
+  fullName: Lionk.Core.TypeRegister
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html
+- uid: System.EventHandler{Lionk.Core.TypeRegister.TypesEventArgs}
+  commentId: T:System.EventHandler{Lionk.Core.TypeRegister.TypesEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TypesEventArgs>
+  nameWithType: EventHandler<TypesEventArgs>
+  fullName: System.EventHandler<Lionk.Core.TypeRegister.TypesEventArgs>
+  nameWithType.vb: EventHandler(Of TypesEventArgs)
+  fullName.vb: System.EventHandler(Of Lionk.Core.TypeRegister.TypesEventArgs)
+  name.vb: EventHandler(Of TypesEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Lionk.Core.TypeRegister.TypesEventArgs
+    name: TypesEventArgs
+    href: Lionk.Core.TypeRegister.TypesEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Core.TypeRegister.TypesEventArgs
+    name: TypesEventArgs
+    href: Lionk.Core.TypeRegister.TypesEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.TypeRegister.ITypesProvider.GetTypes*
+  commentId: Overload:Lionk.Core.TypeRegister.ITypesProvider.GetTypes
+  href: Lionk.Core.TypeRegister.ITypesProvider.html#Lionk_Core_TypeRegister_ITypesProvider_GetTypes
+  name: GetTypes
+  nameWithType: ITypesProvider.GetTypes
+  fullName: Lionk.Core.TypeRegister.ITypesProvider.GetTypes
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Type>
+  nameWithType: IEnumerable<Type>
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  nameWithType.vb: IEnumerable(Of Type)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  name.vb: IEnumerable(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

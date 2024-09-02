@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.TypeRegister
+  commentId: N:Lionk.Core.TypeRegister
+  id: Lionk.Core.TypeRegister
+  children:
+  - Lionk.Core.TypeRegister.Factory
+  - Lionk.Core.TypeRegister.ITypesProvider
+  - Lionk.Core.TypeRegister.TypesEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.TypeRegister
+  nameWithType: Lionk.Core.TypeRegister
+  fullName: Lionk.Core.TypeRegister
+  type: Namespace
+  assemblies:
+  - Lionk.Core
+references:
+- uid: Lionk.Core.TypeRegister.Factory
+  commentId: T:Lionk.Core.TypeRegister.Factory
+  parent: Lionk.Core.TypeRegister
+  href: Lionk.Core.TypeRegister.Factory.html
+  name: Factory
+  nameWithType: Factory
+  fullName: Lionk.Core.TypeRegister.Factory
+- uid: Lionk.Core.TypeRegister.ITypesProvider
+  commentId: T:Lionk.Core.TypeRegister.ITypesProvider
+  parent: Lionk.Core.TypeRegister
+  href: Lionk.Core.TypeRegister.ITypesProvider.html
+  name: ITypesProvider
+  nameWithType: ITypesProvider
+  fullName: Lionk.Core.TypeRegister.ITypesProvider
+- uid: Lionk.Core.TypeRegister.TypesEventArgs
+  commentId: T:Lionk.Core.TypeRegister.TypesEventArgs
+  href: Lionk.Core.TypeRegister.TypesEventArgs.html
+  name: TypesEventArgs
+  nameWithType: TypesEventArgs
+  fullName: Lionk.Core.TypeRegister.TypesEventArgs
+- uid: Lionk.Core.TypeRegister
+  commentId: N:Lionk.Core.TypeRegister
+  href: Lionk.html
+  name: Lionk.Core.TypeRegister
+  nameWithType: Lionk.Core.TypeRegister
+  fullName: Lionk.Core.TypeRegister
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html

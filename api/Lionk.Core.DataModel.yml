@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.DataModel
+  commentId: N:Lionk.Core.DataModel
+  id: Lionk.Core.DataModel
+  children:
+  - Lionk.Core.DataModel.MeasureEventArgs`1
+  - Lionk.Core.DataModel.Measure`1
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.DataModel
+  nameWithType: Lionk.Core.DataModel
+  fullName: Lionk.Core.DataModel
+  type: Namespace
+  assemblies:
+  - Lionk.Core
+references:
+- uid: Lionk.Core.DataModel.Measure`1
+  commentId: T:Lionk.Core.DataModel.Measure`1
+  href: Lionk.Core.DataModel.Measure-1.html
+  name: Measure<T>
+  nameWithType: Measure<T>
+  fullName: Lionk.Core.DataModel.Measure<T>
+  nameWithType.vb: Measure(Of T)
+  fullName.vb: Lionk.Core.DataModel.Measure(Of T)
+  name.vb: Measure(Of T)
+  spec.csharp:
+  - uid: Lionk.Core.DataModel.Measure`1
+    name: Measure
+    href: Lionk.Core.DataModel.Measure-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Lionk.Core.DataModel.Measure`1
+    name: Measure
+    href: Lionk.Core.DataModel.Measure-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Lionk.Core.DataModel.MeasureEventArgs`1
+  commentId: T:Lionk.Core.DataModel.MeasureEventArgs`1
+  href: Lionk.Core.DataModel.MeasureEventArgs-1.html
+  name: MeasureEventArgs<T>
+  nameWithType: MeasureEventArgs<T>
+  fullName: Lionk.Core.DataModel.MeasureEventArgs<T>
+  nameWithType.vb: MeasureEventArgs(Of T)
+  fullName.vb: Lionk.Core.DataModel.MeasureEventArgs(Of T)
+  name.vb: MeasureEventArgs(Of T)
+  spec.csharp:
+  - uid: Lionk.Core.DataModel.MeasureEventArgs`1
+    name: MeasureEventArgs
+    href: Lionk.Core.DataModel.MeasureEventArgs-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Lionk.Core.DataModel.MeasureEventArgs`1
+    name: MeasureEventArgs
+    href: Lionk.Core.DataModel.MeasureEventArgs-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

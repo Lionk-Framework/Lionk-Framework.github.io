@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Project Architecture Description | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Project Architecture Description | Lionk ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/architectureDescription.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="project-architecture-description">Project Architecture Description</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Li/onk Core is designed as a modular platform enabling the management and integration of various components through plugins. The architecture leverages .NET, allowing for a flexible, extensible system with components that can be independently developed, deployed, and managed.</p>
+<h2 id="architecture-components">Architecture Components</h2>
+<h3 id="1-core-application">1. Core Application</h3>
+<p>The core application serves as the foundational platform for Li/onk Core. It is responsible for the overall management, coordination, and integration of the various plugins and components.</p>
+<ul>
+<li><strong>Published as</strong>: Docker Image</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Loading and managing plugins</li>
+<li>Providing the main user interface for configuration and monitoring</li>
+<li>Ensuring communication between different plugins and components</li>
+<li>Handling security and user management</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-framework">2. Framework</h3>
+<p>The framework provides the necessary tools and interfaces for plugin development and integration. It ensures that all plugins adhere to a common standard, facilitating interoperability and seamless integration.</p>
+<ul>
+<li><strong>Published as</strong>: NuGet Packages</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Defining standardized interfaces for plugin development</li>
+<li>Providing base classes and utilities for common functionalities</li>
+<li>Ensuring communication protocols between the core application and plugins</li>
+<li>Offering tools for logging, monitoring, and security management</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-plugins">3. Plugins</h3>
+<p>Plugins are independently developed components that extend the functionality of the core application. Each plugin represents specific functionalities, such as managing sensors, actuators, or other system components.</p>
+<ul>
+<li><strong>Published as</strong>: .dll (Dynamic Link Libraries)</li>
+<li><strong>Responsibilities</strong>:
+<ul>
+<li>Implementing specific component functionalities (e.g., sensor data collection, actuator control)</li>
+<li>Providing user interface elements for their configuration and control</li>
+<li>Integrating with the core application through the framework’s interfaces</li>
+</ul>
+</li>
+</ul>
+<h2 id="interaction-and-integration">Interaction and Integration</h2>
+<h3 id="core-application-and-framework">Core Application and Framework</h3>
+<p>The core application relies on the framework to provide the foundational services and interfaces required for plugin management. When the core application starts, it initializes the framework, which in turn handles the discovery and loading of plugins.</p>
+<ul>
+<li><strong>Core Application</strong>:
+<ul>
+<li>Initializes the framework on startup</li>
+<li>Manage all the frontend views and user interactions</li>
+<li>Uses the framework to discover available plugins</li>
+<li>Manages the lifecycle of plugins (loading, executing, unloading)</li>
+</ul>
+</li>
+<li><strong>Framework</strong>:
+<ul>
+<li>Provides interfaces for plugin discovery and management</li>
+<li>Offers utilities and base classes for plugin development</li>
+<li>Ensures secure and standardized communication between core and plugins</li>
+</ul>
+</li>
+</ul>
+<h3 id="plugins-and-framework">Plugins and Framework</h3>
+<p>Plugins are developed using the framework’s tools and interfaces, ensuring they comply with the system’s standards. When deployed, plugins are discovered and managed by the core application through the framework.</p>
+<ul>
+<li><strong>Plugins</strong>:
+<ul>
+<li>Implement functionalities using the framework’s interfaces</li>
+<li>Provide user interface elements for the core application to render</li>
+<li>Interact with other plugins and the core application through standardized protocols</li>
+</ul>
+</li>
+<li><strong>Framework</strong>:
+<ul>
+<li>Facilitates the registration and discovery of plugins</li>
+<li>Ensures secure and efficient communication between plugins and the core application</li>
+<li>Provides common utilities and services used by plugins (e.g., logging, security)</li>
+</ul>
+</li>
+</ul>
+<h2 id="deployment-and-distribution">Deployment and Distribution</h2>
+<h3 id="docker-image">Docker Image</h3>
+<p>The core application is distributed as a Docker image, ensuring a consistent and reproducible deployment environment. This image includes the core application and the framework, ready to manage and integrate plugins.</p>
+<ul>
+<li><strong>Deployment</strong>:
+<ul>
+<li>Pull the Docker image from the registry</li>
+<li>Run the Docker container on the target environment (supports both ARM and x86 architectures)</li>
+<li>The container initializes the core application, which in turn uses the framework to manage plugins</li>
+</ul>
+</li>
+</ul>
+<h3 id="nuget-packages">NuGet Packages</h3>
+<p>The framework is distributed as a set of NuGet packages, providing developers with the necessary tools and interfaces for plugin development.</p>
+<ul>
+<li><strong>Distribution</strong>:
+<ul>
+<li>NuGet packages are published to a NuGet repository</li>
+<li>Developers add the NuGet packages to their projects to create compatible plugins</li>
+<li>Ensures versioning and dependency management for plugin developers</li>
+</ul>
+</li>
+</ul>
+<h3 id="dll-plugins">.dll Plugins</h3>
+<p>Plugins are distributed as .dll files, allowing for easy deployment and integration with the core application.</p>
+<ul>
+<li><strong>Distribution</strong>:
+<ul>
+<li>Plugins are developed using the framework’s NuGet packages</li>
+<li>Compiled plugins are packaged as .dll files</li>
+<li>Plugins are deployed by placing the .dll files in a designated directory where the core application can discover and load them</li>
+</ul>
+</li>
+</ul>
+<h2 id="visual-representation">Visual Representation</h2>
+<p><img src="https://github.com/user-attachments/assets/7cab9c9f-601b-47c3-99a2-b5de82d67b8e" alt="image"></p>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>The <strong>Core Application</strong> runs inside a Docker container, ensuring consistent deployment.</li>
+<li>The <strong>Framework</strong> is provided as NuGet packages, used by both the core application and plugins.</li>
+<li><strong>Plugins</strong> are developed independently and deployed as .dll files, allowing for easy integration and extension of the core functionality.</li>
+</ul>
+<p>This architecture ensures that Li/onk Core is flexible, extensible, and easy to manage, supporting a wide range of components and use cases in home and industrial environments.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/architectureDescription.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

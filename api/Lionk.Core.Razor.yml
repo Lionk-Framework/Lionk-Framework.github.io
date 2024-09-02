@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Razor
+  commentId: N:Lionk.Core.Razor
+  id: Lionk.Core.Razor
+  children:
+  - Lionk.Core.Razor.ComponentList
+  - Lionk.Core.Razor.IComponentInstanceList
+  - Lionk.Core.Razor.ListSearcher`1
+  - Lionk.Core.Razor._imports
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.Razor
+  nameWithType: Lionk.Core.Razor
+  fullName: Lionk.Core.Razor
+  type: Namespace
+  assemblies:
+  - Lionk.Core.Razor
+references:
+- uid: Lionk.Core.Razor._imports
+  commentId: T:Lionk.Core.Razor._imports
+  href: Lionk.Core.Razor._imports.html
+  name: _imports
+  nameWithType: _imports
+  fullName: Lionk.Core.Razor._imports
+- uid: Lionk.Core.Razor.IComponentInstanceList
+  commentId: T:Lionk.Core.Razor.IComponentInstanceList
+  href: Lionk.Core.Razor.IComponentInstanceList.html
+  name: IComponentInstanceList
+  nameWithType: IComponentInstanceList
+  fullName: Lionk.Core.Razor.IComponentInstanceList
+- uid: Lionk.Core.Razor.ComponentList
+  commentId: T:Lionk.Core.Razor.ComponentList
+  href: Lionk.Core.Razor.ComponentList.html
+  name: ComponentList
+  nameWithType: ComponentList
+  fullName: Lionk.Core.Razor.ComponentList
+- uid: Lionk.Core.Razor.ListSearcher`1
+  commentId: T:Lionk.Core.Razor.ListSearcher`1
+  href: Lionk.Core.Razor.ListSearcher-1.html
+  name: ListSearcher<T>
+  nameWithType: ListSearcher<T>
+  fullName: Lionk.Core.Razor.ListSearcher<T>
+  nameWithType.vb: ListSearcher(Of T)
+  fullName.vb: Lionk.Core.Razor.ListSearcher(Of T)
+  name.vb: ListSearcher(Of T)
+  spec.csharp:
+  - uid: Lionk.Core.Razor.ListSearcher`1
+    name: ListSearcher
+    href: Lionk.Core.Razor.ListSearcher-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Lionk.Core.Razor.ListSearcher`1
+    name: ListSearcher
+    href: Lionk.Core.Razor.ListSearcher-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

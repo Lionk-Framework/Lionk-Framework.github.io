@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.TestComponent.CyclicCounter
+  commentId: N:Lionk.TestComponent.CyclicCounter
+  id: Lionk.TestComponent.CyclicCounter
+  children:
+  - Lionk.TestComponent.CyclicCounter.CounterConfig
+  - Lionk.TestComponent.CyclicCounter.CounterView
+  langs:
+  - csharp
+  - vb
+  name: Lionk.TestComponent.CyclicCounter
+  nameWithType: Lionk.TestComponent.CyclicCounter
+  fullName: Lionk.TestComponent.CyclicCounter
+  type: Namespace
+  assemblies:
+  - Lionk.TestComponent
+references:
+- uid: Lionk.TestComponent.CyclicCounter.CounterView
+  commentId: T:Lionk.TestComponent.CyclicCounter.CounterView
+  parent: Lionk.TestComponent.CyclicCounter
+  href: Lionk.TestComponent.CyclicCounter.CounterView.html
+  name: CounterView
+  nameWithType: CounterView
+  fullName: Lionk.TestComponent.CyclicCounter.CounterView
+- uid: Lionk.TestComponent.CyclicCounter.CounterConfig
+  commentId: T:Lionk.TestComponent.CyclicCounter.CounterConfig
+  parent: Lionk.TestComponent.CyclicCounter
+  href: Lionk.TestComponent.CyclicCounter.CounterConfig.html
+  name: CounterConfig
+  nameWithType: CounterConfig
+  fullName: Lionk.TestComponent.CyclicCounter.CounterConfig
+- uid: Lionk.TestComponent.CyclicCounter
+  commentId: N:Lionk.TestComponent.CyclicCounter
+  href: Lionk.html
+  name: Lionk.TestComponent.CyclicCounter
+  nameWithType: Lionk.TestComponent.CyclicCounter
+  fullName: Lionk.TestComponent.CyclicCounter
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.TestComponent
+    name: TestComponent
+    href: Lionk.TestComponent.html
+  - name: .
+  - uid: Lionk.TestComponent.CyclicCounter
+    name: CyclicCounter
+    href: Lionk.TestComponent.CyclicCounter.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.TestComponent
+    name: TestComponent
+    href: Lionk.TestComponent.html
+  - name: .
+  - uid: Lionk.TestComponent.CyclicCounter
+    name: CyclicCounter
+    href: Lionk.TestComponent.CyclicCounter.html

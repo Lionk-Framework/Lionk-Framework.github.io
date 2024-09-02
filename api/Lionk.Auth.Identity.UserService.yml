@@ -1,0 +1,1541 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Auth.Identity.UserService
+  commentId: T:Lionk.Auth.Identity.UserService
+  id: UserService
+  parent: Lionk.Auth.Identity
+  children:
+  - Lionk.Auth.Identity.UserService.#ctor(Lionk.Auth.Abstraction.IUserRepository)
+  - Lionk.Auth.Identity.UserService.Delete(Lionk.Auth.Identity.User)
+  - Lionk.Auth.Identity.UserService.GetRegisteredUser(System.String,System.String)
+  - Lionk.Auth.Identity.UserService.GetUserByEmail(System.String)
+  - Lionk.Auth.Identity.UserService.GetUserById(System.Guid)
+  - Lionk.Auth.Identity.UserService.GetUserByUsername(System.String)
+  - Lionk.Auth.Identity.UserService.GetUserSalt(System.String)
+  - Lionk.Auth.Identity.UserService.GetUsers
+  - Lionk.Auth.Identity.UserService.Insert(Lionk.Auth.Identity.User)
+  - Lionk.Auth.Identity.UserService.IsEmailExist(System.String)
+  - Lionk.Auth.Identity.UserService.IsFirstUserRegistered
+  - Lionk.Auth.Identity.UserService.IsIdExist(System.Guid)
+  - Lionk.Auth.Identity.UserService.IsUsernameExist(System.String)
+  - Lionk.Auth.Identity.UserService.Update(Lionk.Auth.Identity.User)
+  - Lionk.Auth.Identity.UserService.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UserService
+  nameWithType: UserService
+  fullName: Lionk.Auth.Identity.UserService
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UserService
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 9
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: This class represents a user service.
+  example: []
+  syntax:
+    content: 'public class UserService : IUserService'
+    content.vb: Public Class UserService Implements IUserService
+  inheritance:
+  - System.Object
+  implements:
+  - Lionk.Auth.Abstraction.IUserService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Auth.Identity.UserService.#ctor(Lionk.Auth.Abstraction.IUserRepository)
+  commentId: M:Lionk.Auth.Identity.UserService.#ctor(Lionk.Auth.Abstraction.IUserRepository)
+  id: '#ctor(Lionk.Auth.Abstraction.IUserRepository)'
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: UserService(IUserRepository)
+  nameWithType: UserService.UserService(IUserRepository)
+  fullName: Lionk.Auth.Identity.UserService.UserService(Lionk.Auth.Abstraction.IUserRepository)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 17
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Initializes a new instance of the <xref href="Lionk.Auth.Identity.UserService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UserService(IUserRepository repository)
+    parameters:
+    - id: repository
+      type: Lionk.Auth.Abstraction.IUserRepository
+      description: The user repository.
+    content.vb: Public Sub New(repository As IUserRepository)
+  overload: Lionk.Auth.Identity.UserService.#ctor*
+  nameWithType.vb: UserService.New(IUserRepository)
+  fullName.vb: Lionk.Auth.Identity.UserService.New(Lionk.Auth.Abstraction.IUserRepository)
+  name.vb: New(IUserRepository)
+- uid: Lionk.Auth.Identity.UserService.UserRepository
+  commentId: P:Lionk.Auth.Identity.UserService.UserRepository
+  id: UserRepository
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: UserRepository
+  nameWithType: UserService.UserRepository
+  fullName: Lionk.Auth.Identity.UserService.UserRepository
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UserRepository
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 24
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets or sets the user repository.
+  example: []
+  syntax:
+    content: public IUserRepository UserRepository { get; set; }
+    parameters: []
+    return:
+      type: Lionk.Auth.Abstraction.IUserRepository
+    content.vb: Public Property UserRepository As IUserRepository
+  overload: Lionk.Auth.Identity.UserService.UserRepository*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.UserRepository
+- uid: Lionk.Auth.Identity.UserService.Delete(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Identity.UserService.Delete(Lionk.Auth.Identity.User)
+  id: Delete(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: Delete(User)
+  nameWithType: UserService.Delete(User)
+  fullName: Lionk.Auth.Identity.UserService.Delete(Lionk.Auth.Identity.User)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Delete
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 31
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to delete a user.
+  example: []
+  syntax:
+    content: public bool Delete(User user)
+    parameters:
+    - id: user
+      type: Lionk.Auth.Identity.User
+    return:
+      type: System.Boolean
+      description: True if the user was deleted, false otherwise.
+    content.vb: Public Function Delete(user As User) As Boolean
+  overload: Lionk.Auth.Identity.UserService.Delete*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+- uid: Lionk.Auth.Identity.UserService.GetRegisteredUser(System.String,System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.GetRegisteredUser(System.String,System.String)
+  id: GetRegisteredUser(System.String,System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetRegisteredUser(string, string)
+  nameWithType: UserService.GetRegisteredUser(string, string)
+  fullName: Lionk.Auth.Identity.UserService.GetRegisteredUser(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetRegisteredUser
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 44
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get a registered user.
+  example: []
+  syntax:
+    content: public User? GetRegisteredUser(string username, string passwordHash)
+    parameters:
+    - id: username
+      type: System.String
+      description: The username of the user.
+    - id: passwordHash
+      type: System.String
+      description: The hash of the password of the user.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The registered user.
+    content.vb: Public Function GetRegisteredUser(username As String, passwordHash As String) As User
+  overload: Lionk.Auth.Identity.UserService.GetRegisteredUser*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(System.String,System.String)
+  nameWithType.vb: UserService.GetRegisteredUser(String, String)
+  fullName.vb: Lionk.Auth.Identity.UserService.GetRegisteredUser(String, String)
+  name.vb: GetRegisteredUser(String, String)
+- uid: Lionk.Auth.Identity.UserService.GetUserByEmail(System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.GetUserByEmail(System.String)
+  id: GetUserByEmail(System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetUserByEmail(string)
+  nameWithType: UserService.GetUserByEmail(string)
+  fullName: Lionk.Auth.Identity.UserService.GetUserByEmail(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetUserByEmail
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 52
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get a user by its email.
+  example: []
+  syntax:
+    content: public User? GetUserByEmail(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The email of the user.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The user with the email, null if not found.
+    content.vb: Public Function GetUserByEmail(email As String) As User
+  overload: Lionk.Auth.Identity.UserService.GetUserByEmail*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetUserByEmail(System.String)
+  nameWithType.vb: UserService.GetUserByEmail(String)
+  fullName.vb: Lionk.Auth.Identity.UserService.GetUserByEmail(String)
+  name.vb: GetUserByEmail(String)
+- uid: Lionk.Auth.Identity.UserService.GetUserById(System.Guid)
+  commentId: M:Lionk.Auth.Identity.UserService.GetUserById(System.Guid)
+  id: GetUserById(System.Guid)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetUserById(Guid)
+  nameWithType: UserService.GetUserById(Guid)
+  fullName: Lionk.Auth.Identity.UserService.GetUserById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetUserById
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 60
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get a user by its id.
+  example: []
+  syntax:
+    content: public User? GetUserById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The id of the user.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The user with the id, null if not found.
+    content.vb: Public Function GetUserById(id As Guid) As User
+  overload: Lionk.Auth.Identity.UserService.GetUserById*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+- uid: Lionk.Auth.Identity.UserService.GetUserByUsername(System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.GetUserByUsername(System.String)
+  id: GetUserByUsername(System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetUserByUsername(string)
+  nameWithType: UserService.GetUserByUsername(string)
+  fullName: Lionk.Auth.Identity.UserService.GetUserByUsername(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetUserByUsername
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 68
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get a user by its username.
+  example: []
+  syntax:
+    content: public User? GetUserByUsername(string username)
+    parameters:
+    - id: username
+      type: System.String
+      description: The username of the user.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The user with the username, null if not found.
+    content.vb: Public Function GetUserByUsername(username As String) As User
+  overload: Lionk.Auth.Identity.UserService.GetUserByUsername*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetUserByUsername(System.String)
+  nameWithType.vb: UserService.GetUserByUsername(String)
+  fullName.vb: Lionk.Auth.Identity.UserService.GetUserByUsername(String)
+  name.vb: GetUserByUsername(String)
+- uid: Lionk.Auth.Identity.UserService.GetUsers
+  commentId: M:Lionk.Auth.Identity.UserService.GetUsers
+  id: GetUsers
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetUsers()
+  nameWithType: UserService.GetUsers()
+  fullName: Lionk.Auth.Identity.UserService.GetUsers()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetUsers
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 76
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get all the users.
+  example: []
+  syntax:
+    content: public HashSet<User> GetUsers()
+    return:
+      type: System.Collections.Generic.HashSet{Lionk.Auth.Identity.User}
+      description: The hashSet of all the users.
+    content.vb: Public Function GetUsers() As HashSet(Of User)
+  overload: Lionk.Auth.Identity.UserService.GetUsers*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetUsers
+- uid: Lionk.Auth.Identity.UserService.GetUserSalt(System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.GetUserSalt(System.String)
+  id: GetUserSalt(System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: GetUserSalt(string)
+  nameWithType: UserService.GetUserSalt(string)
+  fullName: Lionk.Auth.Identity.UserService.GetUserSalt(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetUserSalt
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 79
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to get the salt of a user.
+  example: []
+  syntax:
+    content: public string GetUserSalt(string username)
+    parameters:
+    - id: username
+      type: System.String
+      description: The username of the user.
+    return:
+      type: System.String
+      description: The salt of the user.
+    content.vb: Public Function GetUserSalt(username As String) As String
+  overload: Lionk.Auth.Identity.UserService.GetUserSalt*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.GetUserSalt(System.String)
+  nameWithType.vb: UserService.GetUserSalt(String)
+  fullName.vb: Lionk.Auth.Identity.UserService.GetUserSalt(String)
+  name.vb: GetUserSalt(String)
+- uid: Lionk.Auth.Identity.UserService.Insert(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Identity.UserService.Insert(Lionk.Auth.Identity.User)
+  id: Insert(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: Insert(User)
+  nameWithType: UserService.Insert(User)
+  fullName: Lionk.Auth.Identity.UserService.Insert(Lionk.Auth.Identity.User)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Insert
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 87
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to insert a user.
+  example: []
+  syntax:
+    content: public User? Insert(User user)
+    parameters:
+    - id: user
+      type: Lionk.Auth.Identity.User
+      description: The user to insert.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The inserted user, null the insertion failed.
+    content.vb: Public Function Insert(user As User) As User
+  overload: Lionk.Auth.Identity.UserService.Insert*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+- uid: Lionk.Auth.Identity.UserService.IsEmailExist(System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.IsEmailExist(System.String)
+  id: IsEmailExist(System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: IsEmailExist(string)
+  nameWithType: UserService.IsEmailExist(string)
+  fullName: Lionk.Auth.Identity.UserService.IsEmailExist(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsEmailExist
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 100
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to check if a username exists.
+  example: []
+  syntax:
+    content: public bool IsEmailExist(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The user to check.
+    return:
+      type: System.Boolean
+      description: True if the username exists, false otherwise.
+    content.vb: Public Function IsEmailExist(email As String) As Boolean
+  overload: Lionk.Auth.Identity.UserService.IsEmailExist*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.IsEmailExist(System.String)
+  nameWithType.vb: UserService.IsEmailExist(String)
+  fullName.vb: Lionk.Auth.Identity.UserService.IsEmailExist(String)
+  name.vb: IsEmailExist(String)
+- uid: Lionk.Auth.Identity.UserService.IsIdExist(System.Guid)
+  commentId: M:Lionk.Auth.Identity.UserService.IsIdExist(System.Guid)
+  id: IsIdExist(System.Guid)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: IsIdExist(Guid)
+  nameWithType: UserService.IsIdExist(Guid)
+  fullName: Lionk.Auth.Identity.UserService.IsIdExist(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsIdExist
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 103
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to check if an id exists.
+  example: []
+  syntax:
+    content: public bool IsIdExist(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The user to check.
+    return:
+      type: System.Boolean
+      description: True if the id exists, false otherwise.
+    content.vb: Public Function IsIdExist(id As Guid) As Boolean
+  overload: Lionk.Auth.Identity.UserService.IsIdExist*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+- uid: Lionk.Auth.Identity.UserService.IsUsernameExist(System.String)
+  commentId: M:Lionk.Auth.Identity.UserService.IsUsernameExist(System.String)
+  id: IsUsernameExist(System.String)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: IsUsernameExist(string)
+  nameWithType: UserService.IsUsernameExist(string)
+  fullName: Lionk.Auth.Identity.UserService.IsUsernameExist(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsUsernameExist
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 106
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to check if a username exists.
+  example: []
+  syntax:
+    content: public bool IsUsernameExist(string username)
+    parameters:
+    - id: username
+      type: System.String
+      description: The user to check.
+    return:
+      type: System.Boolean
+      description: True if the username exists, false otherwise.
+    content.vb: Public Function IsUsernameExist(username As String) As Boolean
+  overload: Lionk.Auth.Identity.UserService.IsUsernameExist*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.IsUsernameExist(System.String)
+  nameWithType.vb: UserService.IsUsernameExist(String)
+  fullName.vb: Lionk.Auth.Identity.UserService.IsUsernameExist(String)
+  name.vb: IsUsernameExist(String)
+- uid: Lionk.Auth.Identity.UserService.IsFirstUserRegistered
+  commentId: M:Lionk.Auth.Identity.UserService.IsFirstUserRegistered
+  id: IsFirstUserRegistered
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: IsFirstUserRegistered()
+  nameWithType: UserService.IsFirstUserRegistered()
+  fullName: Lionk.Auth.Identity.UserService.IsFirstUserRegistered()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsFirstUserRegistered
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 109
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: >-
+    Method to check if the current user being registered is the first user in the system.
+
+    If true, this indicates that the user should be assigned the Admin role.
+  example: []
+  syntax:
+    content: public bool IsFirstUserRegistered()
+    return:
+      type: System.Boolean
+      description: True if the current user is the first to be registered, false otherwise.
+    content.vb: Public Function IsFirstUserRegistered() As Boolean
+  overload: Lionk.Auth.Identity.UserService.IsFirstUserRegistered*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered
+- uid: Lionk.Auth.Identity.UserService.Update(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Identity.UserService.Update(Lionk.Auth.Identity.User)
+  id: Update(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Identity.UserService
+  langs:
+  - csharp
+  - vb
+  name: Update(User)
+  nameWithType: UserService.Update(User)
+  fullName: Lionk.Auth.Identity.UserService.Update(Lionk.Auth.Identity.User)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Update
+    path: src/Lib/Lionk.Auth/Model/Identity/UserService.cs
+    startLine: 112
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to update a user.
+  example: []
+  syntax:
+    content: public User? Update(User user)
+    parameters:
+    - id: user
+      type: Lionk.Auth.Identity.User
+      description: The user to update.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The updated user, null if the update failed.
+    content.vb: Public Function Update(user As User) As User
+  overload: Lionk.Auth.Identity.UserService.Update*
+  implements:
+  - Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+references:
+- uid: Lionk.Auth.Identity
+  commentId: N:Lionk.Auth.Identity
+  href: Lionk.html
+  name: Lionk.Auth.Identity
+  nameWithType: Lionk.Auth.Identity
+  fullName: Lionk.Auth.Identity
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Auth.Abstraction.IUserService
+  commentId: T:Lionk.Auth.Abstraction.IUserService
+  parent: Lionk.Auth.Abstraction
+  href: Lionk.Auth.Abstraction.IUserService.html
+  name: IUserService
+  nameWithType: IUserService
+  fullName: Lionk.Auth.Abstraction.IUserService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Auth.Abstraction
+  commentId: N:Lionk.Auth.Abstraction
+  href: Lionk.html
+  name: Lionk.Auth.Abstraction
+  nameWithType: Lionk.Auth.Abstraction
+  fullName: Lionk.Auth.Abstraction
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Abstraction
+    name: Abstraction
+    href: Lionk.Auth.Abstraction.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Abstraction
+    name: Abstraction
+    href: Lionk.Auth.Abstraction.html
+- uid: Lionk.Auth.Identity.UserService
+  commentId: T:Lionk.Auth.Identity.UserService
+  href: Lionk.Auth.Identity.UserService.html
+  name: UserService
+  nameWithType: UserService
+  fullName: Lionk.Auth.Identity.UserService
+- uid: Lionk.Auth.Identity.UserService.#ctor*
+  commentId: Overload:Lionk.Auth.Identity.UserService.#ctor
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService__ctor_Lionk_Auth_Abstraction_IUserRepository_
+  name: UserService
+  nameWithType: UserService.UserService
+  fullName: Lionk.Auth.Identity.UserService.UserService
+  nameWithType.vb: UserService.New
+  fullName.vb: Lionk.Auth.Identity.UserService.New
+  name.vb: New
+- uid: Lionk.Auth.Abstraction.IUserRepository
+  commentId: T:Lionk.Auth.Abstraction.IUserRepository
+  parent: Lionk.Auth.Abstraction
+  href: Lionk.Auth.Abstraction.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Lionk.Auth.Abstraction.IUserRepository
+- uid: Lionk.Auth.Identity.UserService.UserRepository*
+  commentId: Overload:Lionk.Auth.Identity.UserService.UserRepository
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_UserRepository
+  name: UserRepository
+  nameWithType: UserService.UserRepository
+  fullName: Lionk.Auth.Identity.UserService.UserRepository
+- uid: Lionk.Auth.Abstraction.IUserService.UserRepository
+  commentId: P:Lionk.Auth.Abstraction.IUserService.UserRepository
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_UserRepository
+  name: UserRepository
+  nameWithType: IUserService.UserRepository
+  fullName: Lionk.Auth.Abstraction.IUserService.UserRepository
+- uid: Lionk.Auth.Identity.UserService.Delete*
+  commentId: Overload:Lionk.Auth.Identity.UserService.Delete
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_Delete_Lionk_Auth_Identity_User_
+  name: Delete
+  nameWithType: UserService.Delete
+  fullName: Lionk.Auth.Identity.UserService.Delete
+- uid: Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Delete_Lionk_Auth_Identity_User_
+  name: Delete(User)
+  nameWithType: IUserService.Delete(User)
+  fullName: Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+    name: Delete
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Delete_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.Delete(Lionk.Auth.Identity.User)
+    name: Delete
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Delete_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+- uid: Lionk.Auth.Identity.User
+  commentId: T:Lionk.Auth.Identity.User
+  parent: Lionk.Auth.Identity
+  href: Lionk.Auth.Identity.User.html
+  name: User
+  nameWithType: User
+  fullName: Lionk.Auth.Identity.User
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Lionk.Auth.Identity.UserService.GetRegisteredUser*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetRegisteredUser
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetRegisteredUser_System_String_System_String_
+  name: GetRegisteredUser
+  nameWithType: UserService.GetRegisteredUser
+  fullName: Lionk.Auth.Identity.UserService.GetRegisteredUser
+- uid: Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(System.String,System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(System.String,System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetRegisteredUser_System_String_System_String_
+  name: GetRegisteredUser(string, string)
+  nameWithType: IUserService.GetRegisteredUser(string, string)
+  fullName: Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(string, string)
+  nameWithType.vb: IUserService.GetRegisteredUser(String, String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(String, String)
+  name.vb: GetRegisteredUser(String, String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(System.String,System.String)
+    name: GetRegisteredUser
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetRegisteredUser_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetRegisteredUser(System.String,System.String)
+    name: GetRegisteredUser
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetRegisteredUser_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Lionk.Auth.Identity.UserService.GetUserByEmail*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetUserByEmail
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetUserByEmail_System_String_
+  name: GetUserByEmail
+  nameWithType: UserService.GetUserByEmail
+  fullName: Lionk.Auth.Identity.UserService.GetUserByEmail
+- uid: Lionk.Auth.Abstraction.IUserService.GetUserByEmail(System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetUserByEmail(System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByEmail_System_String_
+  name: GetUserByEmail(string)
+  nameWithType: IUserService.GetUserByEmail(string)
+  fullName: Lionk.Auth.Abstraction.IUserService.GetUserByEmail(string)
+  nameWithType.vb: IUserService.GetUserByEmail(String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.GetUserByEmail(String)
+  name.vb: GetUserByEmail(String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserByEmail(System.String)
+    name: GetUserByEmail
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByEmail_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserByEmail(System.String)
+    name: GetUserByEmail
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByEmail_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.GetUserById*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetUserById
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetUserById_System_Guid_
+  name: GetUserById
+  nameWithType: UserService.GetUserById
+  fullName: Lionk.Auth.Identity.UserService.GetUserById
+- uid: Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserById_System_Guid_
+  name: GetUserById(Guid)
+  nameWithType: IUserService.GetUserById(Guid)
+  fullName: Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+    name: GetUserById
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserById(System.Guid)
+    name: GetUserById
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Lionk.Auth.Identity.UserService.GetUserByUsername*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetUserByUsername
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetUserByUsername_System_String_
+  name: GetUserByUsername
+  nameWithType: UserService.GetUserByUsername
+  fullName: Lionk.Auth.Identity.UserService.GetUserByUsername
+- uid: Lionk.Auth.Abstraction.IUserService.GetUserByUsername(System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetUserByUsername(System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByUsername_System_String_
+  name: GetUserByUsername(string)
+  nameWithType: IUserService.GetUserByUsername(string)
+  fullName: Lionk.Auth.Abstraction.IUserService.GetUserByUsername(string)
+  nameWithType.vb: IUserService.GetUserByUsername(String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.GetUserByUsername(String)
+  name.vb: GetUserByUsername(String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserByUsername(System.String)
+    name: GetUserByUsername
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByUsername_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserByUsername(System.String)
+    name: GetUserByUsername
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserByUsername_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.GetUsers*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetUsers
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetUsers
+  name: GetUsers
+  nameWithType: UserService.GetUsers
+  fullName: Lionk.Auth.Identity.UserService.GetUsers
+- uid: Lionk.Auth.Abstraction.IUserService.GetUsers
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetUsers
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUsers
+  name: GetUsers()
+  nameWithType: IUserService.GetUsers()
+  fullName: Lionk.Auth.Abstraction.IUserService.GetUsers()
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUsers
+    name: GetUsers
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUsers
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUsers
+    name: GetUsers
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUsers
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.HashSet{Lionk.Auth.Identity.User}
+  commentId: T:System.Collections.Generic.HashSet{Lionk.Auth.Identity.User}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<User>
+  nameWithType: HashSet<User>
+  fullName: System.Collections.Generic.HashSet<Lionk.Auth.Identity.User>
+  nameWithType.vb: HashSet(Of User)
+  fullName.vb: System.Collections.Generic.HashSet(Of Lionk.Auth.Identity.User)
+  name.vb: HashSet(Of User)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Lionk.Auth.Identity.UserService.GetUserSalt*
+  commentId: Overload:Lionk.Auth.Identity.UserService.GetUserSalt
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_GetUserSalt_System_String_
+  name: GetUserSalt
+  nameWithType: UserService.GetUserSalt
+  fullName: Lionk.Auth.Identity.UserService.GetUserSalt
+- uid: Lionk.Auth.Abstraction.IUserService.GetUserSalt(System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.GetUserSalt(System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserSalt_System_String_
+  name: GetUserSalt(string)
+  nameWithType: IUserService.GetUserSalt(string)
+  fullName: Lionk.Auth.Abstraction.IUserService.GetUserSalt(string)
+  nameWithType.vb: IUserService.GetUserSalt(String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.GetUserSalt(String)
+  name.vb: GetUserSalt(String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserSalt(System.String)
+    name: GetUserSalt
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserSalt_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.GetUserSalt(System.String)
+    name: GetUserSalt
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_GetUserSalt_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.Insert*
+  commentId: Overload:Lionk.Auth.Identity.UserService.Insert
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_Insert_Lionk_Auth_Identity_User_
+  name: Insert
+  nameWithType: UserService.Insert
+  fullName: Lionk.Auth.Identity.UserService.Insert
+- uid: Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Insert_Lionk_Auth_Identity_User_
+  name: Insert(User)
+  nameWithType: IUserService.Insert(User)
+  fullName: Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+    name: Insert
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Insert_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.Insert(Lionk.Auth.Identity.User)
+    name: Insert
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Insert_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.IsEmailExist*
+  commentId: Overload:Lionk.Auth.Identity.UserService.IsEmailExist
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_IsEmailExist_System_String_
+  name: IsEmailExist
+  nameWithType: UserService.IsEmailExist
+  fullName: Lionk.Auth.Identity.UserService.IsEmailExist
+- uid: Lionk.Auth.Abstraction.IUserService.IsEmailExist(System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.IsEmailExist(System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsEmailExist_System_String_
+  name: IsEmailExist(string)
+  nameWithType: IUserService.IsEmailExist(string)
+  fullName: Lionk.Auth.Abstraction.IUserService.IsEmailExist(string)
+  nameWithType.vb: IUserService.IsEmailExist(String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.IsEmailExist(String)
+  name.vb: IsEmailExist(String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsEmailExist(System.String)
+    name: IsEmailExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsEmailExist_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsEmailExist(System.String)
+    name: IsEmailExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsEmailExist_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.IsIdExist*
+  commentId: Overload:Lionk.Auth.Identity.UserService.IsIdExist
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_IsIdExist_System_Guid_
+  name: IsIdExist
+  nameWithType: UserService.IsIdExist
+  fullName: Lionk.Auth.Identity.UserService.IsIdExist
+- uid: Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsIdExist_System_Guid_
+  name: IsIdExist(Guid)
+  nameWithType: IUserService.IsIdExist(Guid)
+  fullName: Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+    name: IsIdExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsIdExist_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsIdExist(System.Guid)
+    name: IsIdExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsIdExist_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.IsUsernameExist*
+  commentId: Overload:Lionk.Auth.Identity.UserService.IsUsernameExist
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_IsUsernameExist_System_String_
+  name: IsUsernameExist
+  nameWithType: UserService.IsUsernameExist
+  fullName: Lionk.Auth.Identity.UserService.IsUsernameExist
+- uid: Lionk.Auth.Abstraction.IUserService.IsUsernameExist(System.String)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.IsUsernameExist(System.String)
+  parent: Lionk.Auth.Abstraction.IUserService
+  isExternal: true
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsUsernameExist_System_String_
+  name: IsUsernameExist(string)
+  nameWithType: IUserService.IsUsernameExist(string)
+  fullName: Lionk.Auth.Abstraction.IUserService.IsUsernameExist(string)
+  nameWithType.vb: IUserService.IsUsernameExist(String)
+  fullName.vb: Lionk.Auth.Abstraction.IUserService.IsUsernameExist(String)
+  name.vb: IsUsernameExist(String)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsUsernameExist(System.String)
+    name: IsUsernameExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsUsernameExist_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsUsernameExist(System.String)
+    name: IsUsernameExist
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsUsernameExist_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.IsFirstUserRegistered*
+  commentId: Overload:Lionk.Auth.Identity.UserService.IsFirstUserRegistered
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_IsFirstUserRegistered
+  name: IsFirstUserRegistered
+  nameWithType: UserService.IsFirstUserRegistered
+  fullName: Lionk.Auth.Identity.UserService.IsFirstUserRegistered
+- uid: Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered
+  commentId: M:Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsFirstUserRegistered
+  name: IsFirstUserRegistered()
+  nameWithType: IUserService.IsFirstUserRegistered()
+  fullName: Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered()
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered
+    name: IsFirstUserRegistered
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsFirstUserRegistered
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.IsFirstUserRegistered
+    name: IsFirstUserRegistered
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_IsFirstUserRegistered
+  - name: (
+  - name: )
+- uid: Lionk.Auth.Identity.UserService.Update*
+  commentId: Overload:Lionk.Auth.Identity.UserService.Update
+  href: Lionk.Auth.Identity.UserService.html#Lionk_Auth_Identity_UserService_Update_Lionk_Auth_Identity_User_
+  name: Update
+  nameWithType: UserService.Update
+  fullName: Lionk.Auth.Identity.UserService.Update
+- uid: Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Abstraction.IUserService
+  href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Update_Lionk_Auth_Identity_User_
+  name: Update(User)
+  nameWithType: IUserService.Update(User)
+  fullName: Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+  spec.csharp:
+  - uid: Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+    name: Update
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Update_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )
+  spec.vb:
+  - uid: Lionk.Auth.Abstraction.IUserService.Update(Lionk.Auth.Identity.User)
+    name: Update
+    href: Lionk.Auth.Abstraction.IUserService.html#Lionk_Auth_Abstraction_IUserService_Update_Lionk_Auth_Identity_User_
+  - name: (
+  - uid: Lionk.Auth.Identity.User
+    name: User
+    href: Lionk.Auth.Identity.User.html
+  - name: )

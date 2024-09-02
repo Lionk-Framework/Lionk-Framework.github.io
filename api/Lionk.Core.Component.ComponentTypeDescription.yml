@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.ComponentTypeDescription
+  commentId: T:Lionk.Core.Component.ComponentTypeDescription
+  id: ComponentTypeDescription
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.ComponentTypeDescription.#ctor(System.Type)
+  - Lionk.Core.Component.ComponentTypeDescription.Description
+  - Lionk.Core.Component.ComponentTypeDescription.Name
+  - Lionk.Core.Component.ComponentTypeDescription.Type
+  langs:
+  - csharp
+  - vb
+  name: ComponentTypeDescription
+  nameWithType: ComponentTypeDescription
+  fullName: Lionk.Core.Component.ComponentTypeDescription
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ComponentTypeDescription
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Define a component type description.
+  example: []
+  syntax:
+    content: public class ComponentTypeDescription
+    content.vb: Public Class ComponentTypeDescription
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.Component.ComponentTypeDescription.#ctor(System.Type)
+  commentId: M:Lionk.Core.Component.ComponentTypeDescription.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: Lionk.Core.Component.ComponentTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: ComponentTypeDescription(Type)
+  nameWithType: ComponentTypeDescription.ComponentTypeDescription(Type)
+  fullName: Lionk.Core.Component.ComponentTypeDescription.ComponentTypeDescription(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+    startLine: 15
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Initializes a new instance of the <xref href="Lionk.Core.Component.ComponentTypeDescription" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ComponentTypeDescription(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the component.
+    content.vb: Public Sub New(type As Type)
+  overload: Lionk.Core.Component.ComponentTypeDescription.#ctor*
+  nameWithType.vb: ComponentTypeDescription.New(Type)
+  fullName.vb: Lionk.Core.Component.ComponentTypeDescription.New(System.Type)
+  name.vb: New(Type)
+- uid: Lionk.Core.Component.ComponentTypeDescription.Description
+  commentId: P:Lionk.Core.Component.ComponentTypeDescription.Description
+  id: Description
+  parent: Lionk.Core.Component.ComponentTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ComponentTypeDescription.Description
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Description
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Description
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+    startLine: 30
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the description of the component.
+  example: []
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: Lionk.Core.Component.ComponentTypeDescription.Description*
+- uid: Lionk.Core.Component.ComponentTypeDescription.Name
+  commentId: P:Lionk.Core.Component.ComponentTypeDescription.Name
+  id: Name
+  parent: Lionk.Core.Component.ComponentTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ComponentTypeDescription.Name
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Name
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Name
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+    startLine: 35
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the name of the component.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Lionk.Core.Component.ComponentTypeDescription.Name*
+- uid: Lionk.Core.Component.ComponentTypeDescription.Type
+  commentId: P:Lionk.Core.Component.ComponentTypeDescription.Type
+  id: Type
+  parent: Lionk.Core.Component.ComponentTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ComponentTypeDescription.Type
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Type
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Type
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/ComponentTypeDescription.cs
+    startLine: 40
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the type of the component.
+  example: []
+  syntax:
+    content: public Type Type { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property Type As Type
+  overload: Lionk.Core.Component.ComponentTypeDescription.Type*
+references:
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Component.ComponentTypeDescription
+  commentId: T:Lionk.Core.Component.ComponentTypeDescription
+  href: Lionk.Core.Component.ComponentTypeDescription.html
+  name: ComponentTypeDescription
+  nameWithType: ComponentTypeDescription
+  fullName: Lionk.Core.Component.ComponentTypeDescription
+- uid: Lionk.Core.Component.ComponentTypeDescription.#ctor*
+  commentId: Overload:Lionk.Core.Component.ComponentTypeDescription.#ctor
+  href: Lionk.Core.Component.ComponentTypeDescription.html#Lionk_Core_Component_ComponentTypeDescription__ctor_System_Type_
+  name: ComponentTypeDescription
+  nameWithType: ComponentTypeDescription.ComponentTypeDescription
+  fullName: Lionk.Core.Component.ComponentTypeDescription.ComponentTypeDescription
+  nameWithType.vb: ComponentTypeDescription.New
+  fullName.vb: Lionk.Core.Component.ComponentTypeDescription.New
+  name.vb: New
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Lionk.Core.Component.ComponentTypeDescription.Description*
+  commentId: Overload:Lionk.Core.Component.ComponentTypeDescription.Description
+  href: Lionk.Core.Component.ComponentTypeDescription.html#Lionk_Core_Component_ComponentTypeDescription_Description
+  name: Description
+  nameWithType: ComponentTypeDescription.Description
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Lionk.Core.Component.ComponentTypeDescription.Name*
+  commentId: Overload:Lionk.Core.Component.ComponentTypeDescription.Name
+  href: Lionk.Core.Component.ComponentTypeDescription.html#Lionk_Core_Component_ComponentTypeDescription_Name
+  name: Name
+  nameWithType: ComponentTypeDescription.Name
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Name
+- uid: Lionk.Core.Component.ComponentTypeDescription.Type*
+  commentId: Overload:Lionk.Core.Component.ComponentTypeDescription.Type
+  href: Lionk.Core.Component.ComponentTypeDescription.html#Lionk_Core_Component_ComponentTypeDescription_Type
+  name: Type
+  nameWithType: ComponentTypeDescription.Type
+  fullName: Lionk.Core.Component.ComponentTypeDescription.Type

@@ -1,0 +1,531 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.ICyclicComponent
+  commentId: T:Lionk.Core.Component.ICyclicComponent
+  id: ICyclicComponent
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  - Lionk.Core.Component.ICyclicComponent.LastExecution
+  - Lionk.Core.Component.ICyclicComponent.NbCycle
+  - Lionk.Core.Component.ICyclicComponent.NextExecution
+  - Lionk.Core.Component.ICyclicComponent.Period
+  - Lionk.Core.Component.ICyclicComponent.StartedDate
+  langs:
+  - csharp
+  - vb
+  name: ICyclicComponent
+  nameWithType: ICyclicComponent
+  fullName: Lionk.Core.Component.ICyclicComponent
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ICyclicComponent
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 8
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: This interface defines a cyclic component.
+  example: []
+  syntax:
+    content: 'public interface ICyclicComponent : IExecutableComponent, IComponent, IDisposable'
+    content.vb: Public Interface ICyclicComponent Inherits IExecutableComponent, IComponent, IDisposable
+  inheritedMembers:
+  - Lionk.Core.Component.IExecutableComponent.CanExecute
+  - Lionk.Core.Component.IExecutableComponent.IsInError
+  - Lionk.Core.Component.IExecutableComponent.IsRunning
+  - Lionk.Core.Component.IExecutableComponent.Abort
+  - Lionk.Core.Component.IExecutableComponent.Execute
+  - Lionk.Core.Component.IExecutableComponent.Reset
+  - Lionk.Core.Component.IComponent.Id
+  - Lionk.Core.Component.IComponent.InstanceName
+  - System.IDisposable.Dispose
+- uid: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  commentId: P:Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  id: CyclicComputationMethod
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: CyclicComputationMethod
+  nameWithType: ICyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: CyclicComputationMethod
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 15
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets or sets the cyclic computation method.
+  example: []
+  syntax:
+    content: CyclicComputationMethod CyclicComputationMethod { get; set; }
+    parameters: []
+    return:
+      type: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+    content.vb: Property CyclicComputationMethod As CyclicComputationMethod
+  overload: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod*
+- uid: Lionk.Core.Component.ICyclicComponent.LastExecution
+  commentId: P:Lionk.Core.Component.ICyclicComponent.LastExecution
+  id: LastExecution
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: LastExecution
+  nameWithType: ICyclicComponent.LastExecution
+  fullName: Lionk.Core.Component.ICyclicComponent.LastExecution
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: LastExecution
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 20
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the last execution time of the component.
+  example: []
+  syntax:
+    content: DateTime LastExecution { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property LastExecution As Date
+  overload: Lionk.Core.Component.ICyclicComponent.LastExecution*
+- uid: Lionk.Core.Component.ICyclicComponent.NbCycle
+  commentId: P:Lionk.Core.Component.ICyclicComponent.NbCycle
+  id: NbCycle
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: NbCycle
+  nameWithType: ICyclicComponent.NbCycle
+  fullName: Lionk.Core.Component.ICyclicComponent.NbCycle
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NbCycle
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 25
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the number of cycles executed.
+  example: []
+  syntax:
+    content: int NbCycle { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NbCycle As Integer
+  overload: Lionk.Core.Component.ICyclicComponent.NbCycle*
+- uid: Lionk.Core.Component.ICyclicComponent.NextExecution
+  commentId: P:Lionk.Core.Component.ICyclicComponent.NextExecution
+  id: NextExecution
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: NextExecution
+  nameWithType: ICyclicComponent.NextExecution
+  fullName: Lionk.Core.Component.ICyclicComponent.NextExecution
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NextExecution
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 30
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the next execution time of the component depending on the <xref href="Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: DateTime NextExecution { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property NextExecution As Date
+  overload: Lionk.Core.Component.ICyclicComponent.NextExecution*
+- uid: Lionk.Core.Component.ICyclicComponent.Period
+  commentId: P:Lionk.Core.Component.ICyclicComponent.Period
+  id: Period
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: ICyclicComponent.Period
+  fullName: Lionk.Core.Component.ICyclicComponent.Period
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Period
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 35
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets or sets the period of the component.
+  example: []
+  syntax:
+    content: TimeSpan Period { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Property Period As TimeSpan
+  overload: Lionk.Core.Component.ICyclicComponent.Period*
+- uid: Lionk.Core.Component.ICyclicComponent.StartedDate
+  commentId: P:Lionk.Core.Component.ICyclicComponent.StartedDate
+  id: StartedDate
+  parent: Lionk.Core.Component.ICyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: StartedDate
+  nameWithType: ICyclicComponent.StartedDate
+  fullName: Lionk.Core.Component.ICyclicComponent.StartedDate
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: StartedDate
+    path: src/Lib/Lionk.Core/Model/Component/Interface/ICyclicComponent.cs
+    startLine: 40
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the starting date of the component.
+  example: []
+  syntax:
+    content: DateTime StartedDate { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property StartedDate As Date
+  overload: Lionk.Core.Component.ICyclicComponent.StartedDate*
+references:
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: Lionk.Core.Component.IExecutableComponent.CanExecute
+  commentId: P:Lionk.Core.Component.IExecutableComponent.CanExecute
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_CanExecute
+  name: CanExecute
+  nameWithType: IExecutableComponent.CanExecute
+  fullName: Lionk.Core.Component.IExecutableComponent.CanExecute
+- uid: Lionk.Core.Component.IExecutableComponent.IsInError
+  commentId: P:Lionk.Core.Component.IExecutableComponent.IsInError
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_IsInError
+  name: IsInError
+  nameWithType: IExecutableComponent.IsInError
+  fullName: Lionk.Core.Component.IExecutableComponent.IsInError
+- uid: Lionk.Core.Component.IExecutableComponent.IsRunning
+  commentId: P:Lionk.Core.Component.IExecutableComponent.IsRunning
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_IsRunning
+  name: IsRunning
+  nameWithType: IExecutableComponent.IsRunning
+  fullName: Lionk.Core.Component.IExecutableComponent.IsRunning
+- uid: Lionk.Core.Component.IExecutableComponent.Abort
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Abort
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Abort
+  name: Abort()
+  nameWithType: IExecutableComponent.Abort()
+  fullName: Lionk.Core.Component.IExecutableComponent.Abort()
+  spec.csharp:
+  - uid: Lionk.Core.Component.IExecutableComponent.Abort
+    name: Abort
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Abort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.IExecutableComponent.Abort
+    name: Abort
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Abort
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.IExecutableComponent.Execute
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Execute
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Execute
+  name: Execute()
+  nameWithType: IExecutableComponent.Execute()
+  fullName: Lionk.Core.Component.IExecutableComponent.Execute()
+  spec.csharp:
+  - uid: Lionk.Core.Component.IExecutableComponent.Execute
+    name: Execute
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.IExecutableComponent.Execute
+    name: Execute
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Execute
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.IExecutableComponent.Reset
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Reset
+  parent: Lionk.Core.Component.IExecutableComponent
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Reset
+  name: Reset()
+  nameWithType: IExecutableComponent.Reset()
+  fullName: Lionk.Core.Component.IExecutableComponent.Reset()
+  spec.csharp:
+  - uid: Lionk.Core.Component.IExecutableComponent.Reset
+    name: Reset
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.IExecutableComponent.Reset
+    name: Reset
+    href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Reset
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.IComponent.Id
+  commentId: P:Lionk.Core.Component.IComponent.Id
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_Id
+  name: Id
+  nameWithType: IComponent.Id
+  fullName: Lionk.Core.Component.IComponent.Id
+- uid: Lionk.Core.Component.IComponent.InstanceName
+  commentId: P:Lionk.Core.Component.IComponent.InstanceName
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_InstanceName
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.IExecutableComponent
+  commentId: T:Lionk.Core.Component.IExecutableComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IExecutableComponent.html
+  name: IExecutableComponent
+  nameWithType: IExecutableComponent
+  fullName: Lionk.Core.Component.IExecutableComponent
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponent.html
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_CyclicComputationMethod
+  name: CyclicComputationMethod
+  nameWithType: ICyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+- uid: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+  commentId: T:Lionk.Core.Component.Cyclic.CyclicComputationMethod
+  parent: Lionk.Core.Component.Cyclic
+  href: Lionk.Core.Component.Cyclic.CyclicComputationMethod.html
+  name: CyclicComputationMethod
+  nameWithType: CyclicComputationMethod
+  fullName: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+- uid: Lionk.Core.Component.Cyclic
+  commentId: N:Lionk.Core.Component.Cyclic
+  href: Lionk.html
+  name: Lionk.Core.Component.Cyclic
+  nameWithType: Lionk.Core.Component.Cyclic
+  fullName: Lionk.Core.Component.Cyclic
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+- uid: Lionk.Core.Component.ICyclicComponent.LastExecution*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.LastExecution
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_LastExecution
+  name: LastExecution
+  nameWithType: ICyclicComponent.LastExecution
+  fullName: Lionk.Core.Component.ICyclicComponent.LastExecution
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Lionk.Core.Component.ICyclicComponent.NbCycle*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.NbCycle
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_NbCycle
+  name: NbCycle
+  nameWithType: ICyclicComponent.NbCycle
+  fullName: Lionk.Core.Component.ICyclicComponent.NbCycle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  commentId: P:Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_CyclicComputationMethod
+  name: CyclicComputationMethod
+  nameWithType: ICyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+- uid: Lionk.Core.Component.ICyclicComponent.NextExecution*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.NextExecution
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_NextExecution
+  name: NextExecution
+  nameWithType: ICyclicComponent.NextExecution
+  fullName: Lionk.Core.Component.ICyclicComponent.NextExecution
+- uid: Lionk.Core.Component.ICyclicComponent
+  commentId: T:Lionk.Core.Component.ICyclicComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.ICyclicComponent.html
+  name: ICyclicComponent
+  nameWithType: ICyclicComponent
+  fullName: Lionk.Core.Component.ICyclicComponent
+- uid: Lionk.Core.Component.ICyclicComponent.Period*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.Period
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_Period
+  name: Period
+  nameWithType: ICyclicComponent.Period
+  fullName: Lionk.Core.Component.ICyclicComponent.Period
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Lionk.Core.Component.ICyclicComponent.StartedDate*
+  commentId: Overload:Lionk.Core.Component.ICyclicComponent.StartedDate
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_StartedDate
+  name: StartedDate
+  nameWithType: ICyclicComponent.StartedDate
+  fullName: Lionk.Core.Component.ICyclicComponent.StartedDate

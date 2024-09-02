@@ -1,0 +1,278 @@
+### YamlMime:TableOfContent
+items:
+- uid: Lionk.Auth.Abstraction
+  name: Lionk.Auth.Abstraction
+  items:
+  - uid: Lionk.Auth.Abstraction.IUserRepository
+    name: IUserRepository
+  - uid: Lionk.Auth.Abstraction.IUserService
+    name: IUserService
+- uid: Lionk.Auth.Identity
+  name: Lionk.Auth.Identity
+  items:
+  - uid: Lionk.Auth.Identity.User
+    name: User
+  - uid: Lionk.Auth.Identity.UserAuthenticationStateProvider
+    name: UserAuthenticationStateProvider
+  - uid: Lionk.Auth.Identity.UserFileHandler
+    name: UserFileHandler
+  - uid: Lionk.Auth.Identity.UserService
+    name: UserService
+  - uid: Lionk.Auth.Identity.UserServiceRazor
+    name: UserServiceRazor
+- uid: Lionk.Auth.Utils
+  name: Lionk.Auth.Utils
+  items:
+  - uid: Lionk.Auth.Utils.PasswordUtils
+    name: PasswordUtils
+- uid: Lionk.Core
+  name: Lionk.Core
+  items:
+  - uid: Lionk.Core.NamedElement
+    name: NamedElement
+- uid: Lionk.Core.Component
+  name: Lionk.Core.Component
+  items:
+  - uid: Lionk.Core.Component.BaseComponent
+    name: BaseComponent
+  - uid: Lionk.Core.Component.BaseCyclicComponent
+    name: BaseCyclicComponent
+  - uid: Lionk.Core.Component.BaseExecutableComponent
+    name: BaseExecutableComponent
+  - uid: Lionk.Core.Component.ComponentFactory
+    name: ComponentFactory
+  - uid: Lionk.Core.Component.ComponentRegister
+    name: ComponentRegister
+  - uid: Lionk.Core.Component.ComponentService
+    name: ComponentService
+  - uid: Lionk.Core.Component.ComponentTypeDescription
+    name: ComponentTypeDescription
+  - uid: Lionk.Core.Component.IComponent
+    name: IComponent
+  - uid: Lionk.Core.Component.IComponentService
+    name: IComponentService
+  - uid: Lionk.Core.Component.ICyclicComponent
+    name: ICyclicComponent
+  - uid: Lionk.Core.Component.IExecutableComponent
+    name: IExecutableComponent
+  - uid: Lionk.Core.Component.IMeasurableComponent`1
+    name: IMeasurableComponent<T>
+- uid: Lionk.Core.Component.Cyclic
+  name: Lionk.Core.Component.Cyclic
+  items:
+  - uid: Lionk.Core.Component.Cyclic.CycleState
+    name: CycleState
+  - uid: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+    name: CyclicComputationMethod
+  - uid: Lionk.Core.Component.Cyclic.CyclicComputationMethodExtension
+    name: CyclicComputationMethodExtension
+  - uid: Lionk.Core.Component.Cyclic.CyclicExecutorService
+    name: CyclicExecutorService
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+    name: ICyclicExecutorService
+- uid: Lionk.Core.DataModel
+  name: Lionk.Core.DataModel
+  items:
+  - uid: Lionk.Core.DataModel.MeasureEventArgs`1
+    name: MeasureEventArgs<T>
+  - uid: Lionk.Core.DataModel.Measure`1
+    name: Measure<T>
+- uid: Lionk.Core.Dialog
+  name: Lionk.Core.Dialog
+  items:
+  - uid: Lionk.Core.Dialog.ComponentDialog
+    name: ComponentDialog
+  - uid: Lionk.Core.Dialog.SimpleQuestionDialog
+    name: SimpleQuestionDialog
+- uid: Lionk.Core.Model.Component
+  name: Lionk.Core.Model.Component
+  items:
+  - uid: Lionk.Core.Model.Component.ComponentContainer
+    name: ComponentContainer
+- uid: Lionk.Core.Observable
+  name: Lionk.Core.Observable
+  items:
+  - uid: Lionk.Core.Observable.ObservableElement
+    name: ObservableElement
+- uid: Lionk.Core.Razor
+  name: Lionk.Core.Razor
+  items:
+  - uid: Lionk.Core.Razor.ComponentList
+    name: ComponentList
+  - uid: Lionk.Core.Razor.IComponentInstanceList
+    name: IComponentInstanceList
+  - uid: Lionk.Core.Razor.ListSearcher`1
+    name: ListSearcher<T>
+  - uid: Lionk.Core.Razor._imports
+    name: _imports
+- uid: Lionk.Core.Razor.Service
+  name: Lionk.Core.Razor.Service
+  items:
+  - uid: Lionk.Core.Razor.Service.CyclicExecutorHostedService
+    name: CyclicExecutorHostedService
+- uid: Lionk.Core.Razor.Views.CyclicComponent
+  name: Lionk.Core.Razor.Views.CyclicComponent
+  items:
+  - uid: Lionk.Core.Razor.Views.CyclicComponent.CyclicComponentCard
+    name: CyclicComponentCard
+- uid: Lionk.Core.Razor.Views.CyclicExecutor
+  name: Lionk.Core.Razor.Views.CyclicExecutor
+  items:
+  - uid: Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph
+    name: CycleTimeGraph
+  - uid: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard
+    name: CyclicExecutorStatusCard
+  - uid: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView
+    name: CyclicExecutorView
+  - uid: Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor
+    name: ToggleCyclicExecutor
+- uid: Lionk.Core.TypeRegister
+  name: Lionk.Core.TypeRegister
+  items:
+  - uid: Lionk.Core.TypeRegister.Factory
+    name: Factory
+  - uid: Lionk.Core.TypeRegister.ITypesProvider
+    name: ITypesProvider
+  - uid: Lionk.Core.TypeRegister.TypesEventArgs
+    name: TypesEventArgs
+- uid: Lionk.Core.View
+  name: Lionk.Core.View
+  items:
+  - uid: Lionk.Core.View.ComponentView
+    name: ComponentView
+  - uid: Lionk.Core.View.ComponentViewConfig
+    name: ComponentViewConfig
+  - uid: Lionk.Core.View.ComponentViewDescription
+    name: ComponentViewDescription
+  - uid: Lionk.Core.View.ComponentViewModel
+    name: ComponentViewModel
+  - uid: Lionk.Core.View.ContainerView
+    name: ContainerView
+  - uid: Lionk.Core.View.CyclicComponentConfig
+    name: CyclicComponentConfig
+  - uid: Lionk.Core.View.CyclicComputationMethodExtensionInformation
+    name: CyclicComputationMethodExtensionInformation
+  - uid: Lionk.Core.View.DynamicComponentWrapper
+    name: DynamicComponentWrapper
+  - uid: Lionk.Core.View.IViewLocatorService
+    name: IViewLocatorService
+  - uid: Lionk.Core.View.IViewRegistryService
+    name: IViewRegistryService
+  - uid: Lionk.Core.View.LoadingComponent
+    name: LoadingComponent
+  - uid: Lionk.Core.View.NoComponentView
+    name: NoComponentView
+  - uid: Lionk.Core.View.ViewContext
+    name: ViewContext
+  - uid: Lionk.Core.View.ViewLocatorService
+    name: ViewLocatorService
+  - uid: Lionk.Core.View.ViewOfAttribute
+    name: ViewOfAttribute
+  - uid: Lionk.Core.View.ViewRegistryService
+    name: ViewRegistryService
+- uid: Lionk.Log
+  name: Lionk.Log
+  items:
+  - uid: Lionk.Log.ILoggerFactory
+    name: ILoggerFactory
+  - uid: Lionk.Log.IStandardLogger
+    name: IStandardLogger
+  - uid: Lionk.Log.LogService
+    name: LogService
+  - uid: Lionk.Log.LogSeverity
+    name: LogSeverity
+  - uid: Lionk.Log.Utils
+    name: Utils
+- uid: Lionk.Log.Serilog
+  name: Lionk.Log.Serilog
+  items:
+  - uid: Lionk.Log.Serilog.SerilogFactory
+    name: SerilogFactory
+- uid: Lionk.Notification
+  name: Lionk.Notification
+  items:
+  - uid: Lionk.Notification.Content
+    name: Content
+  - uid: Lionk.Notification.IChannel
+    name: IChannel
+  - uid: Lionk.Notification.INotifier
+    name: INotifier
+  - uid: Lionk.Notification.IRecipient
+    name: IRecipient
+  - uid: Lionk.Notification.Notification
+    name: Notification
+  - uid: Lionk.Notification.NotificationFileHandler
+    name: NotificationFileHandler
+  - uid: Lionk.Notification.NotificationHistory
+    name: NotificationHistory
+  - uid: Lionk.Notification.NotificationService
+    name: NotificationService
+  - uid: Lionk.Notification.Severity
+    name: Severity
+- uid: Lionk.Notification.Converter
+  name: Lionk.Notification.Converter
+  items:
+  - uid: Lionk.Notification.Converter.NotificationPropertiesConverter
+    name: NotificationPropertiesConverter
+  - uid: Lionk.Notification.Converter.NotifierChannelDictionaryConverter
+    name: NotifierChannelDictionaryConverter
+- uid: Lionk.Notification.Email
+  name: Lionk.Notification.Email
+  items:
+  - uid: Lionk.Notification.Email.EmailChannel
+    name: EmailChannel
+  - uid: Lionk.Notification.Email.EmailRecipients
+    name: EmailRecipients
+  - uid: Lionk.Notification.Email.SmtpConfig
+    name: SmtpConfig
+- uid: Lionk.Notification.Event
+  name: Lionk.Notification.Event
+  items:
+  - uid: Lionk.Notification.Event.NotificationEventArgs
+    name: NotificationEventArgs
+- uid: Lionk.Plugin
+  name: Lionk.Plugin
+  items:
+  - uid: Lionk.Plugin.Dependency
+    name: Dependency
+  - uid: Lionk.Plugin.IPluginManager
+    name: IPluginManager
+  - uid: Lionk.Plugin.Plugin
+    name: Plugin
+  - uid: Lionk.Plugin.PluginManager
+    name: PluginManager
+- uid: Lionk.Plugin.Blazor
+  name: Lionk.Plugin.Blazor
+  items:
+  - uid: Lionk.Plugin.Blazor.FileUploadService
+    name: FileUploadService
+  - uid: Lionk.Plugin.Blazor.PluginCard
+    name: PluginCard
+  - uid: Lionk.Plugin.Blazor.PluginUploader
+    name: PluginUploader
+  - uid: Lionk.Plugin.Blazor._Imports
+    name: _Imports
+- uid: Lionk.TestComponent
+  name: Lionk.TestComponent
+  items:
+  - uid: Lionk.TestComponent.ComponentWhichGoToError
+    name: ComponentWhichGoToError
+  - uid: Lionk.TestComponent.Counter
+    name: Counter
+- uid: Lionk.TestComponent.CyclicCounter
+  name: Lionk.TestComponent.CyclicCounter
+  items:
+  - uid: Lionk.TestComponent.CyclicCounter.CounterConfig
+    name: CounterConfig
+  - uid: Lionk.TestComponent.CyclicCounter.CounterView
+    name: CounterView
+- uid: Lionk.Utils
+  name: Lionk.Utils
+  items:
+  - uid: Lionk.Utils.ConfigurationUtils
+    name: ConfigurationUtils
+  - uid: Lionk.Utils.FileHelper
+    name: FileHelper
+  - uid: Lionk.Utils.FolderType
+    name: FolderType
+memberLayout: SamePage

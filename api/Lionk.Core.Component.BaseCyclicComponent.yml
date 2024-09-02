@@ -1,0 +1,1294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.BaseCyclicComponent
+  commentId: T:Lionk.Core.Component.BaseCyclicComponent
+  id: BaseCyclicComponent
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+  - Lionk.Core.Component.BaseCyclicComponent.LastExecution
+  - Lionk.Core.Component.BaseCyclicComponent.NbCycle
+  - Lionk.Core.Component.BaseCyclicComponent.OnExecute(System.Threading.CancellationToken)
+  - Lionk.Core.Component.BaseCyclicComponent.OnInitialize
+  - Lionk.Core.Component.BaseCyclicComponent.OnTerminate
+  - Lionk.Core.Component.BaseCyclicComponent.Period
+  - Lionk.Core.Component.BaseCyclicComponent.StartedDate
+  langs:
+  - csharp
+  - vb
+  name: BaseCyclicComponent
+  nameWithType: BaseCyclicComponent
+  fullName: Lionk.Core.Component.BaseCyclicComponent
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: BaseCyclicComponent
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 12
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Base class that implements the <xref href="Lionk.Core.Component.ICyclicComponent" data-throw-if-not-resolved="false"></xref> interface.
+
+    Provides default behavior for cyclic components, managing their life cycle,
+
+    periodic execution, and cycle count.
+  example: []
+  syntax:
+    content: 'public abstract class BaseCyclicComponent : BaseExecutableComponent, INotifyPropertyChanged, ICyclicComponent, IExecutableComponent, IComponent, IDisposable'
+    content.vb: Public MustInherit Class BaseCyclicComponent Inherits BaseExecutableComponent Implements INotifyPropertyChanged, ICyclicComponent, IExecutableComponent, IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - Lionk.Core.Observable.ObservableElement
+  - Lionk.Core.Component.BaseComponent
+  - Lionk.Core.Component.BaseExecutableComponent
+  derivedClasses:
+  - Lionk.TestComponent.ComponentWhichGoToError
+  - Lionk.TestComponent.Counter
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Lionk.Core.Component.ICyclicComponent
+  - Lionk.Core.Component.IExecutableComponent
+  - Lionk.Core.Component.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - Lionk.Core.Component.BaseExecutableComponent.CanExecute
+  - Lionk.Core.Component.BaseExecutableComponent.IsInError
+  - Lionk.Core.Component.BaseExecutableComponent.IsRunning
+  - Lionk.Core.Component.BaseExecutableComponent.Abort
+  - Lionk.Core.Component.BaseExecutableComponent.Dispose
+  - Lionk.Core.Component.BaseExecutableComponent.Execute
+  - Lionk.Core.Component.BaseExecutableComponent.Reset
+  - Lionk.Core.Component.BaseComponent.Id
+  - Lionk.Core.Component.BaseComponent.InstanceName
+  - Lionk.Core.Observable.ObservableElement.PropertyChanged
+  - Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  - Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+  commentId: P:Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+  id: CyclicComputationMethod
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: CyclicComputationMethod
+  nameWithType: BaseCyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: CyclicComputationMethod
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 34
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Gets or sets the method used to compute the next execution time of the component.
+
+    This can be either relative to the last execution or relative to the start time.
+  example: []
+  syntax:
+    content: public CyclicComputationMethod CyclicComputationMethod { get; set; }
+    parameters: []
+    return:
+      type: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+    content.vb: Public Property CyclicComputationMethod As CyclicComputationMethod
+  overload: Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod*
+  implements:
+  - Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+- uid: Lionk.Core.Component.BaseCyclicComponent.LastExecution
+  commentId: P:Lionk.Core.Component.BaseCyclicComponent.LastExecution
+  id: LastExecution
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: LastExecution
+  nameWithType: BaseCyclicComponent.LastExecution
+  fullName: Lionk.Core.Component.BaseCyclicComponent.LastExecution
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: LastExecution
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 44
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Gets the date and time of the last execution of the component.
+
+    This property is automatically updated each time the component completes its execution.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public DateTime LastExecution { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property LastExecution As Date
+  overload: Lionk.Core.Component.BaseCyclicComponent.LastExecution*
+  implements:
+  - Lionk.Core.Component.ICyclicComponent.LastExecution
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: Lionk.Core.Component.BaseCyclicComponent.NbCycle
+  commentId: P:Lionk.Core.Component.BaseCyclicComponent.NbCycle
+  id: NbCycle
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: NbCycle
+  nameWithType: BaseCyclicComponent.NbCycle
+  fullName: Lionk.Core.Component.BaseCyclicComponent.NbCycle
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NbCycle
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 55
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Gets the number of execution cycles that have been completed by the component.
+
+    This count is incremented automatically with each execution.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public int NbCycle { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property NbCycle As Integer
+  overload: Lionk.Core.Component.BaseCyclicComponent.NbCycle*
+  implements:
+  - Lionk.Core.Component.ICyclicComponent.NbCycle
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: Lionk.Core.Component.BaseCyclicComponent.Period
+  commentId: P:Lionk.Core.Component.BaseCyclicComponent.Period
+  id: Period
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: BaseCyclicComponent.Period
+  fullName: Lionk.Core.Component.BaseCyclicComponent.Period
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Period
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 69
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Gets or sets the period between each execution of the component.
+
+    The period must be greater than zero.
+  example: []
+  syntax:
+    content: public TimeSpan Period { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Period As TimeSpan
+  overload: Lionk.Core.Component.BaseCyclicComponent.Period*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the period is less than or equal to zero.
+  implements:
+  - Lionk.Core.Component.ICyclicComponent.Period
+- uid: Lionk.Core.Component.BaseCyclicComponent.StartedDate
+  commentId: P:Lionk.Core.Component.BaseCyclicComponent.StartedDate
+  id: StartedDate
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: StartedDate
+  nameWithType: BaseCyclicComponent.StartedDate
+  fullName: Lionk.Core.Component.BaseCyclicComponent.StartedDate
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: StartedDate
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 87
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Gets the date and time when the component was started.
+
+    This property is updated automatically when the component is initialized.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public DateTime StartedDate { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property StartedDate As Date
+  overload: Lionk.Core.Component.BaseCyclicComponent.StartedDate*
+  implements:
+  - Lionk.Core.Component.ICyclicComponent.StartedDate
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnExecute(System.Threading.CancellationToken)
+  commentId: M:Lionk.Core.Component.BaseCyclicComponent.OnExecute(System.Threading.CancellationToken)
+  id: OnExecute(System.Threading.CancellationToken)
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: OnExecute(CancellationToken)
+  nameWithType: BaseCyclicComponent.OnExecute(CancellationToken)
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnExecute(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: OnExecute
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 105
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Executes the component, incrementing the cycle count.
+
+    This method is called during each execution cycle of the component.
+  example: []
+  syntax:
+    content: protected override void OnExecute(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that can be used to cancel the execution.
+    content.vb: Protected Overrides Sub OnExecute(cancellationToken As CancellationToken)
+  overridden: Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+  overload: Lionk.Core.Component.BaseCyclicComponent.OnExecute*
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnInitialize
+  commentId: M:Lionk.Core.Component.BaseCyclicComponent.OnInitialize
+  id: OnInitialize
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: OnInitialize()
+  nameWithType: BaseCyclicComponent.OnInitialize()
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnInitialize()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: OnInitialize
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 115
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Initializes the component by setting the start date to the current date and time.
+
+    This method is called automatically during the first execution of the component.
+  example: []
+  syntax:
+    content: protected override void OnInitialize()
+    content.vb: Protected Overrides Sub OnInitialize()
+  overridden: Lionk.Core.Component.BaseExecutableComponent.OnInitialize
+  overload: Lionk.Core.Component.BaseCyclicComponent.OnInitialize*
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnTerminate
+  commentId: M:Lionk.Core.Component.BaseCyclicComponent.OnTerminate
+  id: OnTerminate
+  parent: Lionk.Core.Component.BaseCyclicComponent
+  langs:
+  - csharp
+  - vb
+  name: OnTerminate()
+  nameWithType: BaseCyclicComponent.OnTerminate()
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnTerminate()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: OnTerminate
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseCyclicComponent.cs
+    startLine: 125
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: >-
+    Terminates the execution of the component, updating the last execution time.
+
+    This method is called automatically after the execution logic has completed.
+  example: []
+  syntax:
+    content: protected override void OnTerminate()
+    content.vb: Protected Overrides Sub OnTerminate()
+  overridden: Lionk.Core.Component.BaseExecutableComponent.OnTerminate
+  overload: Lionk.Core.Component.BaseCyclicComponent.OnTerminate*
+references:
+- uid: Lionk.Core.Component.ICyclicComponent
+  commentId: T:Lionk.Core.Component.ICyclicComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.ICyclicComponent.html
+  name: ICyclicComponent
+  nameWithType: ICyclicComponent
+  fullName: Lionk.Core.Component.ICyclicComponent
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Core.Observable.ObservableElement
+  commentId: T:Lionk.Core.Observable.ObservableElement
+  parent: Lionk.Core.Observable
+  href: Lionk.Core.Observable.ObservableElement.html
+  name: ObservableElement
+  nameWithType: ObservableElement
+  fullName: Lionk.Core.Observable.ObservableElement
+- uid: Lionk.Core.Component.BaseComponent
+  commentId: T:Lionk.Core.Component.BaseComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.BaseComponent.html
+  name: BaseComponent
+  nameWithType: BaseComponent
+  fullName: Lionk.Core.Component.BaseComponent
+- uid: Lionk.Core.Component.BaseExecutableComponent
+  commentId: T:Lionk.Core.Component.BaseExecutableComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.BaseExecutableComponent.html
+  name: BaseExecutableComponent
+  nameWithType: BaseExecutableComponent
+  fullName: Lionk.Core.Component.BaseExecutableComponent
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Lionk.Core.Component.IExecutableComponent
+  commentId: T:Lionk.Core.Component.IExecutableComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IExecutableComponent.html
+  name: IExecutableComponent
+  nameWithType: IExecutableComponent
+  fullName: Lionk.Core.Component.IExecutableComponent
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponent.html
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Lionk.Core.Component.BaseExecutableComponent.CanExecute
+  commentId: P:Lionk.Core.Component.BaseExecutableComponent.CanExecute
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_CanExecute
+  name: CanExecute
+  nameWithType: BaseExecutableComponent.CanExecute
+  fullName: Lionk.Core.Component.BaseExecutableComponent.CanExecute
+- uid: Lionk.Core.Component.BaseExecutableComponent.IsInError
+  commentId: P:Lionk.Core.Component.BaseExecutableComponent.IsInError
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_IsInError
+  name: IsInError
+  nameWithType: BaseExecutableComponent.IsInError
+  fullName: Lionk.Core.Component.BaseExecutableComponent.IsInError
+- uid: Lionk.Core.Component.BaseExecutableComponent.IsRunning
+  commentId: P:Lionk.Core.Component.BaseExecutableComponent.IsRunning
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_IsRunning
+  name: IsRunning
+  nameWithType: BaseExecutableComponent.IsRunning
+  fullName: Lionk.Core.Component.BaseExecutableComponent.IsRunning
+- uid: Lionk.Core.Component.BaseExecutableComponent.Abort
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.Abort
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Abort
+  name: Abort()
+  nameWithType: BaseExecutableComponent.Abort()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.Abort()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Abort
+    name: Abort
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Abort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Abort
+    name: Abort
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Abort
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseExecutableComponent.Dispose
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.Dispose
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Dispose
+  name: Dispose()
+  nameWithType: BaseExecutableComponent.Dispose()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.Dispose()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Dispose
+    name: Dispose
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Dispose
+    name: Dispose
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Dispose
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseExecutableComponent.Execute
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.Execute
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Execute
+  name: Execute()
+  nameWithType: BaseExecutableComponent.Execute()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.Execute()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Execute
+    name: Execute
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Execute
+    name: Execute
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Execute
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseExecutableComponent.Reset
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.Reset
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Reset
+  name: Reset()
+  nameWithType: BaseExecutableComponent.Reset()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.Reset()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Reset
+    name: Reset
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.Reset
+    name: Reset
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_Reset
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseComponent.Id
+  commentId: P:Lionk.Core.Component.BaseComponent.Id
+  parent: Lionk.Core.Component.BaseComponent
+  href: Lionk.Core.Component.BaseComponent.html#Lionk_Core_Component_BaseComponent_Id
+  name: Id
+  nameWithType: BaseComponent.Id
+  fullName: Lionk.Core.Component.BaseComponent.Id
+- uid: Lionk.Core.Component.BaseComponent.InstanceName
+  commentId: P:Lionk.Core.Component.BaseComponent.InstanceName
+  parent: Lionk.Core.Component.BaseComponent
+  href: Lionk.Core.Component.BaseComponent.html#Lionk_Core_Component_BaseComponent_InstanceName
+  name: InstanceName
+  nameWithType: BaseComponent.InstanceName
+  fullName: Lionk.Core.Component.BaseComponent.InstanceName
+- uid: Lionk.Core.Observable.ObservableElement.PropertyChanged
+  commentId: E:Lionk.Core.Observable.ObservableElement.PropertyChanged
+  parent: Lionk.Core.Observable.ObservableElement
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ObservableElement.PropertyChanged
+  fullName: Lionk.Core.Observable.ObservableElement.PropertyChanged
+- uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  name: OnPropertyChanged(string)
+  nameWithType: ObservableElement.OnPropertyChanged(string)
+  fullName: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(string)
+  nameWithType.vb: ObservableElement.OnPropertyChanged(String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  definition: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Observable
+  commentId: N:Lionk.Core.Observable
+  href: Lionk.html
+  name: Lionk.Core.Observable
+  nameWithType: Lionk.Core.Observable
+  fullName: Lionk.Core.Observable
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_CyclicComputationMethod
+  name: CyclicComputationMethod
+  nameWithType: BaseCyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.BaseCyclicComponent.CyclicComputationMethod
+- uid: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  commentId: P:Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_CyclicComputationMethod
+  name: CyclicComputationMethod
+  nameWithType: ICyclicComponent.CyclicComputationMethod
+  fullName: Lionk.Core.Component.ICyclicComponent.CyclicComputationMethod
+- uid: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+  commentId: T:Lionk.Core.Component.Cyclic.CyclicComputationMethod
+  parent: Lionk.Core.Component.Cyclic
+  href: Lionk.Core.Component.Cyclic.CyclicComputationMethod.html
+  name: CyclicComputationMethod
+  nameWithType: CyclicComputationMethod
+  fullName: Lionk.Core.Component.Cyclic.CyclicComputationMethod
+- uid: Lionk.Core.Component.Cyclic
+  commentId: N:Lionk.Core.Component.Cyclic
+  href: Lionk.html
+  name: Lionk.Core.Component.Cyclic
+  nameWithType: Lionk.Core.Component.Cyclic
+  fullName: Lionk.Core.Component.Cyclic
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+- uid: Lionk.Core.Component.BaseCyclicComponent.LastExecution*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.LastExecution
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_LastExecution
+  name: LastExecution
+  nameWithType: BaseCyclicComponent.LastExecution
+  fullName: Lionk.Core.Component.BaseCyclicComponent.LastExecution
+- uid: Lionk.Core.Component.ICyclicComponent.LastExecution
+  commentId: P:Lionk.Core.Component.ICyclicComponent.LastExecution
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_LastExecution
+  name: LastExecution
+  nameWithType: ICyclicComponent.LastExecution
+  fullName: Lionk.Core.Component.ICyclicComponent.LastExecution
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Lionk.Core.Component.BaseCyclicComponent.NbCycle*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.NbCycle
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_NbCycle
+  name: NbCycle
+  nameWithType: BaseCyclicComponent.NbCycle
+  fullName: Lionk.Core.Component.BaseCyclicComponent.NbCycle
+- uid: Lionk.Core.Component.ICyclicComponent.NbCycle
+  commentId: P:Lionk.Core.Component.ICyclicComponent.NbCycle
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_NbCycle
+  name: NbCycle
+  nameWithType: ICyclicComponent.NbCycle
+  fullName: Lionk.Core.Component.ICyclicComponent.NbCycle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Lionk.Core.Component.BaseCyclicComponent.Period*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.Period
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_Period
+  name: Period
+  nameWithType: BaseCyclicComponent.Period
+  fullName: Lionk.Core.Component.BaseCyclicComponent.Period
+- uid: Lionk.Core.Component.ICyclicComponent.Period
+  commentId: P:Lionk.Core.Component.ICyclicComponent.Period
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_Period
+  name: Period
+  nameWithType: ICyclicComponent.Period
+  fullName: Lionk.Core.Component.ICyclicComponent.Period
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Lionk.Core.Component.BaseCyclicComponent.StartedDate*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.StartedDate
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_StartedDate
+  name: StartedDate
+  nameWithType: BaseCyclicComponent.StartedDate
+  fullName: Lionk.Core.Component.BaseCyclicComponent.StartedDate
+- uid: Lionk.Core.Component.ICyclicComponent.StartedDate
+  commentId: P:Lionk.Core.Component.ICyclicComponent.StartedDate
+  parent: Lionk.Core.Component.ICyclicComponent
+  href: Lionk.Core.Component.ICyclicComponent.html#Lionk_Core_Component_ICyclicComponent_StartedDate
+  name: StartedDate
+  nameWithType: ICyclicComponent.StartedDate
+  fullName: Lionk.Core.Component.ICyclicComponent.StartedDate
+- uid: Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  isExternal: true
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnExecute_System_Threading_CancellationToken_
+  name: OnExecute(CancellationToken)
+  nameWithType: BaseExecutableComponent.OnExecute(CancellationToken)
+  fullName: Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+    name: OnExecute
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnExecute_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnExecute(System.Threading.CancellationToken)
+    name: OnExecute
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnExecute_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnExecute*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.OnExecute
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_OnExecute_System_Threading_CancellationToken_
+  name: OnExecute
+  nameWithType: BaseCyclicComponent.OnExecute
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnExecute
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Lionk.Core.Component.BaseExecutableComponent.OnInitialize
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.OnInitialize
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnInitialize
+  name: OnInitialize()
+  nameWithType: BaseExecutableComponent.OnInitialize()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.OnInitialize()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnInitialize
+    name: OnInitialize
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnInitialize
+    name: OnInitialize
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnInitialize
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnInitialize*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.OnInitialize
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_OnInitialize
+  name: OnInitialize
+  nameWithType: BaseCyclicComponent.OnInitialize
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnInitialize
+- uid: Lionk.Core.Component.BaseExecutableComponent.OnTerminate
+  commentId: M:Lionk.Core.Component.BaseExecutableComponent.OnTerminate
+  parent: Lionk.Core.Component.BaseExecutableComponent
+  href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnTerminate
+  name: OnTerminate()
+  nameWithType: BaseExecutableComponent.OnTerminate()
+  fullName: Lionk.Core.Component.BaseExecutableComponent.OnTerminate()
+  spec.csharp:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnTerminate
+    name: OnTerminate
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnTerminate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.BaseExecutableComponent.OnTerminate
+    name: OnTerminate
+    href: Lionk.Core.Component.BaseExecutableComponent.html#Lionk_Core_Component_BaseExecutableComponent_OnTerminate
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.BaseCyclicComponent.OnTerminate*
+  commentId: Overload:Lionk.Core.Component.BaseCyclicComponent.OnTerminate
+  href: Lionk.Core.Component.BaseCyclicComponent.html#Lionk_Core_Component_BaseCyclicComponent_OnTerminate
+  name: OnTerminate
+  nameWithType: BaseCyclicComponent.OnTerminate
+  fullName: Lionk.Core.Component.BaseCyclicComponent.OnTerminate

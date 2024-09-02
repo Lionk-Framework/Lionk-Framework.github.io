@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  id: IComponent
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.IComponent.Id
+  - Lionk.Core.Component.IComponent.InstanceName
+  langs:
+  - csharp
+  - vb
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IComponent
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Interface that define a component.
+  example: []
+  syntax:
+    content: 'public interface IComponent : IDisposable'
+    content.vb: Public Interface IComponent Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Lionk.Core.Component.IComponent.Id
+  commentId: P:Lionk.Core.Component.IComponent.Id
+  id: Id
+  parent: Lionk.Core.Component.IComponent
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IComponent.Id
+  fullName: Lionk.Core.Component.IComponent.Id
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Id
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+    startLine: 14
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the unique identifier of the component.
+  example: []
+  syntax:
+    content: Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property Id As Guid
+  overload: Lionk.Core.Component.IComponent.Id*
+- uid: Lionk.Core.Component.IComponent.InstanceName
+  commentId: P:Lionk.Core.Component.IComponent.InstanceName
+  id: InstanceName
+  parent: Lionk.Core.Component.IComponent
+  langs:
+  - csharp
+  - vb
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: InstanceName
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IComponent.cs
+    startLine: 19
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets or sets the name of the component.
+  example: []
+  syntax:
+    content: string InstanceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property InstanceName As String
+  overload: Lionk.Core.Component.IComponent.InstanceName*
+references:
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Component.IComponent.Id*
+  commentId: Overload:Lionk.Core.Component.IComponent.Id
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_Id
+  name: Id
+  nameWithType: IComponent.Id
+  fullName: Lionk.Core.Component.IComponent.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Lionk.Core.Component.IComponent.InstanceName*
+  commentId: Overload:Lionk.Core.Component.IComponent.InstanceName
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_InstanceName
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

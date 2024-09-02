@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Log.IStandardLogger
+  commentId: T:Lionk.Log.IStandardLogger
+  id: IStandardLogger
+  parent: Lionk.Log
+  children:
+  - Lionk.Log.IStandardLogger.Log(Lionk.Log.LogSeverity,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStandardLogger
+  nameWithType: IStandardLogger
+  fullName: Lionk.Log.IStandardLogger
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Logger/Model/Abstraction/IStandardLogger.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IStandardLogger
+    path: src/Lib/Lionk.Logger/Model/Abstraction/IStandardLogger.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Logger
+  namespace: Lionk.Log
+  summary: Interface for custom logger.
+  example: []
+  syntax:
+    content: 'public interface IStandardLogger : IDisposable'
+    content.vb: Public Interface IStandardLogger Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Lionk.Log.IStandardLogger.Log(Lionk.Log.LogSeverity,System.String)
+  commentId: M:Lionk.Log.IStandardLogger.Log(Lionk.Log.LogSeverity,System.String)
+  id: Log(Lionk.Log.LogSeverity,System.String)
+  parent: Lionk.Log.IStandardLogger
+  langs:
+  - csharp
+  - vb
+  name: Log(LogSeverity, string)
+  nameWithType: IStandardLogger.Log(LogSeverity, string)
+  fullName: Lionk.Log.IStandardLogger.Log(Lionk.Log.LogSeverity, string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Logger/Model/Abstraction/IStandardLogger.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Log
+    path: src/Lib/Lionk.Logger/Model/Abstraction/IStandardLogger.cs
+    startLine: 16
+  assemblies:
+  - Lionk.Logger
+  namespace: Lionk.Log
+  summary: Log a message with a <xref href="Lionk.Log.LogSeverity" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: void Log(LogSeverity severity, string message)
+    parameters:
+    - id: severity
+      type: Lionk.Log.LogSeverity
+      description: The severity.
+    - id: message
+      type: System.String
+      description: The message to log.
+    content.vb: Sub Log(severity As LogSeverity, message As String)
+  overload: Lionk.Log.IStandardLogger.Log*
+  nameWithType.vb: IStandardLogger.Log(LogSeverity, String)
+  fullName.vb: Lionk.Log.IStandardLogger.Log(Lionk.Log.LogSeverity, String)
+  name.vb: Log(LogSeverity, String)
+references:
+- uid: Lionk.Log
+  commentId: N:Lionk.Log
+  href: Lionk.html
+  name: Lionk.Log
+  nameWithType: Lionk.Log
+  fullName: Lionk.Log
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Log.LogSeverity
+  commentId: T:Lionk.Log.LogSeverity
+  parent: Lionk.Log
+  href: Lionk.Log.LogSeverity.html
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: Lionk.Log.LogSeverity
+- uid: Lionk.Log.IStandardLogger.Log*
+  commentId: Overload:Lionk.Log.IStandardLogger.Log
+  href: Lionk.Log.IStandardLogger.html#Lionk_Log_IStandardLogger_Log_Lionk_Log_LogSeverity_System_String_
+  name: Log
+  nameWithType: IStandardLogger.Log
+  fullName: Lionk.Log.IStandardLogger.Log
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.View.IViewRegistryService
+  commentId: T:Lionk.Core.View.IViewRegistryService
+  id: IViewRegistryService
+  parent: Lionk.Core.View
+  children:
+  - Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  - Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  - Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IViewRegistryService
+  nameWithType: IViewRegistryService
+  fullName: Lionk.Core.View.IViewRegistryService
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IViewRegistryService
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Interface which define the service to register the active views.
+  example: []
+  syntax:
+    content: public interface IViewRegistryService
+    content.vb: Public Interface IViewRegistryService
+- uid: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  commentId: M:Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  id: HasActiveViews(System.Type)
+  parent: Lionk.Core.View.IViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: HasActiveViews(Type)
+  nameWithType: IViewRegistryService.HasActiveViews(Type)
+  fullName: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: HasActiveViews
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+    startLine: 15
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Method used to check if an instance of the view is active.
+  example: []
+  syntax:
+    content: bool HasActiveViews(Type t)
+    parameters:
+    - id: t
+      type: System.Type
+    return:
+      type: System.Boolean
+      description: True if an instance of this type exist.
+    content.vb: Function HasActiveViews(t As Type) As Boolean
+  overload: Lionk.Core.View.IViewRegistryService.HasActiveViews*
+- uid: Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  commentId: M:Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  id: Register(System.Object)
+  parent: Lionk.Core.View.IViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: Register(object)
+  nameWithType: IViewRegistryService.Register(object)
+  fullName: Lionk.Core.View.IViewRegistryService.Register(object)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Register
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+    startLine: 21
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Method used to register a view.
+  example: []
+  syntax:
+    content: void Register(object viewInstance)
+    parameters:
+    - id: viewInstance
+      type: System.Object
+      description: The view instance.
+    content.vb: Sub Register(viewInstance As Object)
+  overload: Lionk.Core.View.IViewRegistryService.Register*
+  nameWithType.vb: IViewRegistryService.Register(Object)
+  fullName.vb: Lionk.Core.View.IViewRegistryService.Register(Object)
+  name.vb: Register(Object)
+- uid: Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  commentId: M:Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  id: Unregister(System.Object)
+  parent: Lionk.Core.View.IViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: Unregister(object)
+  nameWithType: IViewRegistryService.Unregister(object)
+  fullName: Lionk.Core.View.IViewRegistryService.Unregister(object)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Unregister
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/IViewRegistryService.cs
+    startLine: 27
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Method used to unregister a view.
+  example: []
+  syntax:
+    content: void Unregister(object viewInstance)
+    parameters:
+    - id: viewInstance
+      type: System.Object
+      description: The view instance.
+    content.vb: Sub Unregister(viewInstance As Object)
+  overload: Lionk.Core.View.IViewRegistryService.Unregister*
+  nameWithType.vb: IViewRegistryService.Unregister(Object)
+  fullName.vb: Lionk.Core.View.IViewRegistryService.Unregister(Object)
+  name.vb: Unregister(Object)
+references:
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  href: Lionk.html
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+- uid: Lionk.Core.View.IViewRegistryService.HasActiveViews*
+  commentId: Overload:Lionk.Core.View.IViewRegistryService.HasActiveViews
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_HasActiveViews_System_Type_
+  name: HasActiveViews
+  nameWithType: IViewRegistryService.HasActiveViews
+  fullName: Lionk.Core.View.IViewRegistryService.HasActiveViews
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.View.IViewRegistryService.Register*
+  commentId: Overload:Lionk.Core.View.IViewRegistryService.Register
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Register_System_Object_
+  name: Register
+  nameWithType: IViewRegistryService.Register
+  fullName: Lionk.Core.View.IViewRegistryService.Register
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Core.View.IViewRegistryService.Unregister*
+  commentId: Overload:Lionk.Core.View.IViewRegistryService.Unregister
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Unregister_System_Object_
+  name: Unregister
+  nameWithType: IViewRegistryService.Unregister
+  fullName: Lionk.Core.View.IViewRegistryService.Unregister

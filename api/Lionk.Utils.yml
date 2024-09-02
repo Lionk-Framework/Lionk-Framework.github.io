@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Utils
+  commentId: N:Lionk.Utils
+  id: Lionk.Utils
+  children:
+  - Lionk.Utils.ConfigurationUtils
+  - Lionk.Utils.FileHelper
+  - Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Utils
+  nameWithType: Lionk.Utils
+  fullName: Lionk.Utils
+  type: Namespace
+  assemblies:
+  - Lionk.Utils
+references:
+- uid: Lionk.Utils.ConfigurationUtils
+  commentId: T:Lionk.Utils.ConfigurationUtils
+  href: Lionk.Utils.ConfigurationUtils.html
+  name: ConfigurationUtils
+  nameWithType: ConfigurationUtils
+  fullName: Lionk.Utils.ConfigurationUtils
+- uid: Lionk.Utils.FileHelper
+  commentId: T:Lionk.Utils.FileHelper
+  href: Lionk.Utils.FileHelper.html
+  name: FileHelper
+  nameWithType: FileHelper
+  fullName: Lionk.Utils.FileHelper
+- uid: Lionk.Utils.FolderType
+  commentId: T:Lionk.Utils.FolderType
+  parent: Lionk.Utils
+  href: Lionk.Utils.FolderType.html
+  name: FolderType
+  nameWithType: FolderType
+  fullName: Lionk.Utils.FolderType
+- uid: Lionk.Utils
+  commentId: N:Lionk.Utils
+  href: Lionk.html
+  name: Lionk.Utils
+  nameWithType: Lionk.Utils
+  fullName: Lionk.Utils
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Utils
+    name: Utils
+    href: Lionk.Utils.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Utils
+    name: Utils
+    href: Lionk.Utils.html

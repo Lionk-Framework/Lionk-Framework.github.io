@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Notification Library | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Notification Library | Lionk ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Notification/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="notification-library">Notification Library</h1>
+
+<p>This library allows sending notifications through various channels, such as email. It also supports the addition of custom channels and recipients.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#creating-a-notifyer">Creating a Notifyer</a></li>
+<li><a href="#creating-a-notification">Creating a Notification</a></li>
+<li><a href="#using-emailchannel-and-emailrecipients">Using EmailChannel and EmailRecipients</a></li>
+<li><a href="#notificationservice">NotificationService</a></li>
+<li><a href="#implementing-new-channels-and-recipients">Implementing New Channels and Recipients</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Clone the repository.</li>
+<li>Ensure you have the necessary dependencies</li>
+</ol>
+<ul>
+<li>Newtonsoft.Json</li>
+</ul>
+<ol start="3">
+<li>Add the library files to your project.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<h3 id="creating-a-notifyer">Creating a Notifyer</h3>
+<p>A <code>Notifyer</code> is an entity that sends notifications. You can create a notifyer by implementing the <code>INotifyer</code> interface.</p>
+<pre><code class="lang-csharp">public class MyNotifyer : INotifyer
+{
+    public Guid Id { get; private set; }
+    public string Name { get; private set; }
+
+    public MyNotifyer(string name)
+    {
+        Id = Guid.NewGuid();
+        Name = name;
+    }
+
+    public bool Equals(INotifyer? other)
+    {
+        if (other == null) return false;
+        return Id == other.Id;
+    }
+}
+</code></pre>
+<h3 id="creating-a-notification">Creating a Notification</h3>
+<p>A notification consists of content (<code>Content</code>) and a notifyer (<code>INotifyer</code>).</p>
+<pre><code class="lang-csharp">Content content = new Content(Severity.Information, &quot;Notification Title&quot;, &quot;Notification Message&quot;);
+INotifyer notifyer = new MyNotifyer(&quot;MyNotifyer&quot;);
+
+Notification notification = new Notification(content, notifyer);
+NotificationService.Send(notification);
+</code></pre>
+<h3 id="using-emailchannel-and-emailrecipients">Using EmailChannel and EmailRecipients</h3>
+<p>To send notifications via email, use <code>EmailChannel</code> and <code>EmailRecipients</code>.</p>
+<ol>
+<li><strong>Create an email recipient:</strong></li>
+</ol>
+<pre><code class="lang-csharp">EmailRecipients recipient = new EmailRecipients(&quot;Recipient Name&quot;, &quot;email@example.com&quot;);
+</code></pre>
+<ol start="2">
+<li><strong>Create and initialize an email channel:</strong></li>
+</ol>
+<pre><code class="lang-csharp">EmailChannel emailChannel = new EmailChannel(&quot;MyEmailChannel&quot;);
+emailChannel.AddRecipients(recipient);
+emailChannel.Initialize();
+</code></pre>
+<ol start="3">
+<li><strong>Map the notifyer to the channel and send the notification:</strong></li>
+</ol>
+<pre><code class="lang-csharp">NotificationService.MapNotifyerToChannel(notifyer, emailChannel);
+NotificationService.Send(notification);
+</code></pre>
+<h3 id="notificationservice">NotificationService</h3>
+<p>The <code>NotificationService</code> class manages notifyers and channels, sends notifications, and maintains notification history.
+Mapping notifyers to channels is necessary to send notifications. When <code>NotificationService.MapNotifyerToChannel</code> is called, <code>AddChannels</code> and <code>AddNotifyers</code> are called automatically.</p>
+<h4 id="adding-a-channel">Adding a Channel</h4>
+<p>To add a channel to the notification service:</p>
+<pre><code class="lang-csharp">EmailChannel emailChannel = new EmailChannel(&quot;MyEmailChannel&quot;);
+NotificationService.AddChannels(emailChannel);
+</code></pre>
+<h4 id="adding-a-notifyer">Adding a Notifyer</h4>
+<p>To add a notifyer to the notification service:</p>
+<pre><code class="lang-csharp">INotifyer notifyer = new MyNotifyer(&quot;MyNotifyer&quot;);
+NotificationService.AddNotifyers(notifyer);
+</code></pre>
+<h4 id="mapping-notifyers-to-channels">Mapping Notifyers to Channels</h4>
+<p>To map a notifyer to one or more channels:</p>
+<pre><code class="lang-csharp">NotificationService.MapNotifyerToChannel(notifyer, emailChannel);
+</code></pre>
+<h3 id="implementing-new-channels-and-recipients">Implementing New Channels and Recipients</h3>
+<h4 id="implementing-a-new-channel">Implementing a New Channel</h4>
+<p>To create a new type of channel, implement the <code>IChannel</code> interface.</p>
+<pre><code class="lang-csharp">public class SmsChannel : IChannel
+{
+    public Guid Guid { get; private set; } = Guid.NewGuid();
+    public string Name { get; private set; }
+    public List&lt;IRecipient&gt; Recipients { get; private set; } = new List&lt;IRecipient&gt;();
+    public bool IsInitialized { get; private set; } = false;
+
+    public SmsChannel(string name)
+    {
+        Name = name;
+    }
+
+    public void AddRecipients(params IRecipient[] recipients)
+    {
+        Recipients.AddRange(recipients);
+    }
+
+    public void Initialize()
+    {
+        // Initialize necessary resources
+        IsInitialized = true;
+    }
+
+    public void Send(INotifyer notifyer, Content content)
+    {
+        if (!IsInitialized) throw new InvalidOperationException(&quot;Channel not initialized.&quot;);
+        // Send the notification via SMS
+    }
+
+    public bool Equals(object? obj)
+    {
+        return obj is SmsChannel channel &amp;&amp; Guid == channel.Guid;
+    }
+}
+</code></pre>
+<h4 id="implementing-a-new-recipient">Implementing a New Recipient</h4>
+<p>To create a new type of recipient, implement the <code>IRecipient</code> interface.</p>
+<pre><code class="lang-csharp">public class SmsRecipient : IRecipient
+{
+    public Guid Guid { get; private set; } = Guid.NewGuid();
+    public string Name { get; private set; }
+    public string PhoneNumber { get; private set; }
+
+    public SmsRecipient(string name, string phoneNumber)
+    {
+        Name = name;
+        PhoneNumber = phoneNumber;
+    }
+}
+</code></pre>
+<hr>
+<p>This concludes the documentation for the notification library. For any questions or issues, please open an issue on the repository.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Notification/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

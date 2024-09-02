@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Notification.Converter
+  commentId: N:Lionk.Notification.Converter
+  id: Lionk.Notification.Converter
+  children:
+  - Lionk.Notification.Converter.NotificationPropertiesConverter
+  - Lionk.Notification.Converter.NotifierChannelDictionaryConverter
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Notification.Converter
+  nameWithType: Lionk.Notification.Converter
+  fullName: Lionk.Notification.Converter
+  type: Namespace
+  assemblies:
+  - Lionk.Notification
+references:
+- uid: Lionk.Notification.Converter.NotificationPropertiesConverter
+  commentId: T:Lionk.Notification.Converter.NotificationPropertiesConverter
+  href: Lionk.Notification.Converter.NotificationPropertiesConverter.html
+  name: NotificationPropertiesConverter
+  nameWithType: NotificationPropertiesConverter
+  fullName: Lionk.Notification.Converter.NotificationPropertiesConverter
+- uid: Lionk.Notification.Converter.NotifierChannelDictionaryConverter
+  commentId: T:Lionk.Notification.Converter.NotifierChannelDictionaryConverter
+  href: Lionk.Notification.Converter.NotifierChannelDictionaryConverter.html
+  name: NotifierChannelDictionaryConverter
+  nameWithType: NotifierChannelDictionaryConverter
+  fullName: Lionk.Notification.Converter.NotifierChannelDictionaryConverter

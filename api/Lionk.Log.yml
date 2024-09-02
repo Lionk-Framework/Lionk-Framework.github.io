@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Log
+  commentId: N:Lionk.Log
+  id: Lionk.Log
+  children:
+  - Lionk.Log.ILoggerFactory
+  - Lionk.Log.IStandardLogger
+  - Lionk.Log.LogService
+  - Lionk.Log.LogSeverity
+  - Lionk.Log.Utils
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Log
+  nameWithType: Lionk.Log
+  fullName: Lionk.Log
+  type: Namespace
+  assemblies:
+  - Lionk.Logger
+references:
+- uid: Lionk.Log.ILoggerFactory
+  commentId: T:Lionk.Log.ILoggerFactory
+  parent: Lionk.Log
+  href: Lionk.Log.ILoggerFactory.html
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Lionk.Log.ILoggerFactory
+- uid: Lionk.Log.IStandardLogger
+  commentId: T:Lionk.Log.IStandardLogger
+  parent: Lionk.Log
+  href: Lionk.Log.IStandardLogger.html
+  name: IStandardLogger
+  nameWithType: IStandardLogger
+  fullName: Lionk.Log.IStandardLogger
+- uid: Lionk.Log.LogService
+  commentId: T:Lionk.Log.LogService
+  href: Lionk.Log.LogService.html
+  name: LogService
+  nameWithType: LogService
+  fullName: Lionk.Log.LogService
+- uid: Lionk.Log.LogSeverity
+  commentId: T:Lionk.Log.LogSeverity
+  parent: Lionk.Log
+  href: Lionk.Log.LogSeverity.html
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: Lionk.Log.LogSeverity
+- uid: Lionk.Log.Utils
+  commentId: T:Lionk.Log.Utils
+  href: Lionk.Log.Utils.html
+  name: Utils
+  nameWithType: Utils
+  fullName: Lionk.Log.Utils
+- uid: Lionk.Log
+  commentId: N:Lionk.Log
+  href: Lionk.html
+  name: Lionk.Log
+  nameWithType: Lionk.Log
+  fullName: Lionk.Log
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html

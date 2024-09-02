@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.IExecutableComponent
+  commentId: T:Lionk.Core.Component.IExecutableComponent
+  id: IExecutableComponent
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.IExecutableComponent.Abort
+  - Lionk.Core.Component.IExecutableComponent.CanExecute
+  - Lionk.Core.Component.IExecutableComponent.Execute
+  - Lionk.Core.Component.IExecutableComponent.IsInError
+  - Lionk.Core.Component.IExecutableComponent.IsRunning
+  - Lionk.Core.Component.IExecutableComponent.Reset
+  langs:
+  - csharp
+  - vb
+  name: IExecutableComponent
+  nameWithType: IExecutableComponent
+  fullName: Lionk.Core.Component.IExecutableComponent
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IExecutableComponent
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: This interface defines a cyclic component.
+  example: []
+  syntax:
+    content: 'public interface IExecutableComponent : IComponent, IDisposable'
+    content.vb: Public Interface IExecutableComponent Inherits IComponent, IDisposable
+  inheritedMembers:
+  - Lionk.Core.Component.IComponent.Id
+  - Lionk.Core.Component.IComponent.InstanceName
+  - System.IDisposable.Dispose
+- uid: Lionk.Core.Component.IExecutableComponent.CanExecute
+  commentId: P:Lionk.Core.Component.IExecutableComponent.CanExecute
+  id: CanExecute
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: CanExecute
+  nameWithType: IExecutableComponent.CanExecute
+  fullName: Lionk.Core.Component.IExecutableComponent.CanExecute
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: CanExecute
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 14
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets  a value indicating whether the component can be executed.
+  example: []
+  syntax:
+    content: bool CanExecute { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanExecute As Boolean
+  overload: Lionk.Core.Component.IExecutableComponent.CanExecute*
+- uid: Lionk.Core.Component.IExecutableComponent.IsInError
+  commentId: P:Lionk.Core.Component.IExecutableComponent.IsInError
+  id: IsInError
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: IsInError
+  nameWithType: IExecutableComponent.IsInError
+  fullName: Lionk.Core.Component.IExecutableComponent.IsInError
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsInError
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 19
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets a value indicating whether the component is in error.
+  example: []
+  syntax:
+    content: bool IsInError { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsInError As Boolean
+  overload: Lionk.Core.Component.IExecutableComponent.IsInError*
+- uid: Lionk.Core.Component.IExecutableComponent.IsRunning
+  commentId: P:Lionk.Core.Component.IExecutableComponent.IsRunning
+  id: IsRunning
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: IExecutableComponent.IsRunning
+  fullName: Lionk.Core.Component.IExecutableComponent.IsRunning
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IsRunning
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 24
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets a value indicating whether the component is running.
+  example: []
+  syntax:
+    content: bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsRunning As Boolean
+  overload: Lionk.Core.Component.IExecutableComponent.IsRunning*
+- uid: Lionk.Core.Component.IExecutableComponent.Abort
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Abort
+  id: Abort
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: IExecutableComponent.Abort()
+  fullName: Lionk.Core.Component.IExecutableComponent.Abort()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Abort
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 33
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Abort the current execution.
+  example: []
+  syntax:
+    content: void Abort()
+    content.vb: Sub Abort()
+  overload: Lionk.Core.Component.IExecutableComponent.Abort*
+- uid: Lionk.Core.Component.IExecutableComponent.Execute
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Execute
+  id: Execute
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: IExecutableComponent.Execute()
+  fullName: Lionk.Core.Component.IExecutableComponent.Execute()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Execute
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 38
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Executes the component.
+  example: []
+  syntax:
+    content: void Execute()
+    content.vb: Sub Execute()
+  overload: Lionk.Core.Component.IExecutableComponent.Execute*
+- uid: Lionk.Core.Component.IExecutableComponent.Reset
+  commentId: M:Lionk.Core.Component.IExecutableComponent.Reset
+  id: Reset
+  parent: Lionk.Core.Component.IExecutableComponent
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IExecutableComponent.Reset()
+  fullName: Lionk.Core.Component.IExecutableComponent.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Reset
+    path: src/Lib/Lionk.Core/Model/Component/Interface/IExecutableComponent.cs
+    startLine: 43
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Used to reset the component.
+  example: []
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: Lionk.Core.Component.IExecutableComponent.Reset*
+references:
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: Lionk.Core.Component.IComponent.Id
+  commentId: P:Lionk.Core.Component.IComponent.Id
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_Id
+  name: Id
+  nameWithType: IComponent.Id
+  fullName: Lionk.Core.Component.IComponent.Id
+- uid: Lionk.Core.Component.IComponent.InstanceName
+  commentId: P:Lionk.Core.Component.IComponent.InstanceName
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_InstanceName
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponent.html
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Component.IExecutableComponent.CanExecute*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.CanExecute
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_CanExecute
+  name: CanExecute
+  nameWithType: IExecutableComponent.CanExecute
+  fullName: Lionk.Core.Component.IExecutableComponent.CanExecute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Lionk.Core.Component.IExecutableComponent.IsInError*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.IsInError
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_IsInError
+  name: IsInError
+  nameWithType: IExecutableComponent.IsInError
+  fullName: Lionk.Core.Component.IExecutableComponent.IsInError
+- uid: Lionk.Core.Component.IExecutableComponent.IsRunning*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.IsRunning
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_IsRunning
+  name: IsRunning
+  nameWithType: IExecutableComponent.IsRunning
+  fullName: Lionk.Core.Component.IExecutableComponent.IsRunning
+- uid: Lionk.Core.Component.IExecutableComponent.Abort*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.Abort
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Abort
+  name: Abort
+  nameWithType: IExecutableComponent.Abort
+  fullName: Lionk.Core.Component.IExecutableComponent.Abort
+- uid: Lionk.Core.Component.IExecutableComponent.Execute*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.Execute
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Execute
+  name: Execute
+  nameWithType: IExecutableComponent.Execute
+  fullName: Lionk.Core.Component.IExecutableComponent.Execute
+- uid: Lionk.Core.Component.IExecutableComponent.Reset*
+  commentId: Overload:Lionk.Core.Component.IExecutableComponent.Reset
+  href: Lionk.Core.Component.IExecutableComponent.html#Lionk_Core_Component_IExecutableComponent_Reset
+  name: Reset
+  nameWithType: IExecutableComponent.Reset
+  fullName: Lionk.Core.Component.IExecutableComponent.Reset

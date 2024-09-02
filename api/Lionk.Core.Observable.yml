@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Observable
+  commentId: N:Lionk.Core.Observable
+  id: Lionk.Core.Observable
+  children:
+  - Lionk.Core.Observable.ObservableElement
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.Observable
+  nameWithType: Lionk.Core.Observable
+  fullName: Lionk.Core.Observable
+  type: Namespace
+  assemblies:
+  - Lionk.Core
+references:
+- uid: Lionk.Core.Observable.ObservableElement
+  commentId: T:Lionk.Core.Observable.ObservableElement
+  parent: Lionk.Core.Observable
+  href: Lionk.Core.Observable.ObservableElement.html
+  name: ObservableElement
+  nameWithType: ObservableElement
+  fullName: Lionk.Core.Observable.ObservableElement
+- uid: Lionk.Core.Observable
+  commentId: N:Lionk.Core.Observable
+  href: Lionk.html
+  name: Lionk.Core.Observable
+  nameWithType: Lionk.Core.Observable
+  fullName: Lionk.Core.Observable
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html

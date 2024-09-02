@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.BaseComponent
+  commentId: T:Lionk.Core.Component.BaseComponent
+  id: BaseComponent
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.BaseComponent.Dispose
+  - Lionk.Core.Component.BaseComponent.Id
+  - Lionk.Core.Component.BaseComponent.InstanceName
+  langs:
+  - csharp
+  - vb
+  name: BaseComponent
+  nameWithType: BaseComponent
+  fullName: Lionk.Core.Component.BaseComponent
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: BaseComponent
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+    startLine: 9
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Base class implementation for <xref href="Lionk.Core.Component.IComponent" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public abstract class BaseComponent : ObservableElement, INotifyPropertyChanged, IComponent, IDisposable'
+    content.vb: Public MustInherit Class BaseComponent Inherits ObservableElement Implements INotifyPropertyChanged, IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - Lionk.Core.Observable.ObservableElement
+  derivedClasses:
+  - Lionk.Core.Component.BaseExecutableComponent
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Lionk.Core.Component.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - Lionk.Core.Observable.ObservableElement.PropertyChanged
+  - Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  - Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.Component.BaseComponent.Id
+  commentId: P:Lionk.Core.Component.BaseComponent.Id
+  id: Id
+  parent: Lionk.Core.Component.BaseComponent
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: BaseComponent.Id
+  fullName: Lionk.Core.Component.BaseComponent.Id
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Id
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+    startLine: 20
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets the unique identifier of the component.
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Lionk.Core.Component.BaseComponent.Id*
+  implements:
+  - Lionk.Core.Component.IComponent.Id
+- uid: Lionk.Core.Component.BaseComponent.InstanceName
+  commentId: P:Lionk.Core.Component.BaseComponent.InstanceName
+  id: InstanceName
+  parent: Lionk.Core.Component.BaseComponent
+  langs:
+  - csharp
+  - vb
+  name: InstanceName
+  nameWithType: BaseComponent.InstanceName
+  fullName: Lionk.Core.Component.BaseComponent.InstanceName
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: InstanceName
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+    startLine: 23
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Gets or sets the name of the component.
+  example: []
+  syntax:
+    content: public string InstanceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstanceName As String
+  overload: Lionk.Core.Component.BaseComponent.InstanceName*
+  implements:
+  - Lionk.Core.Component.IComponent.InstanceName
+- uid: Lionk.Core.Component.BaseComponent.Dispose
+  commentId: M:Lionk.Core.Component.BaseComponent.Dispose
+  id: Dispose
+  parent: Lionk.Core.Component.BaseComponent
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: BaseComponent.Dispose()
+  fullName: Lionk.Core.Component.BaseComponent.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Dispose
+    path: src/Lib/Lionk.Core/Model/Component/BaseClass/BaseComponent.cs
+    startLine: 34
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
+  overload: Lionk.Core.Component.BaseComponent.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponent.html
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Core.Observable.ObservableElement
+  commentId: T:Lionk.Core.Observable.ObservableElement
+  parent: Lionk.Core.Observable
+  href: Lionk.Core.Observable.ObservableElement.html
+  name: ObservableElement
+  nameWithType: ObservableElement
+  fullName: Lionk.Core.Observable.ObservableElement
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Lionk.Core.Observable.ObservableElement.PropertyChanged
+  commentId: E:Lionk.Core.Observable.ObservableElement.PropertyChanged
+  parent: Lionk.Core.Observable.ObservableElement
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ObservableElement.PropertyChanged
+  fullName: Lionk.Core.Observable.ObservableElement.PropertyChanged
+- uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  name: OnPropertyChanged(string)
+  nameWithType: ObservableElement.OnPropertyChanged(string)
+  fullName: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(string)
+  nameWithType.vb: ObservableElement.OnPropertyChanged(String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  definition: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Observable
+  commentId: N:Lionk.Core.Observable
+  href: Lionk.html
+  name: Lionk.Core.Observable
+  nameWithType: Lionk.Core.Observable
+  fullName: Lionk.Core.Observable
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Component.BaseComponent.Id*
+  commentId: Overload:Lionk.Core.Component.BaseComponent.Id
+  href: Lionk.Core.Component.BaseComponent.html#Lionk_Core_Component_BaseComponent_Id
+  name: Id
+  nameWithType: BaseComponent.Id
+  fullName: Lionk.Core.Component.BaseComponent.Id
+- uid: Lionk.Core.Component.IComponent.Id
+  commentId: P:Lionk.Core.Component.IComponent.Id
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_Id
+  name: Id
+  nameWithType: IComponent.Id
+  fullName: Lionk.Core.Component.IComponent.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Lionk.Core.Component.BaseComponent.InstanceName*
+  commentId: Overload:Lionk.Core.Component.BaseComponent.InstanceName
+  href: Lionk.Core.Component.BaseComponent.html#Lionk_Core_Component_BaseComponent_InstanceName
+  name: InstanceName
+  nameWithType: BaseComponent.InstanceName
+  fullName: Lionk.Core.Component.BaseComponent.InstanceName
+- uid: Lionk.Core.Component.IComponent.InstanceName
+  commentId: P:Lionk.Core.Component.IComponent.InstanceName
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_InstanceName
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Lionk.Core.Component.BaseComponent.Dispose*
+  commentId: Overload:Lionk.Core.Component.BaseComponent.Dispose
+  href: Lionk.Core.Component.BaseComponent.html#Lionk_Core_Component_BaseComponent_Dispose
+  name: Dispose
+  nameWithType: BaseComponent.Dispose
+  fullName: Lionk.Core.Component.BaseComponent.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

@@ -1,0 +1,1297 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  commentId: T:Lionk.Core.Component.Cyclic.CyclicExecutorService
+  id: CyclicExecutorService
+  parent: Lionk.Core.Component.Cyclic
+  children:
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor(Lionk.Core.Component.IComponentService)
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Start
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop
+  - Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+  langs:
+  - csharp
+  - vb
+  name: CyclicExecutorService
+  nameWithType: CyclicExecutorService
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: CyclicExecutorService
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 14
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Service responsible for executing cyclic components and managing their execution cycle.
+  example: []
+  syntax:
+    content: 'public class CyclicExecutorService : ObservableElement, INotifyPropertyChanged, ICyclicExecutorService'
+    content.vb: Public Class CyclicExecutorService Inherits ObservableElement Implements INotifyPropertyChanged, ICyclicExecutorService
+  inheritance:
+  - System.Object
+  - Lionk.Core.Observable.ObservableElement
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  inheritedMembers:
+  - Lionk.Core.Observable.ObservableElement.PropertyChanged
+  - Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  - Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor(Lionk.Core.Component.IComponentService)
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor(Lionk.Core.Component.IComponentService)
+  id: '#ctor(Lionk.Core.Component.IComponentService)'
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: CyclicExecutorService(IComponentService)
+  nameWithType: CyclicExecutorService.CyclicExecutorService(IComponentService)
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.CyclicExecutorService(Lionk.Core.Component.IComponentService)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 51
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Initializes a new instance of the <xref href="Lionk.Core.Component.Cyclic.CyclicExecutorService" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CyclicExecutorService(IComponentService componentService)
+    parameters:
+    - id: componentService
+      type: Lionk.Core.Component.IComponentService
+      description: The service that provides access to components.
+    content.vb: Public Sub New(componentService As IComponentService)
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor*
+  nameWithType.vb: CyclicExecutorService.New(IComponentService)
+  fullName.vb: Lionk.Core.Component.Cyclic.CyclicExecutorService.New(Lionk.Core.Component.IComponentService)
+  name.vb: New(IComponentService)
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+  id: Components
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Components
+  nameWithType: CyclicExecutorService.Components
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Components
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 64
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets the collection of cyclic components managed by the service.
+  example: []
+  syntax:
+    content: public IEnumerable<ICyclicComponent> Components { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Lionk.Core.Component.ICyclicComponent}
+    content.vb: Public ReadOnly Property Components As IEnumerable(Of ICyclicComponent)
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Components*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.Components
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+  id: State
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: CyclicExecutorService.State
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: State
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 67
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets the current state of the service.
+  example: []
+  syntax:
+    content: public CycleState State { get; set; }
+    parameters: []
+    return:
+      type: Lionk.Core.Component.Cyclic.CycleState
+    content.vb: Public Property State As CycleState
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.State*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.State
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+  id: WatchDogTimeout
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: WatchDogTimeout
+  nameWithType: CyclicExecutorService.WatchDogTimeout
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: WatchDogTimeout
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 74
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets or sets the watchdog timeout. If a component's execution exceeds this duration, the service will take appropriate action.
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public TimeSpan WatchDogTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: >-
+      <JsonProperty>
+
+      Public Property WatchDogTimeout As TimeSpan
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.WatchDogTimeout
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+  id: MeanCycleTime
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: MeanCycleTime
+  nameWithType: CyclicExecutorService.MeanCycleTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: MeanCycleTime
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 86
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets or sets the mean cycle time. This is the average time between the start of two consecutive cycles.
+  example: []
+  syntax:
+    content: public TimeSpan MeanCycleTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property MeanCycleTime As TimeSpan
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.MeanCycleTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+  id: MaxCycleTime
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: MaxCycleTime
+  nameWithType: CyclicExecutorService.MaxCycleTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: MaxCycleTime
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 93
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets or sets the maximum cycle time. This is the maximum time between the start of two consecutive cycles.
+  example: []
+  syntax:
+    content: public TimeSpan MaxCycleTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property MaxCycleTime As TimeSpan
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.MaxCycleTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+  commentId: P:Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+  id: LastExecutionTime
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: LastExecutionTime
+  nameWithType: CyclicExecutorService.LastExecutionTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: LastExecutionTime
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 100
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Gets or sets the last execution time of the service.
+  example: []
+  syntax:
+    content: public TimeSpan LastExecutionTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property LastExecutionTime As TimeSpan
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.LastExecutionTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort
+  id: Abort
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: CyclicExecutorService.Abort()
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Abort
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 113
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Abort method.
+  example: []
+  syntax:
+    content: public void Abort()
+    content.vb: Public Sub Abort()
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort*
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause
+  id: Pause
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: CyclicExecutorService.Pause()
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Pause
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 124
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Pauses the cyclic execution service, halting the execution of components without stopping the service.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume
+  id: Resume
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: CyclicExecutorService.Resume()
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Resume
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 136
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Resumes the cyclic execution service from a paused state.
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Start
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.Start
+  id: Start
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: CyclicExecutorService.Start()
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Start
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 148
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Starts the cyclic execution service.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Start*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop
+  commentId: M:Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop
+  id: Stop
+  parent: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: CyclicExecutorService.Stop()
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Stop
+    path: src/Lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs
+    startLine: 164
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component.Cyclic
+  summary: Stops the cyclic execution service, including all ongoing component executions.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop*
+  implements:
+  - Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop
+references:
+- uid: Lionk.Core.Component.Cyclic
+  commentId: N:Lionk.Core.Component.Cyclic
+  href: Lionk.html
+  name: Lionk.Core.Component.Cyclic
+  nameWithType: Lionk.Core.Component.Cyclic
+  fullName: Lionk.Core.Component.Cyclic
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  - name: .
+  - uid: Lionk.Core.Component.Cyclic
+    name: Cyclic
+    href: Lionk.Core.Component.Cyclic.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Core.Observable.ObservableElement
+  commentId: T:Lionk.Core.Observable.ObservableElement
+  parent: Lionk.Core.Observable
+  href: Lionk.Core.Observable.ObservableElement.html
+  name: ObservableElement
+  nameWithType: ObservableElement
+  fullName: Lionk.Core.Observable.ObservableElement
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  commentId: T:Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  parent: Lionk.Core.Component.Cyclic
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html
+  name: ICyclicExecutorService
+  nameWithType: ICyclicExecutorService
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+- uid: Lionk.Core.Observable.ObservableElement.PropertyChanged
+  commentId: E:Lionk.Core.Observable.ObservableElement.PropertyChanged
+  parent: Lionk.Core.Observable.ObservableElement
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ObservableElement.PropertyChanged
+  fullName: Lionk.Core.Observable.ObservableElement.PropertyChanged
+- uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  name: OnPropertyChanged(string)
+  nameWithType: ObservableElement.OnPropertyChanged(string)
+  fullName: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(string)
+  nameWithType.vb: ObservableElement.OnPropertyChanged(String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1({T}@,{T},System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  parent: Lionk.Core.Observable.ObservableElement
+  definition: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.Observable
+  commentId: N:Lionk.Core.Observable
+  href: Lionk.html
+  name: Lionk.Core.Observable
+  nameWithType: Lionk.Core.Observable
+  fullName: Lionk.Core.Observable
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Observable
+    name: Observable
+    href: Lionk.Core.Observable.html
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  commentId: M:Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+  isExternal: true
+  href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  name: SetField<T>(ref T, T, string)
+  nameWithType: ObservableElement.SetField<T>(ref T, T, string)
+  fullName: Lionk.Core.Observable.ObservableElement.SetField<T>(ref T, T, string)
+  nameWithType.vb: ObservableElement.SetField(Of T)(T, T, String)
+  fullName.vb: Lionk.Core.Observable.ObservableElement.SetField(Of T)(T, T, String)
+  name.vb: SetField(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Observable.ObservableElement.SetField``1(``0@,``0,System.String)
+    name: SetField
+    href: Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService
+  commentId: T:Lionk.Core.Component.Cyclic.CyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html
+  name: CyclicExecutorService
+  nameWithType: CyclicExecutorService
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService__ctor_Lionk_Core_Component_IComponentService_
+  name: CyclicExecutorService
+  nameWithType: CyclicExecutorService.CyclicExecutorService
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.CyclicExecutorService
+  nameWithType.vb: CyclicExecutorService.New
+  fullName.vb: Lionk.Core.Component.Cyclic.CyclicExecutorService.New
+  name.vb: New
+- uid: Lionk.Core.Component.IComponentService
+  commentId: T:Lionk.Core.Component.IComponentService
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponentService.html
+  name: IComponentService
+  nameWithType: IComponentService
+  fullName: Lionk.Core.Component.IComponentService
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Components*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Components
+  name: Components
+  nameWithType: CyclicExecutorService.Components
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Components
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Components
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.Components
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Components
+  name: Components
+  nameWithType: ICyclicExecutorService.Components
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Components
+- uid: System.Collections.Generic.IEnumerable{Lionk.Core.Component.ICyclicComponent}
+  commentId: T:System.Collections.Generic.IEnumerable{Lionk.Core.Component.ICyclicComponent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ICyclicComponent>
+  nameWithType: IEnumerable<ICyclicComponent>
+  fullName: System.Collections.Generic.IEnumerable<Lionk.Core.Component.ICyclicComponent>
+  nameWithType.vb: IEnumerable(Of ICyclicComponent)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Lionk.Core.Component.ICyclicComponent)
+  name.vb: IEnumerable(Of ICyclicComponent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Lionk.Core.Component.ICyclicComponent
+    name: ICyclicComponent
+    href: Lionk.Core.Component.ICyclicComponent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Core.Component.ICyclicComponent
+    name: ICyclicComponent
+    href: Lionk.Core.Component.ICyclicComponent.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.State*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_State
+  name: State
+  nameWithType: CyclicExecutorService.State
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.State
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.State
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.State
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_State
+  name: State
+  nameWithType: ICyclicExecutorService.State
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.State
+- uid: Lionk.Core.Component.Cyclic.CycleState
+  commentId: T:Lionk.Core.Component.Cyclic.CycleState
+  parent: Lionk.Core.Component.Cyclic
+  href: Lionk.Core.Component.Cyclic.CycleState.html
+  name: CycleState
+  nameWithType: CycleState
+  fullName: Lionk.Core.Component.Cyclic.CycleState
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_WatchDogTimeout
+  name: WatchDogTimeout
+  nameWithType: CyclicExecutorService.WatchDogTimeout
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.WatchDogTimeout
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.WatchDogTimeout
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_WatchDogTimeout
+  name: WatchDogTimeout
+  nameWithType: ICyclicExecutorService.WatchDogTimeout
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.WatchDogTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_MeanCycleTime
+  name: MeanCycleTime
+  nameWithType: CyclicExecutorService.MeanCycleTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.MeanCycleTime
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.MeanCycleTime
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_MeanCycleTime
+  name: MeanCycleTime
+  nameWithType: ICyclicExecutorService.MeanCycleTime
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.MeanCycleTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_MaxCycleTime
+  name: MaxCycleTime
+  nameWithType: CyclicExecutorService.MaxCycleTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.MaxCycleTime
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.MaxCycleTime
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_MaxCycleTime
+  name: MaxCycleTime
+  nameWithType: ICyclicExecutorService.MaxCycleTime
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.MaxCycleTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_LastExecutionTime
+  name: LastExecutionTime
+  nameWithType: CyclicExecutorService.LastExecutionTime
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.LastExecutionTime
+  commentId: P:Lionk.Core.Component.Cyclic.ICyclicExecutorService.LastExecutionTime
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_LastExecutionTime
+  name: LastExecutionTime
+  nameWithType: ICyclicExecutorService.LastExecutionTime
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.LastExecutionTime
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Abort
+  name: Abort
+  nameWithType: CyclicExecutorService.Abort
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Pause
+  name: Pause
+  nameWithType: CyclicExecutorService.Pause
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause
+  commentId: M:Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Pause
+  name: Pause()
+  nameWithType: ICyclicExecutorService.Pause()
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause()
+  spec.csharp:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause
+    name: Pause
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Pause
+    name: Pause
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Pause
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Resume
+  name: Resume
+  nameWithType: CyclicExecutorService.Resume
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume
+  commentId: M:Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Resume
+  name: Resume()
+  nameWithType: ICyclicExecutorService.Resume()
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume()
+  spec.csharp:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume
+    name: Resume
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Resume
+    name: Resume
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Resume
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Start*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Start
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Start
+  name: Start
+  nameWithType: CyclicExecutorService.Start
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Start
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start
+  commentId: M:Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Start
+  name: Start()
+  nameWithType: ICyclicExecutorService.Start()
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start()
+  spec.csharp:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start
+    name: Start
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Start
+    name: Start
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Start
+  - name: (
+  - name: )
+- uid: Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop*
+  commentId: Overload:Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop
+  href: Lionk.Core.Component.Cyclic.CyclicExecutorService.html#Lionk_Core_Component_Cyclic_CyclicExecutorService_Stop
+  name: Stop
+  nameWithType: CyclicExecutorService.Stop
+  fullName: Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop
+- uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop
+  commentId: M:Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop
+  parent: Lionk.Core.Component.Cyclic.ICyclicExecutorService
+  href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Stop
+  name: Stop()
+  nameWithType: ICyclicExecutorService.Stop()
+  fullName: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop()
+  spec.csharp:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop
+    name: Stop
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.Component.Cyclic.ICyclicExecutorService.Stop
+    name: Stop
+    href: Lionk.Core.Component.Cyclic.ICyclicExecutorService.html#Lionk_Core_Component_Cyclic_ICyclicExecutorService_Stop
+  - name: (
+  - name: )

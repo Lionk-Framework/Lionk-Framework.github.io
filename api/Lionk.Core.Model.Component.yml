@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Model.Component
+  commentId: N:Lionk.Core.Model.Component
+  id: Lionk.Core.Model.Component
+  children:
+  - Lionk.Core.Model.Component.ComponentContainer
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.Model.Component
+  nameWithType: Lionk.Core.Model.Component
+  fullName: Lionk.Core.Model.Component
+  type: Namespace
+  assemblies:
+  - Lionk.Core
+references:
+- uid: Lionk.Core.Model.Component.ComponentContainer
+  commentId: T:Lionk.Core.Model.Component.ComponentContainer
+  href: Lionk.Core.Model.Component.ComponentContainer.html
+  name: ComponentContainer
+  nameWithType: ComponentContainer
+  fullName: Lionk.Core.Model.Component.ComponentContainer

@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core
+  commentId: N:Lionk.Core
+  id: Lionk.Core
+  children:
+  - Lionk.Core.NamedElement
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core
+  nameWithType: Lionk.Core
+  fullName: Lionk.Core
+  type: Namespace
+  assemblies:
+  - Lionk.Core
+references:
+- uid: Lionk.Core.NamedElement
+  commentId: T:Lionk.Core.NamedElement
+  parent: Lionk.Core
+  href: Lionk.Core.NamedElement.html
+  name: NamedElement
+  nameWithType: NamedElement
+  fullName: Lionk.Core.NamedElement
+- uid: Lionk.Core
+  commentId: N:Lionk.Core
+  href: Lionk.html
+  name: Lionk.Core
+  nameWithType: Lionk.Core
+  fullName: Lionk.Core
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html

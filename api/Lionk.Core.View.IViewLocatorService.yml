@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.View.IViewLocatorService
+  commentId: T:Lionk.Core.View.IViewLocatorService
+  id: IViewLocatorService
+  parent: Lionk.Core.View
+  children:
+  - Lionk.Core.View.IViewLocatorService.GetViewOf(System.Type,Lionk.Core.View.ViewContext)
+  langs:
+  - csharp
+  - vb
+  name: IViewLocatorService
+  nameWithType: IViewLocatorService
+  fullName: Lionk.Core.View.IViewLocatorService
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewLocatorService/IViewLocatorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IViewLocatorService
+    path: src/Lib/Lionk.Core.Razor/Service/ViewLocatorService/IViewLocatorService.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Interface which define the service to locate the view of a component.
+  example: []
+  syntax:
+    content: 'public interface IViewLocatorService : IDisposable'
+    content.vb: Public Interface IViewLocatorService Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Lionk.Core.View.IViewLocatorService.GetViewOf(System.Type,Lionk.Core.View.ViewContext)
+  commentId: M:Lionk.Core.View.IViewLocatorService.GetViewOf(System.Type,Lionk.Core.View.ViewContext)
+  id: GetViewOf(System.Type,Lionk.Core.View.ViewContext)
+  parent: Lionk.Core.View.IViewLocatorService
+  langs:
+  - csharp
+  - vb
+  name: GetViewOf(Type, ViewContext)
+  nameWithType: IViewLocatorService.GetViewOf(Type, ViewContext)
+  fullName: Lionk.Core.View.IViewLocatorService.GetViewOf(System.Type, Lionk.Core.View.ViewContext)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewLocatorService/IViewLocatorService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetViewOf
+    path: src/Lib/Lionk.Core.Razor/Service/ViewLocatorService/IViewLocatorService.cs
+    startLine: 17
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Get the view of a component depending on the context.
+  example: []
+  syntax:
+    content: IEnumerable<ComponentViewDescription> GetViewOf(Type type, ViewContext context)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the component.
+    - id: context
+      type: Lionk.Core.View.ViewContext
+      description: The context.
+    return:
+      type: System.Collections.Generic.IEnumerable{Lionk.Core.View.ComponentViewDescription}
+      description: A <xref href="System.Type" data-throw-if-not-resolved="false"></xref> which define the view.
+    content.vb: Function GetViewOf(type As Type, context As ViewContext) As IEnumerable(Of ComponentViewDescription)
+  overload: Lionk.Core.View.IViewLocatorService.GetViewOf*
+references:
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  href: Lionk.html
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Lionk.Core.View.IViewLocatorService.GetViewOf*
+  commentId: Overload:Lionk.Core.View.IViewLocatorService.GetViewOf
+  href: Lionk.Core.View.IViewLocatorService.html#Lionk_Core_View_IViewLocatorService_GetViewOf_System_Type_Lionk_Core_View_ViewContext_
+  name: GetViewOf
+  nameWithType: IViewLocatorService.GetViewOf
+  fullName: Lionk.Core.View.IViewLocatorService.GetViewOf
+- uid: Lionk.Core.View.ViewContext
+  commentId: T:Lionk.Core.View.ViewContext
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ViewContext.html
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Lionk.Core.View.ViewContext
+- uid: System.Collections.Generic.IEnumerable{Lionk.Core.View.ComponentViewDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Lionk.Core.View.ComponentViewDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ComponentViewDescription>
+  nameWithType: IEnumerable<ComponentViewDescription>
+  fullName: System.Collections.Generic.IEnumerable<Lionk.Core.View.ComponentViewDescription>
+  nameWithType.vb: IEnumerable(Of ComponentViewDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Lionk.Core.View.ComponentViewDescription)
+  name.vb: IEnumerable(Of ComponentViewDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Lionk.Core.View.ComponentViewDescription
+    name: ComponentViewDescription
+    href: Lionk.Core.View.ComponentViewDescription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Core.View.ComponentViewDescription
+    name: ComponentViewDescription
+    href: Lionk.Core.View.ComponentViewDescription.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

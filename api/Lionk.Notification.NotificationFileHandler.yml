@@ -1,0 +1,981 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Notification.NotificationFileHandler
+  commentId: T:Lionk.Notification.NotificationFileHandler
+  id: NotificationFileHandler
+  parent: Lionk.Notification
+  children:
+  - Lionk.Notification.NotificationFileHandler.EditNotificationHistory(Lionk.Notification.NotificationHistory)
+  - Lionk.Notification.NotificationFileHandler.GetChannelsFromJson
+  - Lionk.Notification.NotificationFileHandler.GetNotificationByGuid(System.Guid)
+  - Lionk.Notification.NotificationFileHandler.GetNotifications
+  - Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon
+  - Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson
+  - Lionk.Notification.NotificationFileHandler.SaveChannelToJson(System.Collections.Generic.List{Lionk.Notification.IChannel})
+  - Lionk.Notification.NotificationFileHandler.SaveNotification(Lionk.Notification.NotificationHistory)
+  - Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}})
+  - Lionk.Notification.NotificationFileHandler.SaveNotifierToJson(System.Collections.Generic.List{Lionk.Notification.INotifier})
+  langs:
+  - csharp
+  - vb
+  name: NotificationFileHandler
+  nameWithType: NotificationFileHandler
+  fullName: Lionk.Notification.NotificationFileHandler
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NotificationFileHandler
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 10
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: This class implements the way notifications are managed with a file.
+  example: []
+  syntax:
+    content: public static class NotificationFileHandler
+    content.vb: Public Module NotificationFileHandler
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Notification.NotificationFileHandler.EditNotificationHistory(Lionk.Notification.NotificationHistory)
+  commentId: M:Lionk.Notification.NotificationFileHandler.EditNotificationHistory(Lionk.Notification.NotificationHistory)
+  id: EditNotificationHistory(Lionk.Notification.NotificationHistory)
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: EditNotificationHistory(NotificationHistory)
+  nameWithType: NotificationFileHandler.EditNotificationHistory(NotificationHistory)
+  fullName: Lionk.Notification.NotificationFileHandler.EditNotificationHistory(Lionk.Notification.NotificationHistory)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: EditNotificationHistory
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 52
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to edit a notification in history.
+  example: []
+  syntax:
+    content: public static void EditNotificationHistory(NotificationHistory notificationHistory)
+    parameters:
+    - id: notificationHistory
+      type: Lionk.Notification.NotificationHistory
+      description: The notification to edit.
+    content.vb: Public Shared Sub EditNotificationHistory(notificationHistory As NotificationHistory)
+  overload: Lionk.Notification.NotificationFileHandler.EditNotificationHistory*
+- uid: Lionk.Notification.NotificationFileHandler.GetChannelsFromJson
+  commentId: M:Lionk.Notification.NotificationFileHandler.GetChannelsFromJson
+  id: GetChannelsFromJson
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: GetChannelsFromJson()
+  nameWithType: NotificationFileHandler.GetChannelsFromJson()
+  fullName: Lionk.Notification.NotificationFileHandler.GetChannelsFromJson()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetChannelsFromJson
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 64
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to get channels from a file.
+  example: []
+  syntax:
+    content: public static List<IChannel> GetChannelsFromJson()
+    return:
+      type: System.Collections.Generic.List{Lionk.Notification.IChannel}
+      description: The list of channels.
+    content.vb: Public Shared Function GetChannelsFromJson() As List(Of IChannel)
+  overload: Lionk.Notification.NotificationFileHandler.GetChannelsFromJson*
+- uid: Lionk.Notification.NotificationFileHandler.GetNotificationByGuid(System.Guid)
+  commentId: M:Lionk.Notification.NotificationFileHandler.GetNotificationByGuid(System.Guid)
+  id: GetNotificationByGuid(System.Guid)
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationByGuid(Guid)
+  nameWithType: NotificationFileHandler.GetNotificationByGuid(Guid)
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotificationByGuid(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetNotificationByGuid
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 86
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to get a notification by its unique identifier.
+  example: []
+  syntax:
+    content: public static NotificationHistory? GetNotificationByGuid(Guid guid)
+    parameters:
+    - id: guid
+      type: System.Guid
+      description: The unique identifier of the notification.
+    return:
+      type: Lionk.Notification.NotificationHistory
+      description: The notification with the specified unique identifier.
+    content.vb: Public Shared Function GetNotificationByGuid(guid As Guid) As NotificationHistory
+  overload: Lionk.Notification.NotificationFileHandler.GetNotificationByGuid*
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifications
+  commentId: M:Lionk.Notification.NotificationFileHandler.GetNotifications
+  id: GetNotifications
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: GetNotifications()
+  nameWithType: NotificationFileHandler.GetNotifications()
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifications()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetNotifications
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 97
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to get all the notifications saved.
+  example: []
+  syntax:
+    content: public static List<NotificationHistory> GetNotifications()
+    return:
+      type: System.Collections.Generic.List{Lionk.Notification.NotificationHistory}
+      description: The list of notifications saved.
+    content.vb: Public Shared Function GetNotifications() As List(Of NotificationHistory)
+  overload: Lionk.Notification.NotificationFileHandler.GetNotifications*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If file exists but the result of the deserialization is null.
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon
+  commentId: M:Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon
+  id: GetNotifierChannelsFromJSon
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: GetNotifierChannelsFromJSon()
+  nameWithType: NotificationFileHandler.GetNotifierChannelsFromJSon()
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetNotifierChannelsFromJSon
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 114
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to get notifier channels dictionary from a file.
+  example: []
+  syntax:
+    content: public static Dictionary<Guid, List<IChannel>> GetNotifierChannelsFromJSon()
+    return:
+      type: System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}}
+      description: The dictionary of notifiers and channels.
+    content.vb: Public Shared Function GetNotifierChannelsFromJSon() As Dictionary(Of Guid, List(Of IChannel))
+  overload: Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon*
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson
+  commentId: M:Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson
+  id: GetNotifiersFromJson
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: GetNotifiersFromJson()
+  nameWithType: NotificationFileHandler.GetNotifiersFromJson()
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetNotifiersFromJson
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 131
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to get notifiers from a file.
+  example: []
+  syntax:
+    content: public static List<INotifier> GetNotifiersFromJson()
+    return:
+      type: System.Collections.Generic.List{Lionk.Notification.INotifier}
+      description: The list of notifiers.
+    content.vb: Public Shared Function GetNotifiersFromJson() As List(Of INotifier)
+  overload: Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson*
+- uid: Lionk.Notification.NotificationFileHandler.SaveChannelToJson(System.Collections.Generic.List{Lionk.Notification.IChannel})
+  commentId: M:Lionk.Notification.NotificationFileHandler.SaveChannelToJson(System.Collections.Generic.List{Lionk.Notification.IChannel})
+  id: SaveChannelToJson(System.Collections.Generic.List{Lionk.Notification.IChannel})
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: SaveChannelToJson(List<IChannel>)
+  nameWithType: NotificationFileHandler.SaveChannelToJson(List<IChannel>)
+  fullName: Lionk.Notification.NotificationFileHandler.SaveChannelToJson(System.Collections.Generic.List<Lionk.Notification.IChannel>)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: SaveChannelToJson
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 147
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to save channels to a file.
+  example: []
+  syntax:
+    content: public static void SaveChannelToJson(List<IChannel> channels)
+    parameters:
+    - id: channels
+      type: System.Collections.Generic.List{Lionk.Notification.IChannel}
+      description: The list of channels to save.
+    content.vb: Public Shared Sub SaveChannelToJson(channels As List(Of IChannel))
+  overload: Lionk.Notification.NotificationFileHandler.SaveChannelToJson*
+  nameWithType.vb: NotificationFileHandler.SaveChannelToJson(List(Of IChannel))
+  fullName.vb: Lionk.Notification.NotificationFileHandler.SaveChannelToJson(System.Collections.Generic.List(Of Lionk.Notification.IChannel))
+  name.vb: SaveChannelToJson(List(Of IChannel))
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotification(Lionk.Notification.NotificationHistory)
+  commentId: M:Lionk.Notification.NotificationFileHandler.SaveNotification(Lionk.Notification.NotificationHistory)
+  id: SaveNotification(Lionk.Notification.NotificationHistory)
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: SaveNotification(NotificationHistory)
+  nameWithType: NotificationFileHandler.SaveNotification(NotificationHistory)
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotification(Lionk.Notification.NotificationHistory)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: SaveNotification
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 157
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to save a notification in history.
+  example: []
+  syntax:
+    content: public static void SaveNotification(NotificationHistory notification)
+    parameters:
+    - id: notification
+      type: Lionk.Notification.NotificationHistory
+      description: The notification to save.
+    content.vb: Public Shared Sub SaveNotification(notification As NotificationHistory)
+  overload: Lionk.Notification.NotificationFileHandler.SaveNotification*
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}})
+  commentId: M:Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}})
+  id: SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}})
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: SaveNotifierChannelsToJson(Dictionary<Guid, List<IChannel>>)
+  nameWithType: NotificationFileHandler.SaveNotifierChannelsToJson(Dictionary<Guid, List<IChannel>>)
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary<System.Guid, System.Collections.Generic.List<Lionk.Notification.IChannel>>)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: SaveNotifierChannelsToJson
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 168
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to save notifier channels dictionary to a file.
+  example: []
+  syntax:
+    content: public static void SaveNotifierChannelsToJson(Dictionary<Guid, List<IChannel>> notifierChannels)
+    parameters:
+    - id: notifierChannels
+      type: System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}}
+      description: The dictionary of notifiers and channels to save.
+    content.vb: Public Shared Sub SaveNotifierChannelsToJson(notifierChannels As Dictionary(Of Guid, List(Of IChannel)))
+  overload: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson*
+  nameWithType.vb: NotificationFileHandler.SaveNotifierChannelsToJson(Dictionary(Of Guid, List(Of IChannel)))
+  fullName.vb: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson(System.Collections.Generic.Dictionary(Of System.Guid, System.Collections.Generic.List(Of Lionk.Notification.IChannel)))
+  name.vb: SaveNotifierChannelsToJson(Dictionary(Of Guid, List(Of IChannel)))
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson(System.Collections.Generic.List{Lionk.Notification.INotifier})
+  commentId: M:Lionk.Notification.NotificationFileHandler.SaveNotifierToJson(System.Collections.Generic.List{Lionk.Notification.INotifier})
+  id: SaveNotifierToJson(System.Collections.Generic.List{Lionk.Notification.INotifier})
+  parent: Lionk.Notification.NotificationFileHandler
+  langs:
+  - csharp
+  - vb
+  name: SaveNotifierToJson(List<INotifier>)
+  nameWithType: NotificationFileHandler.SaveNotifierToJson(List<INotifier>)
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson(System.Collections.Generic.List<Lionk.Notification.INotifier>)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: SaveNotifierToJson
+    path: src/Lib/Lionk.Notification/Model/Classes/NotificationFileHandler.cs
+    startLine: 178
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Method to save notifiers to a file.
+  example: []
+  syntax:
+    content: public static void SaveNotifierToJson(List<INotifier> notifiers)
+    parameters:
+    - id: notifiers
+      type: System.Collections.Generic.List{Lionk.Notification.INotifier}
+      description: The list of notifiers to save.
+    content.vb: Public Shared Sub SaveNotifierToJson(notifiers As List(Of INotifier))
+  overload: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson*
+  nameWithType.vb: NotificationFileHandler.SaveNotifierToJson(List(Of INotifier))
+  fullName.vb: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson(System.Collections.Generic.List(Of Lionk.Notification.INotifier))
+  name.vb: SaveNotifierToJson(List(Of INotifier))
+references:
+- uid: Lionk.Notification
+  commentId: N:Lionk.Notification
+  href: Lionk.html
+  name: Lionk.Notification
+  nameWithType: Lionk.Notification
+  fullName: Lionk.Notification
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Notification.NotificationFileHandler.EditNotificationHistory*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.EditNotificationHistory
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_EditNotificationHistory_Lionk_Notification_NotificationHistory_
+  name: EditNotificationHistory
+  nameWithType: NotificationFileHandler.EditNotificationHistory
+  fullName: Lionk.Notification.NotificationFileHandler.EditNotificationHistory
+- uid: Lionk.Notification.NotificationHistory
+  commentId: T:Lionk.Notification.NotificationHistory
+  parent: Lionk.Notification
+  href: Lionk.Notification.NotificationHistory.html
+  name: NotificationHistory
+  nameWithType: NotificationHistory
+  fullName: Lionk.Notification.NotificationHistory
+- uid: Lionk.Notification.NotificationFileHandler.GetChannelsFromJson*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.GetChannelsFromJson
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_GetChannelsFromJson
+  name: GetChannelsFromJson
+  nameWithType: NotificationFileHandler.GetChannelsFromJson
+  fullName: Lionk.Notification.NotificationFileHandler.GetChannelsFromJson
+- uid: System.Collections.Generic.List{Lionk.Notification.IChannel}
+  commentId: T:System.Collections.Generic.List{Lionk.Notification.IChannel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IChannel>
+  nameWithType: List<IChannel>
+  fullName: System.Collections.Generic.List<Lionk.Notification.IChannel>
+  nameWithType.vb: List(Of IChannel)
+  fullName.vb: System.Collections.Generic.List(Of Lionk.Notification.IChannel)
+  name.vb: List(Of IChannel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Lionk.Notification.IChannel
+    name: IChannel
+    href: Lionk.Notification.IChannel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Notification.IChannel
+    name: IChannel
+    href: Lionk.Notification.IChannel.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Lionk.Notification.NotificationFileHandler.GetNotificationByGuid*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.GetNotificationByGuid
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_GetNotificationByGuid_System_Guid_
+  name: GetNotificationByGuid
+  nameWithType: NotificationFileHandler.GetNotificationByGuid
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotificationByGuid
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifications*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.GetNotifications
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_GetNotifications
+  name: GetNotifications
+  nameWithType: NotificationFileHandler.GetNotifications
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifications
+- uid: System.Collections.Generic.List{Lionk.Notification.NotificationHistory}
+  commentId: T:System.Collections.Generic.List{Lionk.Notification.NotificationHistory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<NotificationHistory>
+  nameWithType: List<NotificationHistory>
+  fullName: System.Collections.Generic.List<Lionk.Notification.NotificationHistory>
+  nameWithType.vb: List(Of NotificationHistory)
+  fullName.vb: System.Collections.Generic.List(Of Lionk.Notification.NotificationHistory)
+  name.vb: List(Of NotificationHistory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Lionk.Notification.NotificationHistory
+    name: NotificationHistory
+    href: Lionk.Notification.NotificationHistory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Notification.NotificationHistory
+    name: NotificationHistory
+    href: Lionk.Notification.NotificationHistory.html
+  - name: )
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_GetNotifierChannelsFromJSon
+  name: GetNotifierChannelsFromJSon
+  nameWithType: NotificationFileHandler.GetNotifierChannelsFromJSon
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifierChannelsFromJSon
+- uid: System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,System.Collections.Generic.List{Lionk.Notification.IChannel}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Guid, List<IChannel>>
+  nameWithType: Dictionary<Guid, List<IChannel>>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, System.Collections.Generic.List<Lionk.Notification.IChannel>>
+  nameWithType.vb: Dictionary(Of Guid, List(Of IChannel))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, System.Collections.Generic.List(Of Lionk.Notification.IChannel))
+  name.vb: Dictionary(Of Guid, List(Of IChannel))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Lionk.Notification.IChannel
+    name: IChannel
+    href: Lionk.Notification.IChannel.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Notification.IChannel
+    name: IChannel
+    href: Lionk.Notification.IChannel.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_GetNotifiersFromJson
+  name: GetNotifiersFromJson
+  nameWithType: NotificationFileHandler.GetNotifiersFromJson
+  fullName: Lionk.Notification.NotificationFileHandler.GetNotifiersFromJson
+- uid: System.Collections.Generic.List{Lionk.Notification.INotifier}
+  commentId: T:System.Collections.Generic.List{Lionk.Notification.INotifier}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<INotifier>
+  nameWithType: List<INotifier>
+  fullName: System.Collections.Generic.List<Lionk.Notification.INotifier>
+  nameWithType.vb: List(Of INotifier)
+  fullName.vb: System.Collections.Generic.List(Of Lionk.Notification.INotifier)
+  name.vb: List(Of INotifier)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Lionk.Notification.INotifier
+    name: INotifier
+    href: Lionk.Notification.INotifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Notification.INotifier
+    name: INotifier
+    href: Lionk.Notification.INotifier.html
+  - name: )
+- uid: Lionk.Notification.NotificationFileHandler.SaveChannelToJson*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.SaveChannelToJson
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_SaveChannelToJson_System_Collections_Generic_List_Lionk_Notification_IChannel__
+  name: SaveChannelToJson
+  nameWithType: NotificationFileHandler.SaveChannelToJson
+  fullName: Lionk.Notification.NotificationFileHandler.SaveChannelToJson
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotification*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.SaveNotification
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_SaveNotification_Lionk_Notification_NotificationHistory_
+  name: SaveNotification
+  nameWithType: NotificationFileHandler.SaveNotification
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotification
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_SaveNotifierChannelsToJson_System_Collections_Generic_Dictionary_System_Guid_System_Collections_Generic_List_Lionk_Notification_IChannel___
+  name: SaveNotifierChannelsToJson
+  nameWithType: NotificationFileHandler.SaveNotifierChannelsToJson
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotifierChannelsToJson
+- uid: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson*
+  commentId: Overload:Lionk.Notification.NotificationFileHandler.SaveNotifierToJson
+  href: Lionk.Notification.NotificationFileHandler.html#Lionk_Notification_NotificationFileHandler_SaveNotifierToJson_System_Collections_Generic_List_Lionk_Notification_INotifier__
+  name: SaveNotifierToJson
+  nameWithType: NotificationFileHandler.SaveNotifierToJson
+  fullName: Lionk.Notification.NotificationFileHandler.SaveNotifierToJson

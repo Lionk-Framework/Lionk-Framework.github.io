@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Plugin.Blazor
+  commentId: N:Lionk.Plugin.Blazor
+  id: Lionk.Plugin.Blazor
+  children:
+  - Lionk.Plugin.Blazor.FileUploadService
+  - Lionk.Plugin.Blazor.PluginCard
+  - Lionk.Plugin.Blazor.PluginUploader
+  - Lionk.Plugin.Blazor._Imports
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Plugin.Blazor
+  nameWithType: Lionk.Plugin.Blazor
+  fullName: Lionk.Plugin.Blazor
+  type: Namespace
+  assemblies:
+  - Lionk.Plugin.Blazor
+references:
+- uid: Lionk.Plugin.Blazor.FileUploadService
+  commentId: T:Lionk.Plugin.Blazor.FileUploadService
+  href: Lionk.Plugin.Blazor.FileUploadService.html
+  name: FileUploadService
+  nameWithType: FileUploadService
+  fullName: Lionk.Plugin.Blazor.FileUploadService
+- uid: Lionk.Plugin.Blazor.PluginCard
+  commentId: T:Lionk.Plugin.Blazor.PluginCard
+  href: Lionk.Plugin.Blazor.PluginCard.html
+  name: PluginCard
+  nameWithType: PluginCard
+  fullName: Lionk.Plugin.Blazor.PluginCard
+- uid: Lionk.Plugin.Blazor._Imports
+  commentId: T:Lionk.Plugin.Blazor._Imports
+  href: Lionk.Plugin.Blazor._Imports.html
+  name: _Imports
+  nameWithType: _Imports
+  fullName: Lionk.Plugin.Blazor._Imports
+- uid: Lionk.Plugin.Blazor.PluginUploader
+  commentId: T:Lionk.Plugin.Blazor.PluginUploader
+  href: Lionk.Plugin.Blazor.PluginUploader.html
+  name: PluginUploader
+  nameWithType: PluginUploader
+  fullName: Lionk.Plugin.Blazor.PluginUploader

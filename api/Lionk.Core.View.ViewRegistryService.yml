@@ -1,0 +1,554 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.View.ViewRegistryService
+  commentId: T:Lionk.Core.View.ViewRegistryService
+  id: ViewRegistryService
+  parent: Lionk.Core.View
+  children:
+  - Lionk.Core.View.ViewRegistryService.HasActiveViews(System.Type)
+  - Lionk.Core.View.ViewRegistryService.Register(System.Object)
+  - Lionk.Core.View.ViewRegistryService.Unregister(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ViewRegistryService
+  nameWithType: ViewRegistryService
+  fullName: Lionk.Core.View.ViewRegistryService
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ViewRegistryService
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Service which register the active views.
+  example: []
+  syntax:
+    content: 'public class ViewRegistryService : IViewRegistryService'
+    content.vb: Public Class ViewRegistryService Implements IViewRegistryService
+  inheritance:
+  - System.Object
+  implements:
+  - Lionk.Core.View.IViewRegistryService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.View.ViewRegistryService.HasActiveViews(System.Type)
+  commentId: M:Lionk.Core.View.ViewRegistryService.HasActiveViews(System.Type)
+  id: HasActiveViews(System.Type)
+  parent: Lionk.Core.View.ViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: HasActiveViews(Type)
+  nameWithType: ViewRegistryService.HasActiveViews(Type)
+  fullName: Lionk.Core.View.ViewRegistryService.HasActiveViews(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: HasActiveViews
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+    startLine: 18
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Interface which define the service to register the active views.
+  example: []
+  syntax:
+    content: public bool HasActiveViews(Type t)
+    parameters:
+    - id: t
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasActiveViews(t As Type) As Boolean
+  overload: Lionk.Core.View.ViewRegistryService.HasActiveViews*
+  implements:
+  - Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+- uid: Lionk.Core.View.ViewRegistryService.Register(System.Object)
+  commentId: M:Lionk.Core.View.ViewRegistryService.Register(System.Object)
+  id: Register(System.Object)
+  parent: Lionk.Core.View.ViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: Register(object)
+  nameWithType: ViewRegistryService.Register(object)
+  fullName: Lionk.Core.View.ViewRegistryService.Register(object)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Register
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+    startLine: 21
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Interface which define the service to register the active views.
+  example: []
+  syntax:
+    content: public void Register(object viewInstance)
+    parameters:
+    - id: viewInstance
+      type: System.Object
+    content.vb: Public Sub Register(viewInstance As Object)
+  overload: Lionk.Core.View.ViewRegistryService.Register*
+  implements:
+  - Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  nameWithType.vb: ViewRegistryService.Register(Object)
+  fullName.vb: Lionk.Core.View.ViewRegistryService.Register(Object)
+  name.vb: Register(Object)
+- uid: Lionk.Core.View.ViewRegistryService.Unregister(System.Object)
+  commentId: M:Lionk.Core.View.ViewRegistryService.Unregister(System.Object)
+  id: Unregister(System.Object)
+  parent: Lionk.Core.View.ViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: Unregister(object)
+  nameWithType: ViewRegistryService.Unregister(object)
+  fullName: Lionk.Core.View.ViewRegistryService.Unregister(object)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Unregister
+    path: src/Lib/Lionk.Core.Razor/Service/ViewRegistryService/ViewRegistryService.cs
+    startLine: 24
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Interface which define the service to register the active views.
+  example: []
+  syntax:
+    content: public void Unregister(object viewInstance)
+    parameters:
+    - id: viewInstance
+      type: System.Object
+    content.vb: Public Sub Unregister(viewInstance As Object)
+  overload: Lionk.Core.View.ViewRegistryService.Unregister*
+  implements:
+  - Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  nameWithType.vb: ViewRegistryService.Unregister(Object)
+  fullName.vb: Lionk.Core.View.ViewRegistryService.Unregister(Object)
+  name.vb: Unregister(Object)
+references:
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  href: Lionk.html
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Lionk.Core.View.IViewRegistryService
+  commentId: T:Lionk.Core.View.IViewRegistryService
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.IViewRegistryService.html
+  name: IViewRegistryService
+  nameWithType: IViewRegistryService
+  fullName: Lionk.Core.View.IViewRegistryService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.View.ViewRegistryService.HasActiveViews*
+  commentId: Overload:Lionk.Core.View.ViewRegistryService.HasActiveViews
+  href: Lionk.Core.View.ViewRegistryService.html#Lionk_Core_View_ViewRegistryService_HasActiveViews_System_Type_
+  name: HasActiveViews
+  nameWithType: ViewRegistryService.HasActiveViews
+  fullName: Lionk.Core.View.ViewRegistryService.HasActiveViews
+- uid: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  commentId: M:Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  parent: Lionk.Core.View.IViewRegistryService
+  isExternal: true
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_HasActiveViews_System_Type_
+  name: HasActiveViews(Type)
+  nameWithType: IViewRegistryService.HasActiveViews(Type)
+  fullName: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+  spec.csharp:
+  - uid: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+    name: HasActiveViews
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_HasActiveViews_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.View.IViewRegistryService.HasActiveViews(System.Type)
+    name: HasActiveViews
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_HasActiveViews_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Lionk.Core.View.ViewRegistryService.Register*
+  commentId: Overload:Lionk.Core.View.ViewRegistryService.Register
+  href: Lionk.Core.View.ViewRegistryService.html#Lionk_Core_View_ViewRegistryService_Register_System_Object_
+  name: Register
+  nameWithType: ViewRegistryService.Register
+  fullName: Lionk.Core.View.ViewRegistryService.Register
+- uid: Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  commentId: M:Lionk.Core.View.IViewRegistryService.Register(System.Object)
+  parent: Lionk.Core.View.IViewRegistryService
+  isExternal: true
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Register_System_Object_
+  name: Register(object)
+  nameWithType: IViewRegistryService.Register(object)
+  fullName: Lionk.Core.View.IViewRegistryService.Register(object)
+  nameWithType.vb: IViewRegistryService.Register(Object)
+  fullName.vb: Lionk.Core.View.IViewRegistryService.Register(Object)
+  name.vb: Register(Object)
+  spec.csharp:
+  - uid: Lionk.Core.View.IViewRegistryService.Register(System.Object)
+    name: Register
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Register_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.View.IViewRegistryService.Register(System.Object)
+    name: Register
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Register_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Lionk.Core.View.ViewRegistryService.Unregister*
+  commentId: Overload:Lionk.Core.View.ViewRegistryService.Unregister
+  href: Lionk.Core.View.ViewRegistryService.html#Lionk_Core_View_ViewRegistryService_Unregister_System_Object_
+  name: Unregister
+  nameWithType: ViewRegistryService.Unregister
+  fullName: Lionk.Core.View.ViewRegistryService.Unregister
+- uid: Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  commentId: M:Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+  parent: Lionk.Core.View.IViewRegistryService
+  isExternal: true
+  href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Unregister_System_Object_
+  name: Unregister(object)
+  nameWithType: IViewRegistryService.Unregister(object)
+  fullName: Lionk.Core.View.IViewRegistryService.Unregister(object)
+  nameWithType.vb: IViewRegistryService.Unregister(Object)
+  fullName.vb: Lionk.Core.View.IViewRegistryService.Unregister(Object)
+  name.vb: Unregister(Object)
+  spec.csharp:
+  - uid: Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+    name: Unregister
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Unregister_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Lionk.Core.View.IViewRegistryService.Unregister(System.Object)
+    name: Unregister
+    href: Lionk.Core.View.IViewRegistryService.html#Lionk_Core_View_IViewRegistryService_Unregister_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )

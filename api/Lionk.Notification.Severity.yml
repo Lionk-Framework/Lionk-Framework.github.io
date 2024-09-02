@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Notification.Severity
+  commentId: T:Lionk.Notification.Severity
+  id: Severity
+  parent: Lionk.Notification
+  children:
+  - Lionk.Notification.Severity.Debug
+  - Lionk.Notification.Severity.Error
+  - Lionk.Notification.Severity.Fatal
+  - Lionk.Notification.Severity.Information
+  - Lionk.Notification.Severity.Verbose
+  - Lionk.Notification.Severity.Warning
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: Severity
+  fullName: Lionk.Notification.Severity
+  type: Enum
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Severity
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: This enum define the level of a notification.
+  example: []
+  syntax:
+    content: public enum Severity
+    content.vb: Public Enum Severity
+- uid: Lionk.Notification.Severity.Verbose
+  commentId: F:Lionk.Notification.Severity.Verbose
+  id: Verbose
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Verbose
+  nameWithType: Severity.Verbose
+  fullName: Lionk.Notification.Severity.Verbose
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Verbose
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 12
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: The lowest log level, enable detailed trace logging mainly for application troubleshooting.
+  example: []
+  syntax:
+    content: Verbose = 0
+    return:
+      type: Lionk.Notification.Severity
+- uid: Lionk.Notification.Severity.Debug
+  commentId: F:Lionk.Notification.Severity.Debug
+  id: Debug
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: Severity.Debug
+  fullName: Lionk.Notification.Severity.Debug
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Debug
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 17
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Used for application debugging purposes and to inspect run-time outcomes in development environments.
+  example: []
+  syntax:
+    content: Debug = 1
+    return:
+      type: Lionk.Notification.Severity
+- uid: Lionk.Notification.Severity.Information
+  commentId: F:Lionk.Notification.Severity.Information
+  id: Information
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: Severity.Information
+  fullName: Lionk.Notification.Severity.Information
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Information
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 22
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Used for application monitoring and to track request and response details or specific operation results.
+  example: []
+  syntax:
+    content: Information = 2
+    return:
+      type: Lionk.Notification.Severity
+- uid: Lionk.Notification.Severity.Warning
+  commentId: F:Lionk.Notification.Severity.Warning
+  id: Warning
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: Severity.Warning
+  fullName: Lionk.Notification.Severity.Warning
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Warning
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 27
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: Used to review potential non-critical, non-friendly operation outcomes.
+  example: []
+  syntax:
+    content: Warning = 3
+    return:
+      type: Lionk.Notification.Severity
+- uid: Lionk.Notification.Severity.Error
+  commentId: F:Lionk.Notification.Severity.Error
+  id: Error
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: Severity.Error
+  fullName: Lionk.Notification.Severity.Error
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Error
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 32
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: The most helpful, and yet the most unwanted, log level. Enables detailed error tracking and helps to write error-free applications.
+  example: []
+  syntax:
+    content: Error = 4
+    return:
+      type: Lionk.Notification.Severity
+- uid: Lionk.Notification.Severity.Fatal
+  commentId: F:Lionk.Notification.Severity.Fatal
+  id: Fatal
+  parent: Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  nameWithType: Severity.Fatal
+  fullName: Lionk.Notification.Severity.Fatal
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Fatal
+    path: src/Lib/Lionk.Notification/Model/Enums/Severity.cs
+    startLine: 37
+  assemblies:
+  - Lionk.Notification
+  namespace: Lionk.Notification
+  summary: The most important log level, used to log critical system operations or outcomes that require urgent attention.
+  example: []
+  syntax:
+    content: Fatal = 5
+    return:
+      type: Lionk.Notification.Severity
+references:
+- uid: Lionk.Notification
+  commentId: N:Lionk.Notification
+  href: Lionk.html
+  name: Lionk.Notification
+  nameWithType: Lionk.Notification
+  fullName: Lionk.Notification
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html
+- uid: Lionk.Notification.Severity
+  commentId: T:Lionk.Notification.Severity
+  parent: Lionk.Notification
+  href: Lionk.Notification.Severity.html
+  name: Severity
+  nameWithType: Severity
+  fullName: Lionk.Notification.Severity

@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Auth.Identity.UserServiceRazor
+  commentId: T:Lionk.Auth.Identity.UserServiceRazor
+  id: UserServiceRazor
+  parent: Lionk.Auth.Identity
+  children:
+  - Lionk.Auth.Identity.UserServiceRazor.#ctor(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)
+  - Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync
+  - Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync
+  - Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync(Lionk.Auth.Identity.User)
+  langs:
+  - csharp
+  - vb
+  name: UserServiceRazor
+  nameWithType: UserServiceRazor
+  fullName: Lionk.Auth.Identity.UserServiceRazor
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UserServiceRazor
+    path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+    startLine: 10
+  assemblies:
+  - Lionk.Auth.Razor
+  namespace: Lionk.Auth.Identity
+  summary: This class represents a user service.
+  example: []
+  syntax:
+    content: public class UserServiceRazor
+    content.vb: Public Class UserServiceRazor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Auth.Identity.UserServiceRazor.#ctor(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)
+  commentId: M:Lionk.Auth.Identity.UserServiceRazor.#ctor(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)
+  id: '#ctor(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)'
+  parent: Lionk.Auth.Identity.UserServiceRazor
+  langs:
+  - csharp
+  - vb
+  name: UserServiceRazor(ProtectedLocalStorage)
+  nameWithType: UserServiceRazor.UserServiceRazor(ProtectedLocalStorage)
+  fullName: Lionk.Auth.Identity.UserServiceRazor.UserServiceRazor(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+    startLine: 26
+  assemblies:
+  - Lionk.Auth.Razor
+  namespace: Lionk.Auth.Identity
+  summary: Initializes a new instance of the <xref href="Lionk.Auth.Identity.UserServiceRazor" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UserServiceRazor(ProtectedLocalStorage protectedLocalStorage)
+    parameters:
+    - id: protectedLocalStorage
+      type: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage
+      description: The protected local storage.
+    content.vb: Public Sub New(protectedLocalStorage As ProtectedLocalStorage)
+  overload: Lionk.Auth.Identity.UserServiceRazor.#ctor*
+  nameWithType.vb: UserServiceRazor.New(ProtectedLocalStorage)
+  fullName.vb: Lionk.Auth.Identity.UserServiceRazor.New(Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage)
+  name.vb: New(ProtectedLocalStorage)
+- uid: Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync
+  commentId: M:Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync
+  id: ClearBrowserUserDataAsync
+  parent: Lionk.Auth.Identity.UserServiceRazor
+  langs:
+  - csharp
+  - vb
+  name: ClearBrowserUserDataAsync()
+  nameWithType: UserServiceRazor.ClearBrowserUserDataAsync()
+  fullName: Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ClearBrowserUserDataAsync
+    path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+    startLine: 39
+  assemblies:
+  - Lionk.Auth.Razor
+  namespace: Lionk.Auth.Identity
+  summary: Method to clear the user data from the browser.
+  example: []
+  syntax:
+    content: public Task ClearBrowserUserDataAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: The task.
+    content.vb: Public Function ClearBrowserUserDataAsync() As Task
+  overload: Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync*
+- uid: Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync
+  commentId: M:Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync
+  id: FetchUserFromBrowserAsync
+  parent: Lionk.Auth.Identity.UserServiceRazor
+  langs:
+  - csharp
+  - vb
+  name: FetchUserFromBrowserAsync()
+  nameWithType: UserServiceRazor.FetchUserFromBrowserAsync()
+  fullName: Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: FetchUserFromBrowserAsync
+    path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+    startLine: 45
+  assemblies:
+  - Lionk.Auth.Razor
+  namespace: Lionk.Auth.Identity
+  summary: Method to fetch the user from the browser.
+  example: []
+  syntax:
+    content: public Task<User?> FetchUserFromBrowserAsync()
+    return:
+      type: System.Threading.Tasks.Task{Lionk.Auth.Identity.User}
+      description: The user fetched from the browser.
+    content.vb: Public Function FetchUserFromBrowserAsync() As Task(Of User)
+  overload: Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync*
+- uid: Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync(Lionk.Auth.Identity.User)
+  commentId: M:Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync(Lionk.Auth.Identity.User)
+  id: PersistUserToBrowserAsync(Lionk.Auth.Identity.User)
+  parent: Lionk.Auth.Identity.UserServiceRazor
+  langs:
+  - csharp
+  - vb
+  name: PersistUserToBrowserAsync(User)
+  nameWithType: UserServiceRazor.PersistUserToBrowserAsync(User)
+  fullName: Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync(Lionk.Auth.Identity.User)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: PersistUserToBrowserAsync
+    path: src/Lib/Lionk.Auth.Razor/Model/Identity/UserServiceRazor.cs
+    startLine: 71
+  assemblies:
+  - Lionk.Auth.Razor
+  namespace: Lionk.Auth.Identity
+  summary: Persists the user to the browser.
+  example: []
+  syntax:
+    content: public Task PersistUserToBrowserAsync(User user)
+    parameters:
+    - id: user
+      type: Lionk.Auth.Identity.User
+      description: The user to persist.
+    return:
+      type: System.Threading.Tasks.Task
+      description: The task.
+    content.vb: Public Function PersistUserToBrowserAsync(user As User) As Task
+  overload: Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync*
+references:
+- uid: Lionk.Auth.Identity
+  commentId: N:Lionk.Auth.Identity
+  href: Lionk.html
+  name: Lionk.Auth.Identity
+  nameWithType: Lionk.Auth.Identity
+  fullName: Lionk.Auth.Identity
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Auth.Identity.UserServiceRazor
+  commentId: T:Lionk.Auth.Identity.UserServiceRazor
+  parent: Lionk.Auth.Identity
+  href: Lionk.Auth.Identity.UserServiceRazor.html
+  name: UserServiceRazor
+  nameWithType: UserServiceRazor
+  fullName: Lionk.Auth.Identity.UserServiceRazor
+- uid: Lionk.Auth.Identity.UserServiceRazor.#ctor*
+  commentId: Overload:Lionk.Auth.Identity.UserServiceRazor.#ctor
+  href: Lionk.Auth.Identity.UserServiceRazor.html#Lionk_Auth_Identity_UserServiceRazor__ctor_Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedLocalStorage_
+  name: UserServiceRazor
+  nameWithType: UserServiceRazor.UserServiceRazor
+  fullName: Lionk.Auth.Identity.UserServiceRazor.UserServiceRazor
+  nameWithType.vb: UserServiceRazor.New
+  fullName.vb: Lionk.Auth.Identity.UserServiceRazor.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage
+  commentId: T:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage
+  parent: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.server.protectedbrowserstorage.protectedlocalstorage
+  name: ProtectedLocalStorage
+  nameWithType: ProtectedLocalStorage
+  fullName: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage.ProtectedLocalStorage
+- uid: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  commentId: N:Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  nameWithType: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  fullName: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Server
+    name: Server
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.server
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+    name: ProtectedBrowserStorage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.server.protectedbrowserstorage
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Server
+    name: Server
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.server
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+    name: ProtectedBrowserStorage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.server.protectedbrowserstorage
+- uid: Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync*
+  commentId: Overload:Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync
+  href: Lionk.Auth.Identity.UserServiceRazor.html#Lionk_Auth_Identity_UserServiceRazor_ClearBrowserUserDataAsync
+  name: ClearBrowserUserDataAsync
+  nameWithType: UserServiceRazor.ClearBrowserUserDataAsync
+  fullName: Lionk.Auth.Identity.UserServiceRazor.ClearBrowserUserDataAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync*
+  commentId: Overload:Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync
+  href: Lionk.Auth.Identity.UserServiceRazor.html#Lionk_Auth_Identity_UserServiceRazor_FetchUserFromBrowserAsync
+  name: FetchUserFromBrowserAsync
+  nameWithType: UserServiceRazor.FetchUserFromBrowserAsync
+  fullName: Lionk.Auth.Identity.UserServiceRazor.FetchUserFromBrowserAsync
+- uid: System.Threading.Tasks.Task{Lionk.Auth.Identity.User}
+  commentId: T:System.Threading.Tasks.Task{Lionk.Auth.Identity.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Lionk.Auth.Identity.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Lionk.Auth.Identity.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Lionk.Auth.Identity.User
+    name: User
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Auth.Identity.User
+    name: User
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync*
+  commentId: Overload:Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync
+  href: Lionk.Auth.Identity.UserServiceRazor.html#Lionk_Auth_Identity_UserServiceRazor_PersistUserToBrowserAsync_Lionk_Auth_Identity_User_
+  name: PersistUserToBrowserAsync
+  nameWithType: UserServiceRazor.PersistUserToBrowserAsync
+  fullName: Lionk.Auth.Identity.UserServiceRazor.PersistUserToBrowserAsync
+- uid: Lionk.Auth.Identity.User
+  commentId: T:Lionk.Auth.Identity.User
+  parent: Lionk.Auth.Identity
+  href: Lionk.Auth.Identity.User.html
+  name: User
+  nameWithType: User
+  fullName: Lionk.Auth.Identity.User

@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  id: Lionk.Core.View
+  children:
+  - Lionk.Core.View.ComponentView
+  - Lionk.Core.View.ComponentViewConfig
+  - Lionk.Core.View.ComponentViewDescription
+  - Lionk.Core.View.ComponentViewModel
+  - Lionk.Core.View.ContainerView
+  - Lionk.Core.View.CyclicComponentConfig
+  - Lionk.Core.View.CyclicComputationMethodExtensionInformation
+  - Lionk.Core.View.DynamicComponentWrapper
+  - Lionk.Core.View.IViewLocatorService
+  - Lionk.Core.View.IViewRegistryService
+  - Lionk.Core.View.LoadingComponent
+  - Lionk.Core.View.NoComponentView
+  - Lionk.Core.View.ViewContext
+  - Lionk.Core.View.ViewLocatorService
+  - Lionk.Core.View.ViewOfAttribute
+  - Lionk.Core.View.ViewRegistryService
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  type: Namespace
+  assemblies:
+  - Lionk.Core.Razor
+references:
+- uid: Lionk.Core.View.ComponentViewDescription
+  commentId: T:Lionk.Core.View.ComponentViewDescription
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ComponentViewDescription.html
+  name: ComponentViewDescription
+  nameWithType: ComponentViewDescription
+  fullName: Lionk.Core.View.ComponentViewDescription
+- uid: Lionk.Core.View.ViewContext
+  commentId: T:Lionk.Core.View.ViewContext
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ViewContext.html
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Lionk.Core.View.ViewContext
+- uid: Lionk.Core.View.ViewOfAttribute
+  commentId: T:Lionk.Core.View.ViewOfAttribute
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ViewOfAttribute.html
+  name: ViewOfAttribute
+  nameWithType: ViewOfAttribute
+  fullName: Lionk.Core.View.ViewOfAttribute
+- uid: Lionk.Core.View.IViewLocatorService
+  commentId: T:Lionk.Core.View.IViewLocatorService
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.IViewLocatorService.html
+  name: IViewLocatorService
+  nameWithType: IViewLocatorService
+  fullName: Lionk.Core.View.IViewLocatorService
+- uid: Lionk.Core.View.ViewLocatorService
+  commentId: T:Lionk.Core.View.ViewLocatorService
+  href: Lionk.Core.View.ViewLocatorService.html
+  name: ViewLocatorService
+  nameWithType: ViewLocatorService
+  fullName: Lionk.Core.View.ViewLocatorService
+- uid: Lionk.Core.View.IViewRegistryService
+  commentId: T:Lionk.Core.View.IViewRegistryService
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.IViewRegistryService.html
+  name: IViewRegistryService
+  nameWithType: IViewRegistryService
+  fullName: Lionk.Core.View.IViewRegistryService
+- uid: Lionk.Core.View.ViewRegistryService
+  commentId: T:Lionk.Core.View.ViewRegistryService
+  href: Lionk.Core.View.ViewRegistryService.html
+  name: ViewRegistryService
+  nameWithType: ViewRegistryService
+  fullName: Lionk.Core.View.ViewRegistryService
+- uid: Lionk.Core.View.ComponentViewModel
+  commentId: T:Lionk.Core.View.ComponentViewModel
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ComponentViewModel.html
+  name: ComponentViewModel
+  nameWithType: ComponentViewModel
+  fullName: Lionk.Core.View.ComponentViewModel
+- uid: Lionk.Core.View.CyclicComputationMethodExtensionInformation
+  commentId: T:Lionk.Core.View.CyclicComputationMethodExtensionInformation
+  href: Lionk.Core.View.CyclicComputationMethodExtensionInformation.html
+  name: CyclicComputationMethodExtensionInformation
+  nameWithType: CyclicComputationMethodExtensionInformation
+  fullName: Lionk.Core.View.CyclicComputationMethodExtensionInformation
+- uid: Lionk.Core.View.DynamicComponentWrapper
+  commentId: T:Lionk.Core.View.DynamicComponentWrapper
+  href: Lionk.Core.View.DynamicComponentWrapper.html
+  name: DynamicComponentWrapper
+  nameWithType: DynamicComponentWrapper
+  fullName: Lionk.Core.View.DynamicComponentWrapper
+- uid: Lionk.Core.View.ContainerView
+  commentId: T:Lionk.Core.View.ContainerView
+  href: Lionk.Core.View.ContainerView.html
+  name: ContainerView
+  nameWithType: ContainerView
+  fullName: Lionk.Core.View.ContainerView
+- uid: Lionk.Core.View.CyclicComponentConfig
+  commentId: T:Lionk.Core.View.CyclicComponentConfig
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.CyclicComponentConfig.html
+  name: CyclicComponentConfig
+  nameWithType: CyclicComponentConfig
+  fullName: Lionk.Core.View.CyclicComponentConfig
+- uid: Lionk.Core.View.NoComponentView
+  commentId: T:Lionk.Core.View.NoComponentView
+  href: Lionk.Core.View.NoComponentView.html
+  name: NoComponentView
+  nameWithType: NoComponentView
+  fullName: Lionk.Core.View.NoComponentView
+- uid: Lionk.Core.View.ComponentViewConfig
+  commentId: T:Lionk.Core.View.ComponentViewConfig
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ComponentViewConfig.html
+  name: ComponentViewConfig
+  nameWithType: ComponentViewConfig
+  fullName: Lionk.Core.View.ComponentViewConfig
+- uid: Lionk.Core.View.ComponentView
+  commentId: T:Lionk.Core.View.ComponentView
+  href: Lionk.Core.View.ComponentView.html
+  name: ComponentView
+  nameWithType: ComponentView
+  fullName: Lionk.Core.View.ComponentView
+- uid: Lionk.Core.View.LoadingComponent
+  commentId: T:Lionk.Core.View.LoadingComponent
+  href: Lionk.Core.View.LoadingComponent.html
+  name: LoadingComponent
+  nameWithType: LoadingComponent
+  fullName: Lionk.Core.View.LoadingComponent
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  href: Lionk.html
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html

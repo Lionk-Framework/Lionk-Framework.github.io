@@ -1,0 +1,1449 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Auth.Identity.User
+  commentId: T:Lionk.Auth.Identity.User
+  id: User
+  parent: Lionk.Auth.Identity
+  children:
+  - Lionk.Auth.Identity.User.#ctor(System.Guid,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  - Lionk.Auth.Identity.User.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  - Lionk.Auth.Identity.User.AddRole(System.String)
+  - Lionk.Auth.Identity.User.AddRoles(System.Collections.Generic.IEnumerable{System.String})
+  - Lionk.Auth.Identity.User.Email
+  - Lionk.Auth.Identity.User.Equals(System.Object)
+  - Lionk.Auth.Identity.User.FromClaimsPrincipal(System.Security.Claims.ClaimsPrincipal)
+  - Lionk.Auth.Identity.User.GetHashCode
+  - Lionk.Auth.Identity.User.Id
+  - Lionk.Auth.Identity.User.PasswordHash
+  - Lionk.Auth.Identity.User.RemoveRole(System.String)
+  - Lionk.Auth.Identity.User.RemoveRoles(System.Collections.Generic.IEnumerable{System.String})
+  - Lionk.Auth.Identity.User.Roles
+  - Lionk.Auth.Identity.User.Salt
+  - Lionk.Auth.Identity.User.ToClaimsPrincipal
+  - Lionk.Auth.Identity.User.UpdateEmail(System.String)
+  - Lionk.Auth.Identity.User.UpdatePasswordHash(System.String)
+  - Lionk.Auth.Identity.User.UpdateUsername(System.String)
+  - Lionk.Auth.Identity.User.Username
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: Lionk.Auth.Identity.User
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: User
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 10
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: This class represents a user.
+  example: []
+  syntax:
+    content: public class User
+    content.vb: Public Class User
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Auth.Identity.User.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  commentId: M:Lionk.Auth.Identity.User.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  id: '#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})'
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: User(string, string, string, string, List<string>)
+  nameWithType: User.User(string, string, string, string, List<string>)
+  fullName: Lionk.Auth.Identity.User.User(string, string, string, string, System.Collections.Generic.List<string>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 28
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Initializes a new instance of the <xref href="Lionk.Auth.Identity.User" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public User(string userName, string email, string passwordHash, string salt, List<string> roles)
+    parameters:
+    - id: userName
+      type: System.String
+      description: The username of the user.
+    - id: email
+      type: System.String
+      description: The email of the user.
+    - id: passwordHash
+      type: System.String
+      description: The password hash of the user.
+    - id: salt
+      type: System.String
+      description: The salt used to hash the password.
+    - id: roles
+      type: System.Collections.Generic.List{System.String}
+      description: The roles of the user.
+    content.vb: Public Sub New(userName As String, email As String, passwordHash As String, salt As String, roles As List(Of String))
+  overload: Lionk.Auth.Identity.User.#ctor*
+  nameWithType.vb: User.New(String, String, String, String, List(Of String))
+  fullName.vb: Lionk.Auth.Identity.User.New(String, String, String, String, System.Collections.Generic.List(Of String))
+  name.vb: New(String, String, String, String, List(Of String))
+- uid: Lionk.Auth.Identity.User.#ctor(System.Guid,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  commentId: M:Lionk.Auth.Identity.User.#ctor(System.Guid,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})
+  id: '#ctor(System.Guid,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})'
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: User(Guid, string, string, string, string, List<string>)
+  nameWithType: User.User(Guid, string, string, string, string, List<string>)
+  fullName: Lionk.Auth.Identity.User.User(System.Guid, string, string, string, string, System.Collections.Generic.List<string>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 47
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Initializes a new instance of the <xref href="Lionk.Auth.Identity.User" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public User(Guid id, string userName, string email, string passwordHash, string salt, List<string> roles)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The unique identifier of the user.
+    - id: userName
+      type: System.String
+      description: The username of the user.
+    - id: email
+      type: System.String
+      description: The email of the user.
+    - id: passwordHash
+      type: System.String
+      description: The password hash of the user.
+    - id: salt
+      type: System.String
+      description: The salt used to hash the password.
+    - id: roles
+      type: System.Collections.Generic.List{System.String}
+      description: The roles of the user.
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New(id As Guid, userName As String, email As String, passwordHash As String, salt As String, roles As List(Of String))
+  overload: Lionk.Auth.Identity.User.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: User.New(Guid, String, String, String, String, List(Of String))
+  fullName.vb: Lionk.Auth.Identity.User.New(System.Guid, String, String, String, String, System.Collections.Generic.List(Of String))
+  name.vb: New(Guid, String, String, String, String, List(Of String))
+- uid: Lionk.Auth.Identity.User.Email
+  commentId: P:Lionk.Auth.Identity.User.Email
+  id: Email
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: User.Email
+  fullName: Lionk.Auth.Identity.User.Email
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Email
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 65
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the email of the user.
+  example: []
+  syntax:
+    content: public string Email { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Email As String
+  overload: Lionk.Auth.Identity.User.Email*
+- uid: Lionk.Auth.Identity.User.Id
+  commentId: P:Lionk.Auth.Identity.User.Id
+  id: Id
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: User.Id
+  fullName: Lionk.Auth.Identity.User.Id
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Id
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 70
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the unique identifier of the user.
+  example: []
+  syntax:
+    content: public Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property Id As Guid
+  overload: Lionk.Auth.Identity.User.Id*
+- uid: Lionk.Auth.Identity.User.PasswordHash
+  commentId: P:Lionk.Auth.Identity.User.PasswordHash
+  id: PasswordHash
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: PasswordHash
+  nameWithType: User.PasswordHash
+  fullName: Lionk.Auth.Identity.User.PasswordHash
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: PasswordHash
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 75
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the password hash of the user.
+  example: []
+  syntax:
+    content: public string PasswordHash { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PasswordHash As String
+  overload: Lionk.Auth.Identity.User.PasswordHash*
+- uid: Lionk.Auth.Identity.User.Roles
+  commentId: P:Lionk.Auth.Identity.User.Roles
+  id: Roles
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: User.Roles
+  fullName: Lionk.Auth.Identity.User.Roles
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Roles
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 80
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the roles of the user.
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<string> Roles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+    content.vb: Public ReadOnly Property Roles As IReadOnlyCollection(Of String)
+  overload: Lionk.Auth.Identity.User.Roles*
+- uid: Lionk.Auth.Identity.User.Salt
+  commentId: P:Lionk.Auth.Identity.User.Salt
+  id: Salt
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Salt
+  nameWithType: User.Salt
+  fullName: Lionk.Auth.Identity.User.Salt
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Salt
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 85
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the salt used to hash the password.
+  example: []
+  syntax:
+    content: public string Salt { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Salt As String
+  overload: Lionk.Auth.Identity.User.Salt*
+- uid: Lionk.Auth.Identity.User.Username
+  commentId: P:Lionk.Auth.Identity.User.Username
+  id: Username
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: User.Username
+  fullName: Lionk.Auth.Identity.User.Username
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Username
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 90
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Gets the username of the user.
+  example: []
+  syntax:
+    content: public string Username { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Username As String
+  overload: Lionk.Auth.Identity.User.Username*
+- uid: Lionk.Auth.Identity.User.FromClaimsPrincipal(System.Security.Claims.ClaimsPrincipal)
+  commentId: M:Lionk.Auth.Identity.User.FromClaimsPrincipal(System.Security.Claims.ClaimsPrincipal)
+  id: FromClaimsPrincipal(System.Security.Claims.ClaimsPrincipal)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: FromClaimsPrincipal(ClaimsPrincipal)
+  nameWithType: User.FromClaimsPrincipal(ClaimsPrincipal)
+  fullName: Lionk.Auth.Identity.User.FromClaimsPrincipal(System.Security.Claims.ClaimsPrincipal)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: FromClaimsPrincipal
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 101
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to convert a ClaimsPrincipal to a user.
+  example: []
+  syntax:
+    content: public static User FromClaimsPrincipal(ClaimsPrincipal principal)
+    parameters:
+    - id: principal
+      type: System.Security.Claims.ClaimsPrincipal
+      description: The ClaimsPrincipal to convert.
+    return:
+      type: Lionk.Auth.Identity.User
+      description: The user from the ClaimsPrincipal.
+    content.vb: Public Shared Function FromClaimsPrincipal(principal As ClaimsPrincipal) As User
+  overload: Lionk.Auth.Identity.User.FromClaimsPrincipal*
+- uid: Lionk.Auth.Identity.User.AddRole(System.String)
+  commentId: M:Lionk.Auth.Identity.User.AddRole(System.String)
+  id: AddRole(System.String)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: AddRole(string)
+  nameWithType: User.AddRole(string)
+  fullName: Lionk.Auth.Identity.User.AddRole(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: AddRole
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 126
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to add a role to the user.
+  example: []
+  syntax:
+    content: public void AddRole(string role)
+    parameters:
+    - id: role
+      type: System.String
+      description: The role to add.
+    content.vb: Public Sub AddRole(role As String)
+  overload: Lionk.Auth.Identity.User.AddRole*
+  nameWithType.vb: User.AddRole(String)
+  fullName.vb: Lionk.Auth.Identity.User.AddRole(String)
+  name.vb: AddRole(String)
+- uid: Lionk.Auth.Identity.User.AddRoles(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Lionk.Auth.Identity.User.AddRoles(System.Collections.Generic.IEnumerable{System.String})
+  id: AddRoles(System.Collections.Generic.IEnumerable{System.String})
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: AddRoles(IEnumerable<string>)
+  nameWithType: User.AddRoles(IEnumerable<string>)
+  fullName: Lionk.Auth.Identity.User.AddRoles(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: AddRoles
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 132
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to add roles to the user.
+  example: []
+  syntax:
+    content: public void AddRoles(IEnumerable<string> roles)
+    parameters:
+    - id: roles
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The roles to add.
+    content.vb: Public Sub AddRoles(roles As IEnumerable(Of String))
+  overload: Lionk.Auth.Identity.User.AddRoles*
+  nameWithType.vb: User.AddRoles(IEnumerable(Of String))
+  fullName.vb: Lionk.Auth.Identity.User.AddRoles(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: AddRoles(IEnumerable(Of String))
+- uid: Lionk.Auth.Identity.User.Equals(System.Object)
+  commentId: M:Lionk.Auth.Identity.User.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: User.Equals(object?)
+  fullName: Lionk.Auth.Identity.User.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Equals
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 135
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Lionk.Auth.Identity.User.Equals*
+  nameWithType.vb: User.Equals(Object)
+  fullName.vb: Lionk.Auth.Identity.User.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Lionk.Auth.Identity.User.GetHashCode
+  commentId: M:Lionk.Auth.Identity.User.GetHashCode
+  id: GetHashCode
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: User.GetHashCode()
+  fullName: Lionk.Auth.Identity.User.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetHashCode
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 138
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Lionk.Auth.Identity.User.GetHashCode*
+- uid: Lionk.Auth.Identity.User.RemoveRole(System.String)
+  commentId: M:Lionk.Auth.Identity.User.RemoveRole(System.String)
+  id: RemoveRole(System.String)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: RemoveRole(string)
+  nameWithType: User.RemoveRole(string)
+  fullName: Lionk.Auth.Identity.User.RemoveRole(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: RemoveRole
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 144
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to remove a role from the user.
+  example: []
+  syntax:
+    content: public void RemoveRole(string role)
+    parameters:
+    - id: role
+      type: System.String
+      description: The role to remove.
+    content.vb: Public Sub RemoveRole(role As String)
+  overload: Lionk.Auth.Identity.User.RemoveRole*
+  nameWithType.vb: User.RemoveRole(String)
+  fullName.vb: Lionk.Auth.Identity.User.RemoveRole(String)
+  name.vb: RemoveRole(String)
+- uid: Lionk.Auth.Identity.User.RemoveRoles(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Lionk.Auth.Identity.User.RemoveRoles(System.Collections.Generic.IEnumerable{System.String})
+  id: RemoveRoles(System.Collections.Generic.IEnumerable{System.String})
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: RemoveRoles(IEnumerable<string>)
+  nameWithType: User.RemoveRoles(IEnumerable<string>)
+  fullName: Lionk.Auth.Identity.User.RemoveRoles(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: RemoveRoles
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 150
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to remove roles from the user.
+  example: []
+  syntax:
+    content: public void RemoveRoles(IEnumerable<string> roles)
+    parameters:
+    - id: roles
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The roles to remove.
+    content.vb: Public Sub RemoveRoles(roles As IEnumerable(Of String))
+  overload: Lionk.Auth.Identity.User.RemoveRoles*
+  nameWithType.vb: User.RemoveRoles(IEnumerable(Of String))
+  fullName.vb: Lionk.Auth.Identity.User.RemoveRoles(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: RemoveRoles(IEnumerable(Of String))
+- uid: Lionk.Auth.Identity.User.ToClaimsPrincipal
+  commentId: M:Lionk.Auth.Identity.User.ToClaimsPrincipal
+  id: ToClaimsPrincipal
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: ToClaimsPrincipal()
+  nameWithType: User.ToClaimsPrincipal()
+  fullName: Lionk.Auth.Identity.User.ToClaimsPrincipal()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ToClaimsPrincipal
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 156
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to convert the user to a ClaimsPrincipal.
+  example: []
+  syntax:
+    content: public ClaimsPrincipal ToClaimsPrincipal()
+    return:
+      type: System.Security.Claims.ClaimsPrincipal
+      description: The user as a ClaimsPrincipal.
+    content.vb: Public Function ToClaimsPrincipal() As ClaimsPrincipal
+  overload: Lionk.Auth.Identity.User.ToClaimsPrincipal*
+- uid: Lionk.Auth.Identity.User.UpdateEmail(System.String)
+  commentId: M:Lionk.Auth.Identity.User.UpdateEmail(System.String)
+  id: UpdateEmail(System.String)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: UpdateEmail(string)
+  nameWithType: User.UpdateEmail(string)
+  fullName: Lionk.Auth.Identity.User.UpdateEmail(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UpdateEmail
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 177
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to update the email of the user.
+  example: []
+  syntax:
+    content: public void UpdateEmail(string newEmail)
+    parameters:
+    - id: newEmail
+      type: System.String
+      description: The new email.
+    content.vb: Public Sub UpdateEmail(newEmail As String)
+  overload: Lionk.Auth.Identity.User.UpdateEmail*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If the new email is null.
+  nameWithType.vb: User.UpdateEmail(String)
+  fullName.vb: Lionk.Auth.Identity.User.UpdateEmail(String)
+  name.vb: UpdateEmail(String)
+- uid: Lionk.Auth.Identity.User.UpdatePasswordHash(System.String)
+  commentId: M:Lionk.Auth.Identity.User.UpdatePasswordHash(System.String)
+  id: UpdatePasswordHash(System.String)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: UpdatePasswordHash(string)
+  nameWithType: User.UpdatePasswordHash(string)
+  fullName: Lionk.Auth.Identity.User.UpdatePasswordHash(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UpdatePasswordHash
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 184
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to update the password hash of the user.
+  example: []
+  syntax:
+    content: public void UpdatePasswordHash(string newPasswordHash)
+    parameters:
+    - id: newPasswordHash
+      type: System.String
+      description: The new password hash.
+    content.vb: Public Sub UpdatePasswordHash(newPasswordHash As String)
+  overload: Lionk.Auth.Identity.User.UpdatePasswordHash*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If the new password hash is null.
+  nameWithType.vb: User.UpdatePasswordHash(String)
+  fullName.vb: Lionk.Auth.Identity.User.UpdatePasswordHash(String)
+  name.vb: UpdatePasswordHash(String)
+- uid: Lionk.Auth.Identity.User.UpdateUsername(System.String)
+  commentId: M:Lionk.Auth.Identity.User.UpdateUsername(System.String)
+  id: UpdateUsername(System.String)
+  parent: Lionk.Auth.Identity.User
+  langs:
+  - csharp
+  - vb
+  name: UpdateUsername(string)
+  nameWithType: User.UpdateUsername(string)
+  fullName: Lionk.Auth.Identity.User.UpdateUsername(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UpdateUsername
+    path: src/Lib/Lionk.Auth/Model/Identity/User.cs
+    startLine: 192
+  assemblies:
+  - Lionk.Auth
+  namespace: Lionk.Auth.Identity
+  summary: Method to update the username of the user.
+  example: []
+  syntax:
+    content: public void UpdateUsername(string newUsername)
+    parameters:
+    - id: newUsername
+      type: System.String
+      description: The new username.
+    content.vb: Public Sub UpdateUsername(newUsername As String)
+  overload: Lionk.Auth.Identity.User.UpdateUsername*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If the new username is null.
+  nameWithType.vb: User.UpdateUsername(String)
+  fullName.vb: Lionk.Auth.Identity.User.UpdateUsername(String)
+  name.vb: UpdateUsername(String)
+references:
+- uid: Lionk.Auth.Identity
+  commentId: N:Lionk.Auth.Identity
+  href: Lionk.html
+  name: Lionk.Auth.Identity
+  nameWithType: Lionk.Auth.Identity
+  fullName: Lionk.Auth.Identity
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Identity
+    name: Identity
+    href: Lionk.Auth.Identity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Auth.Identity.User
+  commentId: T:Lionk.Auth.Identity.User
+  parent: Lionk.Auth.Identity
+  href: Lionk.Auth.Identity.User.html
+  name: User
+  nameWithType: User
+  fullName: Lionk.Auth.Identity.User
+- uid: Lionk.Auth.Identity.User.#ctor*
+  commentId: Overload:Lionk.Auth.Identity.User.#ctor
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User__ctor_System_String_System_String_System_String_System_String_System_Collections_Generic_List_System_String__
+  name: User
+  nameWithType: User.User
+  fullName: Lionk.Auth.Identity.User.User
+  nameWithType.vb: User.New
+  fullName.vb: Lionk.Auth.Identity.User.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Lionk.Auth.Identity.User.Email*
+  commentId: Overload:Lionk.Auth.Identity.User.Email
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Email
+  name: Email
+  nameWithType: User.Email
+  fullName: Lionk.Auth.Identity.User.Email
+- uid: Lionk.Auth.Identity.User.Id*
+  commentId: Overload:Lionk.Auth.Identity.User.Id
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Id
+  name: Id
+  nameWithType: User.Id
+  fullName: Lionk.Auth.Identity.User.Id
+- uid: Lionk.Auth.Identity.User.PasswordHash*
+  commentId: Overload:Lionk.Auth.Identity.User.PasswordHash
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_PasswordHash
+  name: PasswordHash
+  nameWithType: User.PasswordHash
+  fullName: Lionk.Auth.Identity.User.PasswordHash
+- uid: Lionk.Auth.Identity.User.Roles*
+  commentId: Overload:Lionk.Auth.Identity.User.Roles
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Roles
+  name: Roles
+  nameWithType: User.Roles
+  fullName: Lionk.Auth.Identity.User.Roles
+- uid: System.Collections.Generic.IReadOnlyCollection{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<string>
+  nameWithType: IReadOnlyCollection<string>
+  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  nameWithType.vb: IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  name.vb: IReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Lionk.Auth.Identity.User.Salt*
+  commentId: Overload:Lionk.Auth.Identity.User.Salt
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Salt
+  name: Salt
+  nameWithType: User.Salt
+  fullName: Lionk.Auth.Identity.User.Salt
+- uid: Lionk.Auth.Identity.User.Username*
+  commentId: Overload:Lionk.Auth.Identity.User.Username
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Username
+  name: Username
+  nameWithType: User.Username
+  fullName: Lionk.Auth.Identity.User.Username
+- uid: Lionk.Auth.Identity.User.FromClaimsPrincipal*
+  commentId: Overload:Lionk.Auth.Identity.User.FromClaimsPrincipal
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_FromClaimsPrincipal_System_Security_Claims_ClaimsPrincipal_
+  name: FromClaimsPrincipal
+  nameWithType: User.FromClaimsPrincipal
+  fullName: Lionk.Auth.Identity.User.FromClaimsPrincipal
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+- uid: Lionk.Auth.Identity.User.AddRole*
+  commentId: Overload:Lionk.Auth.Identity.User.AddRole
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_AddRole_System_String_
+  name: AddRole
+  nameWithType: User.AddRole
+  fullName: Lionk.Auth.Identity.User.AddRole
+- uid: Lionk.Auth.Identity.User.AddRoles*
+  commentId: Overload:Lionk.Auth.Identity.User.AddRoles
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_AddRoles_System_Collections_Generic_IEnumerable_System_String__
+  name: AddRoles
+  nameWithType: User.AddRoles
+  fullName: Lionk.Auth.Identity.User.AddRoles
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Lionk.Auth.Identity.User.Equals*
+  commentId: Overload:Lionk.Auth.Identity.User.Equals
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_Equals_System_Object_
+  name: Equals
+  nameWithType: User.Equals
+  fullName: Lionk.Auth.Identity.User.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Lionk.Auth.Identity.User.GetHashCode*
+  commentId: Overload:Lionk.Auth.Identity.User.GetHashCode
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_GetHashCode
+  name: GetHashCode
+  nameWithType: User.GetHashCode
+  fullName: Lionk.Auth.Identity.User.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Lionk.Auth.Identity.User.RemoveRole*
+  commentId: Overload:Lionk.Auth.Identity.User.RemoveRole
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_RemoveRole_System_String_
+  name: RemoveRole
+  nameWithType: User.RemoveRole
+  fullName: Lionk.Auth.Identity.User.RemoveRole
+- uid: Lionk.Auth.Identity.User.RemoveRoles*
+  commentId: Overload:Lionk.Auth.Identity.User.RemoveRoles
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_RemoveRoles_System_Collections_Generic_IEnumerable_System_String__
+  name: RemoveRoles
+  nameWithType: User.RemoveRoles
+  fullName: Lionk.Auth.Identity.User.RemoveRoles
+- uid: Lionk.Auth.Identity.User.ToClaimsPrincipal*
+  commentId: Overload:Lionk.Auth.Identity.User.ToClaimsPrincipal
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_ToClaimsPrincipal
+  name: ToClaimsPrincipal
+  nameWithType: User.ToClaimsPrincipal
+  fullName: Lionk.Auth.Identity.User.ToClaimsPrincipal
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Lionk.Auth.Identity.User.UpdateEmail*
+  commentId: Overload:Lionk.Auth.Identity.User.UpdateEmail
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_UpdateEmail_System_String_
+  name: UpdateEmail
+  nameWithType: User.UpdateEmail
+  fullName: Lionk.Auth.Identity.User.UpdateEmail
+- uid: Lionk.Auth.Identity.User.UpdatePasswordHash*
+  commentId: Overload:Lionk.Auth.Identity.User.UpdatePasswordHash
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_UpdatePasswordHash_System_String_
+  name: UpdatePasswordHash
+  nameWithType: User.UpdatePasswordHash
+  fullName: Lionk.Auth.Identity.User.UpdatePasswordHash
+- uid: Lionk.Auth.Identity.User.UpdateUsername*
+  commentId: Overload:Lionk.Auth.Identity.User.UpdateUsername
+  href: Lionk.Auth.Identity.User.html#Lionk_Auth_Identity_User_UpdateUsername_System_String_
+  name: UpdateUsername
+  nameWithType: User.UpdateUsername
+  fullName: Lionk.Auth.Identity.User.UpdateUsername

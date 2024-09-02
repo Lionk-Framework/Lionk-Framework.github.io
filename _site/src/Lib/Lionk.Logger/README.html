@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Lionk Logger Library | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Lionk Logger Library | Lionk ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Logger/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lionk-logger-library">Lionk Logger Library</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The Lionk Logger Library provides a robust and flexible logging framework designed to integrate seamlessly into your applications. It offers a standardized approach to logging with varying levels of severity, making it easier to track application behavior, debug issues, and maintain detailed logs. The library supports multiple logging backends and includes a default implementation using Serilog for file-based logging.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Logger Factory</strong>: Easily create loggers with the <code>ILoggerFactory</code> interface, allowing for customized logger implementations.</li>
+<li><strong>Standard Logging Interface</strong>: Use the <code>IStandardLogger</code> interface for consistent logging across different loggers and applications.</li>
+<li><strong>Configurable Logging</strong>: Configure the logging behavior using <code>LogService</code>, including defining log levels and output destinations.</li>
+<li><strong>Severity Levels</strong>: Support for multiple log severity levels, including Trace, Debug, Information, Warning, Error, and Critical.</li>
+<li><strong>Serilog Integration</strong>: Default implementation with Serilog for robust, file-based logging with daily rolling logs.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the Lionk Logger Library, use the NuGet package manager console:</p>
+<pre><code class="lang-bash">dotnet add package Lionk.Logger
+</code></pre>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="1-setting-up-the-logservice">1. Setting Up the LogService</h3>
+<p>The core of the library is the <code>LogService</code> class, which manages loggers and provides a straightforward API for logging messages. To set up logging in your application, configure the logger factory in your <code>Startup.cs</code> or <code>Program.cs</code> file:</p>
+<pre><code class="lang-csharp">using Lionk.Log;
+using Lionk.Log.Serilog;
+
+// Configure the logger factory
+var loggerFactory = new SerilogFactory();
+LogService.Configure(loggerFactory);
+</code></pre>
+<h3 id="2-creating-and-using-loggers">2. Creating and Using Loggers</h3>
+<p>With <code>LogService</code> configured, you can create loggers and start logging messages immediately. Here are some common operations:</p>
+<h4 id="creating-a-logger">Creating a Logger</h4>
+<p>To create a new logger, use the <code>CreateLogger</code> method provided by <code>LogService</code>. This method allows you to specify a logger name, which can help categorize logs.</p>
+<pre><code class="lang-csharp">using Lionk.Log;
+
+// Create a logger for a specific category
+var logger = LogService.CreateLogger(&quot;MyAppLogger&quot;);
+
+if (logger != null)
+{
+    logger.Log(LogSeverity.Information, &quot;Logger created successfully.&quot;);
+}
+else
+{
+    Console.WriteLine(&quot;Failed to create logger.&quot;);
+}
+</code></pre>
+<h4 id="logging-messages">Logging Messages</h4>
+<p>You can log messages at various severity levels using the <code>Log</code> method of the <code>IStandardLogger</code> interface:</p>
+<pre><code class="lang-csharp">logger?.Log(LogSeverity.Debug, &quot;This is a debug message.&quot;);
+logger?.Log(LogSeverity.Information, &quot;This is an info message.&quot;);
+logger?.Log(LogSeverity.Warning, &quot;This is a warning message.&quot;);
+logger?.Log(LogSeverity.Error, &quot;This is an error message.&quot;);
+logger?.Log(LogSeverity.Critical, &quot;This is a critical message.&quot;);
+</code></pre>
+<h4 id="logging-application-and-debug-messages">Logging Application and Debug Messages</h4>
+<p>The <code>LogService</code> also provides specific methods for logging application and debug messages:</p>
+<pre><code class="lang-csharp">LogService.LogApp(LogSeverity.Warning, &quot;This is a warning related to the application.&quot;);
+LogService.LogDebug(&quot;This is a debug message specific to debugging.&quot;);
+</code></pre>
+<h3 id="3-configuring-serilog-logging">3. Configuring Serilog Logging</h3>
+<p>By default, the library uses Serilog for file-based logging. You can customize Serilog configuration by modifying the <code>SerilogFactory</code> class or extending it as needed.</p>
+<pre><code class="lang-csharp">using Lionk.Log.Serilog;
+
+// Create a custom logger factory if needed
+var customLoggerFactory = new SerilogFactory();
+LogService.Configure(customLoggerFactory);
+
+// Log some messages
+LogService.LogApp(LogSeverity.Information, &quot;Application has started.&quot;);
+LogService.LogDebug(&quot;Debugging mode is enabled.&quot;);
+</code></pre>
+<h2 id="extending-the-logger">Extending the Logger</h2>
+<p>The Lionk Logger Library is designed to be easily extensible. You can create custom loggers by implementing the <code>ILoggerFactory</code> and <code>IStandardLogger</code> interfaces:</p>
+<h3 id="implementing-a-custom-logger">Implementing a Custom Logger</h3>
+<pre><code class="lang-csharp">using Lionk.Log;
+
+public class CustomLoggerFactory : ILoggerFactory
+{
+    public IStandardLogger CreateLogger(string loggerName)
+    {
+        // Implement custom logger creation logic
+        return new CustomLogger();
+    }
+}
+
+public class CustomLogger : IStandardLogger
+{
+    public void Dispose()
+    {
+        // Clean up resources
+    }
+
+    public void Log(LogSeverity severity, string message)
+    {
+        // Implement custom logging logic
+        Console.WriteLine($&quot;{severity}: {message}&quot;);
+    }
+}
+</code></pre>
+<h3 id="registering-your-custom-logger">Registering Your Custom Logger</h3>
+<p>Replace the default Serilog factory with your custom logger factory:</p>
+<pre><code class="lang-csharp">// Use the custom logger factory
+var customLoggerFactory = new CustomLoggerFactory();
+LogService.Configure(customLoggerFactory);
+
+// Now LogService will use the custom logger
+LogService.LogApp(LogSeverity.Information, &quot;Using custom logger now.&quot;);
+</code></pre>
+<h2 id="log-severity-levels">Log Severity Levels</h2>
+<p>The library supports multiple log severity levels to categorize log messages effectively:</p>
+<ul>
+<li><strong>Trace</strong>: Detailed information, typically of interest only when diagnosing problems.</li>
+<li><strong>Debug</strong>: Information useful to developers for debugging the application.</li>
+<li><strong>Information</strong>: Informational messages that highlight the progress of the application.</li>
+<li><strong>Warning</strong>: Potentially harmful situations of interest to end users or system managers.</li>
+<li><strong>Error</strong>: Error events of more considerable significance that might still allow the application to continue running.</li>
+<li><strong>Critical</strong>: Severe error events that will presumably lead the application to abort.</li>
+</ul>
+<h2 id="security-considerations">Security Considerations</h2>
+<ul>
+<li><strong>Log Sanitization</strong>: Ensure that sensitive information, such as personal data or authentication details, is not logged.</li>
+<li><strong>Log Access</strong>: Restrict access to log files to maintain confidentiality and integrity.</li>
+</ul>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions are welcome! Please fork the repository, create a branch, and submit a pull request with your enhancements.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Logger/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

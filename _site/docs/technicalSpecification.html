@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Technical Specification | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Technical Specification | Lionk ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/technicalSpecification.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="technical-specification">Technical Specification</h1>
+
+<h2 id="lionk-core">Li/onk Core</h2>
+<p>Li/onk Core is a modular platform developed in .NET designed to enable the management and integration of various components through plugins. The project is crafted to cater to end users (operators and administrators) as well as plugin developers, offering maximum flexibility and extensibility. The primary goal is to enhance the quality of life in home environments by allowing seamless integration and management of various components.</p>
+<h1 id="frontend">FrontEnd</h1>
+<h2 id="framework-and-language">Framework and Language</h2>
+<p>The frontend will be built using <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor">Blazor Server</a> with .NET and C#. Blazor Server enables the development of interactive web applications using C#, which offers several advantages:</p>
+<ul>
+<li><strong>Unified Development</strong>: Allows the use of C# for both client-side and server-side logic, leveraging the team's expertise.</li>
+<li><strong>Real-Time Updates</strong>: Blazor Server facilitates real-time web functionality, making it ideal for interactive user interfaces.</li>
+<li><strong>Strong Typing and Compilation</strong>: Ensures better error checking during development, leading to more reliable applications.</li>
+</ul>
+<p>Challenges include ensuring optimal performance for high-frequency updates and the necessity for developers to adapt to Blazor-specific paradigms if they are more familiar with other web technologies.</p>
+<h1 id="backend">BackEnd</h1>
+<h2 id="programming-language">Programming Language</h2>
+<p>The backend will utilize C#, a powerful and versatile language that integrates seamlessly with the .NET ecosystem, providing a consistent development experience across the entire application.</p>
+<h2 id="framework">Framework</h2>
+<p>The backend will be constructed using <a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.NET Core</a>, employing the following modules:</p>
+<ul>
+<li><strong>EF Core</strong>: For database management, providing a robust ORM (Object-Relational Mapping) solution.</li>
+<li><strong>Newtonsot.Json</strong>: For JSON serialization and deserialization, enabling efficient data storage for persistent data without using any db.</li>
+<li><strong>Influx DB</strong> For measure logging, providing a robust time serie db optimized for time-stamped or time series data.</li>
+<li><strong>SignalR</strong>: For asynchronous, real-time communication, enabling live updates and notifications.</li>
+</ul>
+<h1 id="plugin-architecture">Plugin Architecture</h1>
+<p>Li/onk Core features a plugin architecture to extend functionality without requiring recompilation of the core application. Key components include:</p>
+<ul>
+<li><strong>NuGet Packages</strong>: The core framework and tools for plugin development will be distributed via NuGet packages. This approach simplifies version control and dependency management.</li>
+<li><strong>Modular Design</strong>: Encourages the development, testing, and maintenance of independent components, allowing for flexible and scalable application growth.</li>
+</ul>
+<h3 id="advantages-of-plugin-architecture">Advantages of Plugin Architecture</h3>
+<ul>
+<li><strong>Flexibility</strong>: Easily add or remove features without modifying the core application.</li>
+<li><strong>Scalability</strong>: Supports the independent development of components, which can be integrated as needed.</li>
+<li><strong>Community and Extensibility</strong>: Allows external developers to contribute plugins, fostering a rich ecosystem of shared solutions.</li>
+</ul>
+<h1 id="deployment">Deployment</h1>
+<p>The application will be distributed as a Docker image, providing a consistent and reproducible environment for deployment. This choice is driven by several factors:</p>
+<ul>
+<li><strong>Simplified Deployment</strong>: Docker images ensure that the application runs consistently across various environments.</li>
+<li><strong>Isolation and Security</strong>: Containers provide a secure environment, isolating the application from potential conflicts.</li>
+<li><strong>Scalability</strong>: Docker facilitates the easy scaling of the application by running multiple container instances as required.</li>
+</ul>
+<h2 id="on-premise-deployment">On-Premise Deployment</h2>
+<p>Li/onk Core is designed for on-premise deployment, meaning it will run directly on the client's infrastructure. This approach offers:</p>
+<ul>
+<li><strong>Data Privacy</strong>: Ensures that sensitive data remains within the client's control.</li>
+<li><strong>Customization</strong>: Clients can tailor the application to meet their specific needs and operational environments.</li>
+<li><strong>Performance</strong>: Local deployment reduces latency, improving the overall performance and responsiveness of the application.</li>
+</ul>
+<h1 id="resources-and-learning">Resources and Learning</h1>
+<p>Below are some resources to help with learning Blazor, ASP.NET Core, and Docker, as well as resources for plugin development:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-6.0">Blazor Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0">ASP.NET Core Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/nuget-org/publish-a-package">NuGet Package Creation</a></li>
+<li><a href="https://docs.docker.com/">Docker Documentation</a></li>
+</ul>
+<p>With these choices, Li/onk Core aims to provide a flexible, extensible, and user-friendly platform for managing home environment components, ensuring ease of use for both end users and developers.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/technicalSpecification.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Log.Serilog
+  commentId: N:Lionk.Log.Serilog
+  id: Lionk.Log.Serilog
+  children:
+  - Lionk.Log.Serilog.SerilogFactory
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Log.Serilog
+  nameWithType: Lionk.Log.Serilog
+  fullName: Lionk.Log.Serilog
+  type: Namespace
+  assemblies:
+  - Lionk.Logger
+references:
+- uid: Lionk.Log.Serilog.SerilogFactory
+  commentId: T:Lionk.Log.Serilog.SerilogFactory
+  href: Lionk.Log.Serilog.SerilogFactory.html
+  name: SerilogFactory
+  nameWithType: SerilogFactory
+  fullName: Lionk.Log.Serilog.SerilogFactory

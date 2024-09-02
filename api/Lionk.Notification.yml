@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Notification
+  commentId: N:Lionk.Notification
+  id: Lionk.Notification
+  children:
+  - Lionk.Notification.Content
+  - Lionk.Notification.IChannel
+  - Lionk.Notification.INotifier
+  - Lionk.Notification.IRecipient
+  - Lionk.Notification.Notification
+  - Lionk.Notification.NotificationFileHandler
+  - Lionk.Notification.NotificationHistory
+  - Lionk.Notification.NotificationService
+  - Lionk.Notification.Severity
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Notification
+  nameWithType: Lionk.Notification
+  fullName: Lionk.Notification
+  type: Namespace
+  assemblies:
+  - Lionk.Notification
+references:
+- uid: Lionk.Notification.IChannel
+  commentId: T:Lionk.Notification.IChannel
+  parent: Lionk.Notification
+  href: Lionk.Notification.IChannel.html
+  name: IChannel
+  nameWithType: IChannel
+  fullName: Lionk.Notification.IChannel
+- uid: Lionk.Notification.INotifier
+  commentId: T:Lionk.Notification.INotifier
+  parent: Lionk.Notification
+  href: Lionk.Notification.INotifier.html
+  name: INotifier
+  nameWithType: INotifier
+  fullName: Lionk.Notification.INotifier
+- uid: Lionk.Notification.IRecipient
+  commentId: T:Lionk.Notification.IRecipient
+  parent: Lionk.Notification
+  href: Lionk.Notification.IRecipient.html
+  name: IRecipient
+  nameWithType: IRecipient
+  fullName: Lionk.Notification.IRecipient
+- uid: Lionk.Notification.Content
+  commentId: T:Lionk.Notification.Content
+  parent: Lionk.Notification
+  href: Lionk.Notification.Content.html
+  name: Content
+  nameWithType: Content
+  fullName: Lionk.Notification.Content
+- uid: Lionk.Notification.Notification
+  commentId: T:Lionk.Notification.Notification
+  parent: Lionk.Notification
+  href: Lionk.Notification.Notification.html
+  name: Notification
+  nameWithType: Notification
+  fullName: Lionk.Notification.Notification
+- uid: Lionk.Notification.NotificationFileHandler
+  commentId: T:Lionk.Notification.NotificationFileHandler
+  href: Lionk.Notification.NotificationFileHandler.html
+  name: NotificationFileHandler
+  nameWithType: NotificationFileHandler
+  fullName: Lionk.Notification.NotificationFileHandler
+- uid: Lionk.Notification.NotificationHistory
+  commentId: T:Lionk.Notification.NotificationHistory
+  parent: Lionk.Notification
+  href: Lionk.Notification.NotificationHistory.html
+  name: NotificationHistory
+  nameWithType: NotificationHistory
+  fullName: Lionk.Notification.NotificationHistory
+- uid: Lionk.Notification.NotificationService
+  commentId: T:Lionk.Notification.NotificationService
+  href: Lionk.Notification.NotificationService.html
+  name: NotificationService
+  nameWithType: NotificationService
+  fullName: Lionk.Notification.NotificationService
+- uid: Lionk.Notification.Severity
+  commentId: T:Lionk.Notification.Severity
+  parent: Lionk.Notification
+  href: Lionk.Notification.Severity.html
+  name: Severity
+  nameWithType: Severity
+  fullName: Lionk.Notification.Severity
+- uid: Lionk.Notification
+  commentId: N:Lionk.Notification
+  href: Lionk.html
+  name: Lionk.Notification
+  nameWithType: Lionk.Notification
+  fullName: Lionk.Notification
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Notification
+    name: Notification
+    href: Lionk.Notification.html

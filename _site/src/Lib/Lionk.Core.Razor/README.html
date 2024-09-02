@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Lionk.Core.Razor | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Lionk.Core.Razor | Lionk ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Core.Razor/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lionkcorerazor">Lionk.Core.Razor</h1>
+
+<p>Lionk.Core.Razor is a Blazor-focused extension of the Lionk.Core library, providing essential components and services for dynamically managing and rendering views in a Blazor application. This library integrates MudBlazor components to create interactive, configurable dialogs and dynamic view handling within Blazor.</p>
+<h2 id="overview">Overview</h2>
+<p>The Lionk.Core.Razor library focuses on:</p>
+<ul>
+<li><strong>Dynamic Component Rendering</strong>: Allows rendering of components dynamically based on user interactions and context.</li>
+<li><strong>View Management</strong>: Provides services to locate, register, and manage views of components.</li>
+<li><strong>Dialog Management</strong>: Uses MudBlazor dialogs for displaying views with flexible and reusable UI patterns.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To use Lionk.Core.Razor in your Blazor project, add the package via NuGet:</p>
+<pre><code class="lang-bash">dotnet add package Lionk.Core.Razor
+</code></pre>
+<h2 id="key-components-and-services">Key Components and Services</h2>
+<h3 id="1-dynamic-dialogs">1. Dynamic Dialogs</h3>
+<p>The library provides Blazor components for displaying views within MudBlazor dialogs, leveraging <code>MudDialog</code> to present content in a clean and interactive manner.</p>
+<h4 id="example-creating-a-dynamic-dialog-with-a-carousel">Example: Creating a Dynamic Dialog with a Carousel</h4>
+<pre><code class="lang-razor">@using Lionk.Core.Dialog
+@using Lionk.Core.View
+
+&lt;MudDialog Style=&quot;height:50%&quot;&gt;
+    &lt;DialogContent&gt;
+        &lt;MudCarousel ShowArrows=&quot;true&quot;
+                     ShowBullets=&quot;false&quot;
+                     EnableSwipeGesture=&quot;true&quot;
+                     AutoCycle=&quot;false&quot;
+                     TData=&quot;object&quot;
+                     SelectedIndexChanged=&quot;ViewChanged&quot;
+                     Style=&quot;height:100%&quot;
+                     SelectedIndex=&quot;CurrentIndex&quot;&gt;
+
+            @if (ViewDescriptions is not null &amp;&amp; ViewDescriptions.Count &gt; 0)
+            {
+                foreach (ComponentViewDescription viewDescription in ViewDescriptions)
+                {
+                    &lt;MudCarouselItem Style=&quot;padding-left:50px; padding-right:50px; overflow-y: scroll;&quot;&gt;
+                        &lt;MudGrid Style=&quot;width:inherit%&quot;&gt;
+                            &lt;MudItem&gt;
+                                &lt;MudText Typo=&quot;Typo.h6&quot;&gt;@viewDescription.Name&lt;/MudText&gt;
+                            &lt;/MudItem&gt;
+                            &lt;MudItem Style=&quot;width:inherit&quot;&gt;
+                                &lt;DynamicComponentWrapper Type=&quot;@viewDescription.ViewType&quot; Parameters=&quot;_parameter&quot;/&gt;
+                            &lt;/MudItem&gt;
+                        &lt;/MudGrid&gt;
+                    &lt;/MudCarouselItem&gt;
+                }
+            }
+        &lt;/MudCarousel&gt;
+    &lt;/DialogContent&gt;
+    &lt;DialogActions&gt;
+        &lt;MudButton OnClick=&quot;Submit&quot;&gt;Ok&lt;/MudButton&gt;
+    &lt;/DialogActions&gt;
+&lt;/MudDialog&gt;
+
+@code {
+    [CascadingParameter]
+    MudDialogInstance? MudDialog { get; set; }
+
+    [Parameter]
+    public object? Component { get; set; }
+
+    [Parameter]
+    public List&lt;ComponentViewDescription&gt;? ViewDescriptions { get; set; }
+
+    [Parameter]
+    public int CurrentIndex { get; set; }
+
+    private readonly Dictionary&lt;string, object&gt; _parameter = new();
+
+    protected override void OnInitialized()
+    {
+        if (Component is null) return;
+        _parameter.Add(&quot;Component&quot;, Component);
+        if (CurrentIndex &gt;= ViewDescriptions?.Count) CurrentIndex = 0;
+    }
+
+    private void Submit()
+    {
+        MudDialog?.Close(DialogResult.Ok(CurrentIndex));
+    }
+
+    private void ViewChanged(int index)
+    {
+        CurrentIndex = index;
+    }
+}
+</code></pre>
+<h4 id="explanation">Explanation</h4>
+<ul>
+<li><strong>MudDialog</strong>: A MudBlazor dialog is used as the main container for the carousel and actions.</li>
+<li><strong>MudCarousel</strong>: Allows navigation between different component views dynamically based on the provided list of <code>ComponentViewDescription</code>.</li>
+<li><strong>DynamicComponentWrapper</strong>: Renders components dynamically based on the <code>ViewType</code> specified in the <code>ComponentViewDescription</code>.</li>
+</ul>
+<h3 id="2-simple-confirmation-dialog">2. Simple Confirmation Dialog</h3>
+<p>Another example of a dialog is a simpler setup for confirmation actions.</p>
+<pre><code class="lang-razor">@namespace Lionk.Core.Dialog
+
+&lt;MudDialog&gt;
+    &lt;DialogContent&gt;
+        &lt;MudText&gt;@ContentText&lt;/MudText&gt;
+    &lt;/DialogContent&gt;
+    &lt;DialogActions&gt;
+        &lt;MudButton OnClick=&quot;Cancel&quot;&gt;Cancel&lt;/MudButton&gt;
+        &lt;MudButton Color=&quot;@Color&quot; Variant=&quot;Variant.Filled&quot; OnClick=&quot;Submit&quot;&gt;@ButtonText&lt;/MudButton&gt;
+    &lt;/DialogActions&gt;
+&lt;/MudDialog&gt;
+
+@code {
+    [CascadingParameter]
+    private MudDialogInstance? MudDialog { get; set; }
+
+    [Parameter]
+    public string? ContentText { get; set; }
+
+    [Parameter]
+    public string? ButtonText { get; set; }
+
+    [Parameter]
+    public Color Color { get; set; }
+
+    private void Submit()
+    {
+        MudDialog?.Close(DialogResult.Ok(true));
+    }
+
+    private void Cancel()
+    {
+        MudDialog?.Cancel();
+    }
+}
+</code></pre>
+<h3 id="3-view-locator-and-registration-services">3. View Locator and Registration Services</h3>
+<p>The library includes services for locating and managing views dynamically within Blazor applications:</p>
+<h4 id="iviewlocatorservice"><strong>IViewLocatorService</strong></h4>
+<ul>
+<li>Provides methods to locate views associated with specific component types and contexts.</li>
+<li>Supports different view contexts like configuration, detail, page, and widget views.</li>
+</ul>
+<h4 id="viewlocatorservice"><strong>ViewLocatorService</strong></h4>
+<ul>
+<li>Implements <code>IViewLocatorService</code> to dynamically discover and provide views for components.</li>
+<li>Uses a types provider (<code>ITypesProvider</code>) to fetch and create views based on defined attributes (<code>ViewOfAttribute</code>).</li>
+</ul>
+<h4 id="example-locating-views-for-a-component">Example: Locating Views for a Component</h4>
+<pre><code class="lang-csharp">using Lionk.Core.View;
+
+public class ExampleComponent { }
+
+public void FindViews()
+{
+    ITypesProvider typesProvider = new CustomTypesProvider(); // Implement ITypesProvider
+    IViewLocatorService viewLocator = new ViewLocatorService(typesProvider);
+    
+    var views = viewLocator.GetViewOf(typeof(ExampleComponent), ViewContext.Detail);
+    foreach (var view in views)
+    {
+        Console.WriteLine($&quot;View found: {view.Name}, Type: {view.ViewType}&quot;);
+    }
+}
+</code></pre>
+<h3 id="4-dynamic-component-rendering">4. Dynamic Component Rendering</h3>
+<p>The <code>DynamicComponentWrapper</code> component is used to render views dynamically. It integrates with the <code>IViewRegistryService</code> to manage the lifecycle of dynamically rendered views.</p>
+<h4 id="example-rendering-a-dynamic-component">Example: Rendering a Dynamic Component</h4>
+<pre><code class="lang-razor">@using Lionk.Core.View
+
+&lt;DynamicComponentWrapper Type=&quot;@viewType&quot; Parameters=&quot;@viewParameters&quot; /&gt;
+
+@code {
+    [Parameter]
+    public Type? viewType { get; set; }
+
+    [Parameter]
+    public IDictionary&lt;string, object&gt;? viewParameters { get; set; }
+}
+</code></pre>
+<h3 id="5-view-registry-service">5. View Registry Service</h3>
+<p>The <code>ViewRegistryService</code> helps in managing active views within the application, allowing checking for active instances and registering or unregistering views dynamically.</p>
+<h4 id="example-using-view-registry-service">Example: Using View Registry Service</h4>
+<pre><code class="lang-csharp">using Lionk.Core.View;
+
+var registry = new ViewRegistryService();
+
+// Register a view instance
+object viewInstance = new CustomView();
+registry.Register(viewInstance);
+
+// Check if a view type has active instances
+bool isActive = registry.HasActiveViews(typeof(CustomView));
+Console.WriteLine($&quot;Is CustomView active: {isActive}&quot;);
+
+// Unregister the view instance
+registry.Unregister(viewInstance);
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Lionk.Core.Razor provides a robust foundation for dynamic component rendering and view management in Blazor applications. By leveraging MudBlazor for UI components and a flexible service architecture for view management, it allows developers to create interactive and configurable user interfaces easily.</p>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions to Lionk.Core are welcome! Please fork the repository, make your changes in a new branch, and submit a pull request.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Core.Razor/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

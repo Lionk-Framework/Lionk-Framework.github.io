@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.View.ComponentViewModel
+  commentId: T:Lionk.Core.View.ComponentViewModel
+  id: ComponentViewModel
+  parent: Lionk.Core.View
+  children:
+  - Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Guid,System.Type,System.Int32[])
+  - Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Type)
+  - Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+  - Lionk.Core.View.ComponentViewModel.Id
+  - Lionk.Core.View.ComponentViewModel.Indexes
+  - Lionk.Core.View.ComponentViewModel.SaveCurrentIndex(Lionk.Core.View.ViewContext,System.Int32)
+  - Lionk.Core.View.ComponentViewModel.ViewType
+  langs:
+  - csharp
+  - vb
+  name: ComponentViewModel
+  nameWithType: ComponentViewModel
+  fullName: Lionk.Core.View.ComponentViewModel
+  type: Class
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ComponentViewModel
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 9
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Dashboard item model.
+  example: []
+  syntax:
+    content: public class ComponentViewModel
+    content.vb: Public Class ComponentViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Type)
+  commentId: M:Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Type)
+  id: '#ctor(System.Guid,System.Type)'
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ComponentViewModel(Guid, Type)
+  nameWithType: ComponentViewModel.ComponentViewModel(Guid, Type)
+  fullName: Lionk.Core.View.ComponentViewModel.ComponentViewModel(System.Guid, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 18
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Initializes a new instance of the <xref href="Lionk.Core.View.ComponentViewModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ComponentViewModel(Guid componentId, Type viewType)
+    parameters:
+    - id: componentId
+      type: System.Guid
+      description: The component unique id.
+    - id: viewType
+      type: System.Type
+      description: The view type.
+    content.vb: Public Sub New(componentId As Guid, viewType As Type)
+  overload: Lionk.Core.View.ComponentViewModel.#ctor*
+  nameWithType.vb: ComponentViewModel.New(Guid, Type)
+  fullName.vb: Lionk.Core.View.ComponentViewModel.New(System.Guid, System.Type)
+  name.vb: New(Guid, Type)
+- uid: Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Guid,System.Type,System.Int32[])
+  commentId: M:Lionk.Core.View.ComponentViewModel.#ctor(System.Guid,System.Guid,System.Type,System.Int32[])
+  id: '#ctor(System.Guid,System.Guid,System.Type,System.Int32[])'
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ComponentViewModel(Guid, Guid, Type, int[])
+  nameWithType: ComponentViewModel.ComponentViewModel(Guid, Guid, Type, int[])
+  fullName: Lionk.Core.View.ComponentViewModel.ComponentViewModel(System.Guid, System.Guid, System.Type, int[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: .ctor
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 32
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Initializes a new instance of the <xref href="Lionk.Core.View.ComponentViewModel" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public ComponentViewModel(Guid id, Guid componentId, Type viewType, int[] indexes)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The unique identifier of the dashboard item model.
+    - id: componentId
+      type: System.Guid
+      description: The component instance name.
+    - id: viewType
+      type: System.Type
+      description: The view type.
+    - id: indexes
+      type: System.Int32[]
+      description: The indexes of selected views.
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New(id As Guid, componentId As Guid, viewType As Type, indexes As Integer())
+  overload: Lionk.Core.View.ComponentViewModel.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ComponentViewModel.New(Guid, Guid, Type, Integer())
+  fullName.vb: Lionk.Core.View.ComponentViewModel.New(System.Guid, System.Guid, System.Type, Integer())
+  name.vb: New(Guid, Guid, Type, Integer())
+- uid: Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+  commentId: P:Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+  id: ComponentUniqueId
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ComponentUniqueId
+  nameWithType: ComponentViewModel.ComponentUniqueId
+  fullName: Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ComponentUniqueId
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 48
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Gets or sets the component instance name.
+  example: []
+  syntax:
+    content: public Guid ComponentUniqueId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ComponentUniqueId As Guid
+  overload: Lionk.Core.View.ComponentViewModel.ComponentUniqueId*
+- uid: Lionk.Core.View.ComponentViewModel.Id
+  commentId: P:Lionk.Core.View.ComponentViewModel.Id
+  id: Id
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ComponentViewModel.Id
+  fullName: Lionk.Core.View.ComponentViewModel.Id
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Id
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 53
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Gets the unique identifier of the dashboard history.
+  example: []
+  syntax:
+    content: public Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Lionk.Core.View.ComponentViewModel.Id*
+- uid: Lionk.Core.View.ComponentViewModel.Indexes
+  commentId: P:Lionk.Core.View.ComponentViewModel.Indexes
+  id: Indexes
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: Indexes
+  nameWithType: ComponentViewModel.Indexes
+  fullName: Lionk.Core.View.ComponentViewModel.Indexes
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Indexes
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 58
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Gets the indexes of selected views.
+  example: []
+  syntax:
+    content: public int[] Indexes { get; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public ReadOnly Property Indexes As Integer()
+  overload: Lionk.Core.View.ComponentViewModel.Indexes*
+- uid: Lionk.Core.View.ComponentViewModel.ViewType
+  commentId: P:Lionk.Core.View.ComponentViewModel.ViewType
+  id: ViewType
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ViewType
+  nameWithType: ComponentViewModel.ViewType
+  fullName: Lionk.Core.View.ComponentViewModel.ViewType
+  type: Property
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ViewType
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 63
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: Gets or sets the view type.
+  example: []
+  syntax:
+    content: public Type ViewType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property ViewType As Type
+  overload: Lionk.Core.View.ComponentViewModel.ViewType*
+- uid: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex(Lionk.Core.View.ViewContext,System.Int32)
+  commentId: M:Lionk.Core.View.ComponentViewModel.SaveCurrentIndex(Lionk.Core.View.ViewContext,System.Int32)
+  id: SaveCurrentIndex(Lionk.Core.View.ViewContext,System.Int32)
+  parent: Lionk.Core.View.ComponentViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveCurrentIndex(ViewContext, int)
+  nameWithType: ComponentViewModel.SaveCurrentIndex(ViewContext, int)
+  fullName: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex(Lionk.Core.View.ViewContext, int)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: SaveCurrentIndex
+    path: src/Lib/Lionk.Core.Razor/Views/Component/ComponentViewModel.cs
+    startLine: 74
+  assemblies:
+  - Lionk.Core.Razor
+  namespace: Lionk.Core.View
+  summary: This method saves the current index of the view.
+  example: []
+  syntax:
+    content: public void SaveCurrentIndex(ViewContext viewContext, int index)
+    parameters:
+    - id: viewContext
+      type: Lionk.Core.View.ViewContext
+      description: The view context.
+    - id: index
+      type: System.Int32
+      description: The index of the view.
+    content.vb: Public Sub SaveCurrentIndex(viewContext As ViewContext, index As Integer)
+  overload: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex*
+  nameWithType.vb: ComponentViewModel.SaveCurrentIndex(ViewContext, Integer)
+  fullName.vb: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex(Lionk.Core.View.ViewContext, Integer)
+  name.vb: SaveCurrentIndex(ViewContext, Integer)
+references:
+- uid: Lionk.Core.View
+  commentId: N:Lionk.Core.View
+  href: Lionk.html
+  name: Lionk.Core.View
+  nameWithType: Lionk.Core.View
+  fullName: Lionk.Core.View
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.View
+    name: View
+    href: Lionk.Core.View.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Lionk.Core.View.ComponentViewModel
+  commentId: T:Lionk.Core.View.ComponentViewModel
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ComponentViewModel.html
+  name: ComponentViewModel
+  nameWithType: ComponentViewModel
+  fullName: Lionk.Core.View.ComponentViewModel
+- uid: Lionk.Core.View.ComponentViewModel.#ctor*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.#ctor
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel__ctor_System_Guid_System_Type_
+  name: ComponentViewModel
+  nameWithType: ComponentViewModel.ComponentViewModel
+  fullName: Lionk.Core.View.ComponentViewModel.ComponentViewModel
+  nameWithType.vb: ComponentViewModel.New
+  fullName.vb: Lionk.Core.View.ComponentViewModel.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Lionk.Core.View.ComponentViewModel.ComponentUniqueId*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel_ComponentUniqueId
+  name: ComponentUniqueId
+  nameWithType: ComponentViewModel.ComponentUniqueId
+  fullName: Lionk.Core.View.ComponentViewModel.ComponentUniqueId
+- uid: Lionk.Core.View.ComponentViewModel.Id*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.Id
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel_Id
+  name: Id
+  nameWithType: ComponentViewModel.Id
+  fullName: Lionk.Core.View.ComponentViewModel.Id
+- uid: Lionk.Core.View.ComponentViewModel.Indexes*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.Indexes
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel_Indexes
+  name: Indexes
+  nameWithType: ComponentViewModel.Indexes
+  fullName: Lionk.Core.View.ComponentViewModel.Indexes
+- uid: Lionk.Core.View.ComponentViewModel.ViewType*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.ViewType
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel_ViewType
+  name: ViewType
+  nameWithType: ComponentViewModel.ViewType
+  fullName: Lionk.Core.View.ComponentViewModel.ViewType
+- uid: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex*
+  commentId: Overload:Lionk.Core.View.ComponentViewModel.SaveCurrentIndex
+  href: Lionk.Core.View.ComponentViewModel.html#Lionk_Core_View_ComponentViewModel_SaveCurrentIndex_Lionk_Core_View_ViewContext_System_Int32_
+  name: SaveCurrentIndex
+  nameWithType: ComponentViewModel.SaveCurrentIndex
+  fullName: Lionk.Core.View.ComponentViewModel.SaveCurrentIndex
+- uid: Lionk.Core.View.ViewContext
+  commentId: T:Lionk.Core.View.ViewContext
+  parent: Lionk.Core.View
+  href: Lionk.Core.View.ViewContext.html
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Lionk.Core.View.ViewContext
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

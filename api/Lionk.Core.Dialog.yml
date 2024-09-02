@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Dialog
+  commentId: N:Lionk.Core.Dialog
+  id: Lionk.Core.Dialog
+  children:
+  - Lionk.Core.Dialog.ComponentDialog
+  - Lionk.Core.Dialog.SimpleQuestionDialog
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.Dialog
+  nameWithType: Lionk.Core.Dialog
+  fullName: Lionk.Core.Dialog
+  type: Namespace
+  assemblies:
+  - Lionk.Core.Razor
+references:
+- uid: Lionk.Core.Dialog.ComponentDialog
+  commentId: T:Lionk.Core.Dialog.ComponentDialog
+  href: Lionk.Core.Dialog.ComponentDialog.html
+  name: ComponentDialog
+  nameWithType: ComponentDialog
+  fullName: Lionk.Core.Dialog.ComponentDialog
+- uid: Lionk.Core.Dialog.SimpleQuestionDialog
+  commentId: T:Lionk.Core.Dialog.SimpleQuestionDialog
+  href: Lionk.Core.Dialog.SimpleQuestionDialog.html
+  name: SimpleQuestionDialog
+  nameWithType: SimpleQuestionDialog
+  fullName: Lionk.Core.Dialog.SimpleQuestionDialog

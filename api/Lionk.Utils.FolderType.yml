@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Utils.FolderType
+  commentId: T:Lionk.Utils.FolderType
+  id: FolderType
+  parent: Lionk.Utils
+  children:
+  - Lionk.Utils.FolderType.Config
+  - Lionk.Utils.FolderType.Data
+  - Lionk.Utils.FolderType.Logs
+  - Lionk.Utils.FolderType.Plugin
+  - Lionk.Utils.FolderType.Temp
+  langs:
+  - csharp
+  - vb
+  name: FolderType
+  nameWithType: FolderType
+  fullName: Lionk.Utils.FolderType
+  type: Enum
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: FolderType
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the type of the configuration file.
+  example: []
+  syntax:
+    content: public enum FolderType
+    content.vb: Public Enum FolderType
+- uid: Lionk.Utils.FolderType.Config
+  commentId: F:Lionk.Utils.FolderType.Config
+  id: Config
+  parent: Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: FolderType.Config
+  fullName: Lionk.Utils.FolderType.Config
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Config
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 12
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the configuration folder.
+  example: []
+  syntax:
+    content: Config = 0
+    return:
+      type: Lionk.Utils.FolderType
+- uid: Lionk.Utils.FolderType.Logs
+  commentId: F:Lionk.Utils.FolderType.Logs
+  id: Logs
+  parent: Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Logs
+  nameWithType: FolderType.Logs
+  fullName: Lionk.Utils.FolderType.Logs
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Logs
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 17
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the log folder.
+  example: []
+  syntax:
+    content: Logs = 1
+    return:
+      type: Lionk.Utils.FolderType
+- uid: Lionk.Utils.FolderType.Data
+  commentId: F:Lionk.Utils.FolderType.Data
+  id: Data
+  parent: Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: FolderType.Data
+  fullName: Lionk.Utils.FolderType.Data
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Data
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 22
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the data folder.
+  example: []
+  syntax:
+    content: Data = 2
+    return:
+      type: Lionk.Utils.FolderType
+- uid: Lionk.Utils.FolderType.Plugin
+  commentId: F:Lionk.Utils.FolderType.Plugin
+  id: Plugin
+  parent: Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Plugin
+  nameWithType: FolderType.Plugin
+  fullName: Lionk.Utils.FolderType.Plugin
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Plugin
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 27
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the plugin folder.
+  example: []
+  syntax:
+    content: Plugin = 3
+    return:
+      type: Lionk.Utils.FolderType
+- uid: Lionk.Utils.FolderType.Temp
+  commentId: F:Lionk.Utils.FolderType.Temp
+  id: Temp
+  parent: Lionk.Utils.FolderType
+  langs:
+  - csharp
+  - vb
+  name: Temp
+  nameWithType: FolderType.Temp
+  fullName: Lionk.Utils.FolderType.Temp
+  type: Field
+  source:
+    remote:
+      path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: Temp
+    path: src/Lib/Lionk.Utils/Utils/FolderType.cs
+    startLine: 32
+  assemblies:
+  - Lionk.Utils
+  namespace: Lionk.Utils
+  summary: Represents the temporary folder.
+  example: []
+  syntax:
+    content: Temp = 4
+    return:
+      type: Lionk.Utils.FolderType
+references:
+- uid: Lionk.Utils
+  commentId: N:Lionk.Utils
+  href: Lionk.html
+  name: Lionk.Utils
+  nameWithType: Lionk.Utils
+  fullName: Lionk.Utils
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Utils
+    name: Utils
+    href: Lionk.Utils.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Utils
+    name: Utils
+    href: Lionk.Utils.html
+- uid: Lionk.Utils.FolderType
+  commentId: T:Lionk.Utils.FolderType
+  parent: Lionk.Utils
+  href: Lionk.Utils.FolderType.html
+  name: FolderType
+  nameWithType: FolderType
+  fullName: Lionk.Utils.FolderType

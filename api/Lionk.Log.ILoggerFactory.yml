@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Log.ILoggerFactory
+  commentId: T:Lionk.Log.ILoggerFactory
+  id: ILoggerFactory
+  parent: Lionk.Log
+  children:
+  - Lionk.Log.ILoggerFactory.CreateLogger(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Lionk.Log.ILoggerFactory
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Logger/Model/Abstraction/ILoggerFactory.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: ILoggerFactory
+    path: src/Lib/Lionk.Logger/Model/Abstraction/ILoggerFactory.cs
+    startLine: 7
+  assemblies:
+  - Lionk.Logger
+  namespace: Lionk.Log
+  summary: Interface for creating loggers.
+  example: []
+  syntax:
+    content: public interface ILoggerFactory
+    content.vb: Public Interface ILoggerFactory
+- uid: Lionk.Log.ILoggerFactory.CreateLogger(System.String)
+  commentId: M:Lionk.Log.ILoggerFactory.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: Lionk.Log.ILoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(string)
+  nameWithType: ILoggerFactory.CreateLogger(string)
+  fullName: Lionk.Log.ILoggerFactory.CreateLogger(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Logger/Model/Abstraction/ILoggerFactory.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: CreateLogger
+    path: src/Lib/Lionk.Logger/Model/Abstraction/ILoggerFactory.cs
+    startLine: 16
+  assemblies:
+  - Lionk.Logger
+  namespace: Lionk.Log
+  summary: Create a logger.
+  example: []
+  syntax:
+    content: IStandardLogger CreateLogger(string loggerName)
+    parameters:
+    - id: loggerName
+      type: System.String
+      description: The logger name.
+    return:
+      type: Lionk.Log.IStandardLogger
+      description: A new <xref href="Lionk.Log.IStandardLogger" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function CreateLogger(loggerName As String) As IStandardLogger
+  overload: Lionk.Log.ILoggerFactory.CreateLogger*
+  nameWithType.vb: ILoggerFactory.CreateLogger(String)
+  fullName.vb: Lionk.Log.ILoggerFactory.CreateLogger(String)
+  name.vb: CreateLogger(String)
+references:
+- uid: Lionk.Log
+  commentId: N:Lionk.Log
+  href: Lionk.html
+  name: Lionk.Log
+  nameWithType: Lionk.Log
+  fullName: Lionk.Log
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Log
+    name: Log
+    href: Lionk.Log.html
+- uid: Lionk.Log.IStandardLogger
+  commentId: T:Lionk.Log.IStandardLogger
+  parent: Lionk.Log
+  href: Lionk.Log.IStandardLogger.html
+  name: IStandardLogger
+  nameWithType: IStandardLogger
+  fullName: Lionk.Log.IStandardLogger
+- uid: Lionk.Log.ILoggerFactory.CreateLogger*
+  commentId: Overload:Lionk.Log.ILoggerFactory.CreateLogger
+  href: Lionk.Log.ILoggerFactory.html#Lionk_Log_ILoggerFactory_CreateLogger_System_String_
+  name: CreateLogger
+  nameWithType: ILoggerFactory.CreateLogger
+  fullName: Lionk.Log.ILoggerFactory.CreateLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

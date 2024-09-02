@@ -1,0 +1,819 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Component.IComponentService
+  commentId: T:Lionk.Core.Component.IComponentService
+  id: IComponentService
+  parent: Lionk.Core.Component
+  children:
+  - Lionk.Core.Component.IComponentService.GetInstanceById(System.Guid)
+  - Lionk.Core.Component.IComponentService.GetInstanceByName(System.String)
+  - Lionk.Core.Component.IComponentService.GetInstances
+  - Lionk.Core.Component.IComponentService.GetInstancesOfType``1
+  - Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary
+  - Lionk.Core.Component.IComponentService.NewComponentAvailable
+  - Lionk.Core.Component.IComponentService.NewInstanceRegistered
+  - Lionk.Core.Component.IComponentService.RegisterComponentInstance(Lionk.Core.Component.IComponent)
+  - Lionk.Core.Component.IComponentService.UnregisterComponentInstance(Lionk.Core.Component.IComponent)
+  langs:
+  - csharp
+  - vb
+  name: IComponentService
+  nameWithType: IComponentService
+  fullName: Lionk.Core.Component.IComponentService
+  type: Interface
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: IComponentService
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 9
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Interface for component service.
+  example: []
+  syntax:
+    content: 'public interface IComponentService : IDisposable'
+    content.vb: Public Interface IComponentService Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Lionk.Core.Component.IComponentService.NewComponentAvailable
+  commentId: E:Lionk.Core.Component.IComponentService.NewComponentAvailable
+  id: NewComponentAvailable
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: NewComponentAvailable
+  nameWithType: IComponentService.NewComponentAvailable
+  fullName: Lionk.Core.Component.IComponentService.NewComponentAvailable
+  type: Event
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NewComponentAvailable
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 16
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Event raised when a new type is available.
+  example: []
+  syntax:
+    content: event EventHandler<EventArgs> NewComponentAvailable
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event NewComponentAvailable As EventHandler(Of EventArgs)
+- uid: Lionk.Core.Component.IComponentService.NewInstanceRegistered
+  commentId: E:Lionk.Core.Component.IComponentService.NewInstanceRegistered
+  id: NewInstanceRegistered
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: NewInstanceRegistered
+  nameWithType: IComponentService.NewInstanceRegistered
+  fullName: Lionk.Core.Component.IComponentService.NewInstanceRegistered
+  type: Event
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: NewInstanceRegistered
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 21
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Event raised when a new instance is registered.
+  example: []
+  syntax:
+    content: event EventHandler<EventArgs> NewInstanceRegistered
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Event NewInstanceRegistered As EventHandler(Of EventArgs)
+- uid: Lionk.Core.Component.IComponentService.GetInstanceById(System.Guid)
+  commentId: M:Lionk.Core.Component.IComponentService.GetInstanceById(System.Guid)
+  id: GetInstanceById(System.Guid)
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceById(Guid)
+  nameWithType: IComponentService.GetInstanceById(Guid)
+  fullName: Lionk.Core.Component.IComponentService.GetInstanceById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetInstanceById
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 32
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Get an instance by its unique identifier.
+  example: []
+  syntax:
+    content: IComponent? GetInstanceById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: The id.
+    return:
+      type: Lionk.Core.Component.IComponent
+      description: A component with id, or null if no component exist.
+    content.vb: Function GetInstanceById(id As Guid) As IComponent
+  overload: Lionk.Core.Component.IComponentService.GetInstanceById*
+- uid: Lionk.Core.Component.IComponentService.GetInstanceByName(System.String)
+  commentId: M:Lionk.Core.Component.IComponentService.GetInstanceByName(System.String)
+  id: GetInstanceByName(System.String)
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: GetInstanceByName(string)
+  nameWithType: IComponentService.GetInstanceByName(string)
+  fullName: Lionk.Core.Component.IComponentService.GetInstanceByName(string)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetInstanceByName
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 39
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Get an instance by <xref href="Lionk.Core.Component.IComponent.InstanceName" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IComponent? GetInstanceByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The instance name.
+    return:
+      type: Lionk.Core.Component.IComponent
+      description: The <xref href="Lionk.Core.Component.IComponent" data-throw-if-not-resolved="false"></xref> define by its name, null if not registered.
+    content.vb: Function GetInstanceByName(name As String) As IComponent
+  overload: Lionk.Core.Component.IComponentService.GetInstanceByName*
+  nameWithType.vb: IComponentService.GetInstanceByName(String)
+  fullName.vb: Lionk.Core.Component.IComponentService.GetInstanceByName(String)
+  name.vb: GetInstanceByName(String)
+- uid: Lionk.Core.Component.IComponentService.GetInstances
+  commentId: M:Lionk.Core.Component.IComponentService.GetInstances
+  id: GetInstances
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: GetInstances()
+  nameWithType: IComponentService.GetInstances()
+  fullName: Lionk.Core.Component.IComponentService.GetInstances()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetInstances
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 45
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Get all instances registered.
+  example: []
+  syntax:
+    content: IEnumerable<IComponent> GetInstances()
+    return:
+      type: System.Collections.Generic.IEnumerable{Lionk.Core.Component.IComponent}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing all registered instance.
+    content.vb: Function GetInstances() As IEnumerable(Of IComponent)
+  overload: Lionk.Core.Component.IComponentService.GetInstances*
+- uid: Lionk.Core.Component.IComponentService.GetInstancesOfType``1
+  commentId: M:Lionk.Core.Component.IComponentService.GetInstancesOfType``1
+  id: GetInstancesOfType``1
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: GetInstancesOfType<T>()
+  nameWithType: IComponentService.GetInstancesOfType<T>()
+  fullName: Lionk.Core.Component.IComponentService.GetInstancesOfType<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetInstancesOfType
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 52
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Get all instances of components of type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: IEnumerable<T> GetInstancesOfType<T>()
+    typeParameters:
+    - id: T
+      description: The type of the components.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing all registered instance of T.
+    content.vb: Function GetInstancesOfType(Of T)() As IEnumerable(Of T)
+  overload: Lionk.Core.Component.IComponentService.GetInstancesOfType*
+  nameWithType.vb: IComponentService.GetInstancesOfType(Of T)()
+  fullName.vb: Lionk.Core.Component.IComponentService.GetInstancesOfType(Of T)()
+  name.vb: GetInstancesOfType(Of T)()
+- uid: Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary
+  commentId: M:Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary
+  id: GetRegisteredTypeDictionary
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: GetRegisteredTypeDictionary()
+  nameWithType: IComponentService.GetRegisteredTypeDictionary()
+  fullName: Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary()
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: GetRegisteredTypeDictionary
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 61
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Get all registered types from <xref href="Lionk.Core.TypeRegister.ITypesProvider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: IReadOnlyDictionary<ComponentTypeDescription, Factory> GetRegisteredTypeDictionary()
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{Lionk.Core.Component.ComponentTypeDescription,Lionk.Core.TypeRegister.Factory}
+      description: >-
+        A <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>
+
+        which contains information about registered components."/&gt;.
+    content.vb: Function GetRegisteredTypeDictionary() As IReadOnlyDictionary(Of ComponentTypeDescription, Factory)
+  overload: Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary*
+- uid: Lionk.Core.Component.IComponentService.RegisterComponentInstance(Lionk.Core.Component.IComponent)
+  commentId: M:Lionk.Core.Component.IComponentService.RegisterComponentInstance(Lionk.Core.Component.IComponent)
+  id: RegisterComponentInstance(Lionk.Core.Component.IComponent)
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: RegisterComponentInstance(IComponent)
+  nameWithType: IComponentService.RegisterComponentInstance(IComponent)
+  fullName: Lionk.Core.Component.IComponentService.RegisterComponentInstance(Lionk.Core.Component.IComponent)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: RegisterComponentInstance
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 67
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Register a component.
+  example: []
+  syntax:
+    content: void RegisterComponentInstance(IComponent component)
+    parameters:
+    - id: component
+      type: Lionk.Core.Component.IComponent
+      description: the component to register.
+    content.vb: Sub RegisterComponentInstance(component As IComponent)
+  overload: Lionk.Core.Component.IComponentService.RegisterComponentInstance*
+- uid: Lionk.Core.Component.IComponentService.UnregisterComponentInstance(Lionk.Core.Component.IComponent)
+  commentId: M:Lionk.Core.Component.IComponentService.UnregisterComponentInstance(Lionk.Core.Component.IComponent)
+  id: UnregisterComponentInstance(Lionk.Core.Component.IComponent)
+  parent: Lionk.Core.Component.IComponentService
+  langs:
+  - csharp
+  - vb
+  name: UnregisterComponentInstance(IComponent)
+  nameWithType: IComponentService.UnregisterComponentInstance(IComponent)
+  fullName: Lionk.Core.Component.IComponentService.UnregisterComponentInstance(Lionk.Core.Component.IComponent)
+  type: Method
+  source:
+    remote:
+      path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+      branch: api-documentation
+      repo: git@github.com:Lionk-Framework/Lionk.git
+    id: UnregisterComponentInstance
+    path: src/Lib/Lionk.Core/Model/Services/ComponentService/IComponentService.cs
+    startLine: 73
+  assemblies:
+  - Lionk.Core
+  namespace: Lionk.Core.Component
+  summary: Unregister a component.
+  example: []
+  syntax:
+    content: void UnregisterComponentInstance(IComponent component)
+    parameters:
+    - id: component
+      type: Lionk.Core.Component.IComponent
+      description: Unregister the instance.
+    content.vb: Sub UnregisterComponentInstance(component As IComponent)
+  overload: Lionk.Core.Component.IComponentService.UnregisterComponentInstance*
+references:
+- uid: Lionk.Core.Component
+  commentId: N:Lionk.Core.Component
+  href: Lionk.html
+  name: Lionk.Core.Component
+  nameWithType: Lionk.Core.Component
+  fullName: Lionk.Core.Component
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.Component
+    name: Component
+    href: Lionk.Core.Component.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Lionk.Core.Component.IComponentService.GetInstanceById*
+  commentId: Overload:Lionk.Core.Component.IComponentService.GetInstanceById
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_GetInstanceById_System_Guid_
+  name: GetInstanceById
+  nameWithType: IComponentService.GetInstanceById
+  fullName: Lionk.Core.Component.IComponentService.GetInstanceById
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Lionk.Core.Component.IComponent
+  commentId: T:Lionk.Core.Component.IComponent
+  parent: Lionk.Core.Component
+  href: Lionk.Core.Component.IComponent.html
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Lionk.Core.Component.IComponent
+- uid: Lionk.Core.Component.IComponent.InstanceName
+  commentId: P:Lionk.Core.Component.IComponent.InstanceName
+  parent: Lionk.Core.Component.IComponent
+  href: Lionk.Core.Component.IComponent.html#Lionk_Core_Component_IComponent_InstanceName
+  name: InstanceName
+  nameWithType: IComponent.InstanceName
+  fullName: Lionk.Core.Component.IComponent.InstanceName
+- uid: Lionk.Core.Component.IComponentService.GetInstanceByName*
+  commentId: Overload:Lionk.Core.Component.IComponentService.GetInstanceByName
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_GetInstanceByName_System_String_
+  name: GetInstanceByName
+  nameWithType: IComponentService.GetInstanceByName
+  fullName: Lionk.Core.Component.IComponentService.GetInstanceByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Lionk.Core.Component.IComponentService.GetInstances*
+  commentId: Overload:Lionk.Core.Component.IComponentService.GetInstances
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_GetInstances
+  name: GetInstances
+  nameWithType: IComponentService.GetInstances
+  fullName: Lionk.Core.Component.IComponentService.GetInstances
+- uid: System.Collections.Generic.IEnumerable{Lionk.Core.Component.IComponent}
+  commentId: T:System.Collections.Generic.IEnumerable{Lionk.Core.Component.IComponent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IComponent>
+  nameWithType: IEnumerable<IComponent>
+  fullName: System.Collections.Generic.IEnumerable<Lionk.Core.Component.IComponent>
+  nameWithType.vb: IEnumerable(Of IComponent)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Lionk.Core.Component.IComponent)
+  name.vb: IEnumerable(Of IComponent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Lionk.Core.Component.IComponent
+    name: IComponent
+    href: Lionk.Core.Component.IComponent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Core.Component.IComponent
+    name: IComponent
+    href: Lionk.Core.Component.IComponent.html
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Lionk.Core.Component.IComponentService.GetInstancesOfType*
+  commentId: Overload:Lionk.Core.Component.IComponentService.GetInstancesOfType
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_GetInstancesOfType__1
+  name: GetInstancesOfType
+  nameWithType: IComponentService.GetInstancesOfType
+  fullName: Lionk.Core.Component.IComponentService.GetInstancesOfType
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Lionk.Core.TypeRegister.ITypesProvider
+  commentId: T:Lionk.Core.TypeRegister.ITypesProvider
+  parent: Lionk.Core.TypeRegister
+  href: Lionk.Core.TypeRegister.ITypesProvider.html
+  name: ITypesProvider
+  nameWithType: ITypesProvider
+  fullName: Lionk.Core.TypeRegister.ITypesProvider
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary*
+  commentId: Overload:Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_GetRegisteredTypeDictionary
+  name: GetRegisteredTypeDictionary
+  nameWithType: IComponentService.GetRegisteredTypeDictionary
+  fullName: Lionk.Core.Component.IComponentService.GetRegisteredTypeDictionary
+- uid: System.Collections.Generic.IReadOnlyDictionary{Lionk.Core.Component.ComponentTypeDescription,Lionk.Core.TypeRegister.Factory}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Lionk.Core.Component.ComponentTypeDescription,Lionk.Core.TypeRegister.Factory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<ComponentTypeDescription, Factory>
+  nameWithType: IReadOnlyDictionary<ComponentTypeDescription, Factory>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Lionk.Core.Component.ComponentTypeDescription, Lionk.Core.TypeRegister.Factory>
+  nameWithType.vb: IReadOnlyDictionary(Of ComponentTypeDescription, Factory)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Lionk.Core.Component.ComponentTypeDescription, Lionk.Core.TypeRegister.Factory)
+  name.vb: IReadOnlyDictionary(Of ComponentTypeDescription, Factory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Lionk.Core.Component.ComponentTypeDescription
+    name: ComponentTypeDescription
+    href: Lionk.Core.Component.ComponentTypeDescription.html
+  - name: ','
+  - name: " "
+  - uid: Lionk.Core.TypeRegister.Factory
+    name: Factory
+    href: Lionk.Core.TypeRegister.Factory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Lionk.Core.Component.ComponentTypeDescription
+    name: ComponentTypeDescription
+    href: Lionk.Core.Component.ComponentTypeDescription.html
+  - name: ','
+  - name: " "
+  - uid: Lionk.Core.TypeRegister.Factory
+    name: Factory
+    href: Lionk.Core.TypeRegister.Factory.html
+  - name: )
+- uid: Lionk.Core.TypeRegister
+  commentId: N:Lionk.Core.TypeRegister
+  href: Lionk.html
+  name: Lionk.Core.TypeRegister
+  nameWithType: Lionk.Core.TypeRegister
+  fullName: Lionk.Core.TypeRegister
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Core
+    name: Core
+    href: Lionk.Core.html
+  - name: .
+  - uid: Lionk.Core.TypeRegister
+    name: TypeRegister
+    href: Lionk.Core.TypeRegister.html
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Lionk.Core.Component.IComponentService.RegisterComponentInstance*
+  commentId: Overload:Lionk.Core.Component.IComponentService.RegisterComponentInstance
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_RegisterComponentInstance_Lionk_Core_Component_IComponent_
+  name: RegisterComponentInstance
+  nameWithType: IComponentService.RegisterComponentInstance
+  fullName: Lionk.Core.Component.IComponentService.RegisterComponentInstance
+- uid: Lionk.Core.Component.IComponentService.UnregisterComponentInstance*
+  commentId: Overload:Lionk.Core.Component.IComponentService.UnregisterComponentInstance
+  href: Lionk.Core.Component.IComponentService.html#Lionk_Core_Component_IComponentService_UnregisterComponentInstance_Lionk_Core_Component_IComponent_
+  name: UnregisterComponentInstance
+  nameWithType: IComponentService.UnregisterComponentInstance
+  fullName: Lionk.Core.Component.IComponentService.UnregisterComponentInstance

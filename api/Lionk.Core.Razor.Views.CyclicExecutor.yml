@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Core.Razor.Views.CyclicExecutor
+  commentId: N:Lionk.Core.Razor.Views.CyclicExecutor
+  id: Lionk.Core.Razor.Views.CyclicExecutor
+  children:
+  - Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph
+  - Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard
+  - Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView
+  - Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Core.Razor.Views.CyclicExecutor
+  nameWithType: Lionk.Core.Razor.Views.CyclicExecutor
+  fullName: Lionk.Core.Razor.Views.CyclicExecutor
+  type: Namespace
+  assemblies:
+  - Lionk.Core.Razor
+references:
+- uid: Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph
+  commentId: T:Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph
+  href: Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph.html
+  name: CycleTimeGraph
+  nameWithType: CycleTimeGraph
+  fullName: Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph
+- uid: Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor
+  commentId: T:Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor
+  href: Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor.html
+  name: ToggleCyclicExecutor
+  nameWithType: ToggleCyclicExecutor
+  fullName: Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor
+- uid: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView
+  commentId: T:Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView
+  href: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView.html
+  name: CyclicExecutorView
+  nameWithType: CyclicExecutorView
+  fullName: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView
+- uid: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard
+  commentId: T:Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard
+  href: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard.html
+  name: CyclicExecutorStatusCard
+  nameWithType: CyclicExecutorStatusCard
+  fullName: Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard

@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lionk.Auth.Abstraction
+  commentId: N:Lionk.Auth.Abstraction
+  id: Lionk.Auth.Abstraction
+  children:
+  - Lionk.Auth.Abstraction.IUserRepository
+  - Lionk.Auth.Abstraction.IUserService
+  langs:
+  - csharp
+  - vb
+  name: Lionk.Auth.Abstraction
+  nameWithType: Lionk.Auth.Abstraction
+  fullName: Lionk.Auth.Abstraction
+  type: Namespace
+  assemblies:
+  - Lionk.Auth
+references:
+- uid: Lionk.Auth.Abstraction.IUserRepository
+  commentId: T:Lionk.Auth.Abstraction.IUserRepository
+  parent: Lionk.Auth.Abstraction
+  href: Lionk.Auth.Abstraction.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Lionk.Auth.Abstraction.IUserRepository
+- uid: Lionk.Auth.Abstraction.IUserService
+  commentId: T:Lionk.Auth.Abstraction.IUserService
+  parent: Lionk.Auth.Abstraction
+  href: Lionk.Auth.Abstraction.IUserService.html
+  name: IUserService
+  nameWithType: IUserService
+  fullName: Lionk.Auth.Abstraction.IUserService
+- uid: Lionk.Auth.Abstraction
+  commentId: N:Lionk.Auth.Abstraction
+  href: Lionk.html
+  name: Lionk.Auth.Abstraction
+  nameWithType: Lionk.Auth.Abstraction
+  fullName: Lionk.Auth.Abstraction
+  spec.csharp:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Abstraction
+    name: Abstraction
+    href: Lionk.Auth.Abstraction.html
+  spec.vb:
+  - uid: Lionk
+    name: Lionk
+    href: Lionk.html
+  - name: .
+  - uid: Lionk.Auth
+    name: Auth
+    href: Lionk.Auth.html
+  - name: .
+  - uid: Lionk.Auth.Abstraction
+    name: Abstraction
+    href: Lionk.Auth.Abstraction.html
