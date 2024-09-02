@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Lionk Plugin Blazor Library | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Lionk Plugin Blazor Library | Lionk ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Plugin.Blazor/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lionk-plugin-blazor-library">Lionk Plugin Blazor Library</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The Lionk Plugin Blazor Library provides an interactive and dynamic interface for managing plugins directly within Blazor applications. It includes features for uploading plugins, displaying plugin information, and managing dependencies in a user-friendly manner. This library extends the capabilities of the Lionk Plugin Library by integrating it with Blazor components, allowing seamless plugin management through a web interface.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>File Upload Service</strong>: Handles file uploads for plugins, saving them to a specified target directory.</li>
+<li><strong>Dynamic Plugin Management</strong>: View, add, and remove plugins within the Blazor UI.</li>
+<li><strong>Dependency Visualization</strong>: Display and interact with plugin dependencies, showing their load status and allowing for detailed inspection.</li>
+<li><strong>Responsive UI Components</strong>: Utilizes the MudBlazor UI library to provide a responsive and modern interface for managing plugins.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the Lionk Plugin Blazor Library, use the NuGet package manager console:</p>
+<pre><code class="lang-bash">Install-Package Lionk.Plugin.Blazor
+</code></pre>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="1-setting-up-the-fileuploadservice">1. Setting Up the FileUploadService</h3>
+<p>The <code>FileUploadService</code> is responsible for handling file uploads in the Blazor application. To set up the service, create an instance by specifying the target directory where the files should be saved:</p>
+<pre><code class="lang-csharp">using Lionk.Plugin.Blazor;
+
+// Initialize FileUploadService with the target directory
+var fileUploadService = new FileUploadService(&quot;path/to/target/directory&quot;);
+</code></pre>
+<h3 id="2-uploading-files">2. Uploading Files</h3>
+<p>The <code>UploadFileAsync</code> method of the <code>FileUploadService</code> uploads files to the specified directory and returns the new file paths if successful. If a file already exists at the target location, the upload will be canceled:</p>
+<pre><code class="lang-csharp">var files = await fileInput.GetMultipleFilesAsync(); // Assume fileInput is a MudBlazor file input component
+List&lt;string&gt;? uploadedPaths = await fileUploadService.UploadFileAsync(files);
+
+if (uploadedPaths != null)
+{
+    Console.WriteLine(&quot;Files uploaded successfully:&quot;);
+    foreach (var path in uploadedPaths)
+    {
+        Console.WriteLine(path);
+    }
+}
+else
+{
+    Console.WriteLine(&quot;File upload failed. File already exists.&quot;);
+}
+</code></pre>
+<h3 id="3-managing-plugins-in-blazor">3. Managing Plugins in Blazor</h3>
+<p>The library provides a Blazor component interface for managing plugins, allowing you to view, add, delete, and inspect plugins directly in the application. The plugin management page and components utilize MudBlazor for a clean and intuitive UI.</p>
+<h4 id="displaying-plugins">Displaying Plugins</h4>
+<p>The <code>PluginCard</code> component is used to display details about each plugin, including its name, version, author, description, and dependencies:</p>
+<pre><code class="lang-razor">&lt;PluginCard Plugin=&quot;@plugin&quot; OnDependencySelect=&quot;HandleDependencySelect&quot; OnDelete=&quot;DeletePlugin&quot; /&gt;
+</code></pre>
+<h4 id="handling-plugin-dependencies">Handling Plugin Dependencies</h4>
+<p>Dependencies are shown within each plugin card. If a dependency is not loaded, it is displayed with an error icon. Clicking on dependencies triggers further actions like inspecting or resolving issues:</p>
+<pre><code class="lang-razor">&lt;MudCollapse Expanded=&quot;@ShowDependencies&quot;&gt;
+    &lt;MudText Typo=&quot;Typo.caption&quot;&gt;Dependencies:&lt;/MudText&gt;
+    &lt;MudList T=&quot;string&quot; Class=&quot;small-font non-selectable&quot;&gt;
+        @foreach (Dependency dependency in Plugin.Dependencies)
+        {
+            &lt;MudListItem OnClick=&quot;() =&gt; OnDependencySelectAsync(dependency)&quot;&gt;
+                @if (dependency.IsLoaded)
+                {
+                    &lt;MudText&gt;@dependency.AssemblyName.FullName&lt;/MudText&gt;
+                }
+                else
+                {
+                    &lt;MudText Color=&quot;Color.Error&quot;&gt;@dependency.AssemblyName.FullName&lt;/MudText&gt;
+                }
+            &lt;/MudListItem&gt;
+        }
+    &lt;/MudList&gt;
+&lt;/MudCollapse&gt;
+</code></pre>
+<h4 id="adding-plugins-via-file-upload">Adding Plugins via File Upload</h4>
+<p>The library supports file uploads directly from the UI using the MudBlazor file upload component:</p>
+<pre><code class="lang-razor">&lt;MudFileUpload T=&quot;IReadOnlyList&lt;IBrowserFile&gt;&quot; Accept=&quot;.dll&quot; OnFilesChanged=&quot;OnInputFileChanged&quot;&gt;
+    &lt;ActivatorContent&gt;
+        &lt;MudPaper Height=&quot;50px&quot; Outlined=&quot;true&quot; Class=&quot;drag-area&quot;&gt;
+            &lt;MudText Typo=&quot;Typo.subtitle2&quot; Align=&quot;Align.Center&quot;&gt;Drag files here or click to browse&lt;/MudText&gt;
+            &lt;MudButton Color=&quot;Color.Primary&quot; Variant=&quot;Variant.Filled&quot; OnClick=&quot;OpenFilePickerAsync&quot;&gt;Browse&lt;/MudButton&gt;
+        &lt;/MudPaper&gt;
+    &lt;/ActivatorContent&gt;
+&lt;/MudFileUpload&gt;
+</code></pre>
+<p>Handle the file input event to upload the files and add them as plugins:</p>
+<pre><code class="lang-csharp">private async Task OnInputFileChanged(InputFileChangeEventArgs e)
+{
+    IReadOnlyList&lt;IBrowserFile&gt; files = e.GetMultipleFiles();
+    List&lt;string&gt;? uploadedPaths = await FileUploadService.UploadFileAsync(files);
+
+    if (uploadedPaths == null)
+    {
+        Snackbar.Add(&quot;File upload failed: Plugin with the same name already exists!&quot;, Severity.Error);
+        return;
+    }
+
+    foreach (string file in uploadedPaths)
+    {
+        PluginManager.AddPlugin(file);
+        Snackbar.Add($&quot;Plugin {Path.GetFileName(file)} uploaded successfully!&quot;, Severity.Success);
+    }
+}
+</code></pre>
+<h4 id="deleting-plugins">Deleting Plugins</h4>
+<p>Plugins can be removed from the system using the <code>DeletePlugin</code> method. The UI provides feedback on whether the operation requires an application restart:</p>
+<pre><code class="lang-csharp">private void DeletePlugin(Plugin plugin)
+{
+    PluginManager.RemovePlugin(plugin);
+    Snackbar.Add($&quot;Plugin {plugin.Name} deleted successfully!&quot;, Severity.Success);
+    StateHasChanged();
+}
+</code></pre>
+<h2 id="ui-components-and-styling">UI Components and Styling</h2>
+<p>The Lionk Plugin Blazor Library uses the MudBlazor component library for UI elements. This integration provides a polished and responsive interface for managing plugins. The components include cards for displaying plugin information, buttons for actions like adding or removing plugins, and dialogs for showing warnings or errors.</p>
+<h3 id="customizing-the-ui">Customizing the UI</h3>
+<p>The appearance of the plugin management UI can be customized through CSS or by modifying the component parameters. The <code>PluginCard</code> component, for instance, uses MudBlazor�s <code>MudCard</code>, <code>MudText</code>, and <code>MudButton</code> components, which can be styled via CSS classes or inline styles.</p>
+<h3 id="example-plugin-management-page">Example Plugin Management Page</h3>
+<p>Here�s a complete example of a plugin management page using Lionk Plugin Blazor:</p>
+<pre><code class="lang-razor">@page &quot;/plugin-manager&quot;
+@inject IPluginManager PluginManager
+@inject FileUploadService FileUploadService
+@inject ISnackbar Snackbar
+
+&lt;MudStack Style=&quot;width: 100%&quot;&gt;
+    &lt;MudAlert Severity=&quot;Severity.Warning&quot; Elevation=&quot;2&quot; Class=&quot;mb-4&quot; Visible=&quot;@PluginManager.DoNeedARestart()&quot;&gt;
+        &lt;MudText Typo=&quot;Typo.subtitle2&quot; Align=&quot;Align.Center&quot;&gt;
+            A restart is required for changes to take effect. Please restart the application.
+        &lt;/MudText&gt;
+    &lt;/MudAlert&gt;
+
+    &lt;MudGrid&gt;
+        @foreach (var plugin in PluginManager.GetAllPlugins())
+        {
+            &lt;MudItem xs=&quot;12&quot; sm=&quot;6&quot; md=&quot;4&quot; lg=&quot;3&quot;&gt;
+                &lt;PluginCard Plugin=&quot;@plugin&quot; OnDependencySelect=&quot;HandleDependencySelect&quot; OnDelete=&quot;DeletePlugin&quot; /&gt;
+            &lt;/MudItem&gt;
+        }
+    &lt;/MudGrid&gt;
+
+    &lt;MudToolBar&gt;
+        &lt;MudFileUpload T=&quot;IReadOnlyList&lt;IBrowserFile&gt;&quot; Accept=&quot;.dll&quot; OnFilesChanged=&quot;OnInputFileChanged&quot;&gt;
+            &lt;ActivatorContent&gt;
+                &lt;MudPaper Class=&quot;upload-area&quot;&gt;
+                    &lt;MudText Typo=&quot;Typo.subtitle2&quot; Align=&quot;Align.Center&quot;&gt;Drag files here or click to browse&lt;/MudText&gt;
+                    &lt;MudButton Color=&quot;Color.Primary&quot; Variant=&quot;Variant.Filled&quot;&gt;Browse&lt;/MudButton&gt;
+                &lt;/MudPaper&gt;
+            &lt;/ActivatorContent&gt;
+        &lt;/MudFileUpload&gt;
+    &lt;/MudToolBar&gt;
+&lt;/MudStack&gt;
+
+@code {
+    private async Task OnInputFileChanged(InputFileChangeEventArgs e)
+    {
+        var files = e.GetMultipleFiles();
+        var result = await FileUploadService.UploadFileAsync(files);
+        
+        if (result != null)
+        {
+            foreach (var path in result)
+                PluginManager.AddPlugin(path);
+            
+            Snackbar.Add(&quot;Plugins added successfully!&quot;, Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add(&quot;Failed to upload plugins!&quot;, Severity.Error);
+        }
+    }
+    
+    private void DeletePlugin(Plugin plugin)
+    {
+        PluginManager.RemovePlugin(plugin);
+        Snackbar.Add($&quot;Plugin {plugin.Name} removed. Restart required.&quot;, Severity.Warning);
+    }
+    
+    private void HandleDependencySelect(Dependency dependency)
+    {
+        // Handle dependency interaction
+    }
+}
+</code></pre>
+<h2 id="security-considerations">Security Considerations</h2>
+<ul>
+<li><strong>File Validation</strong>: Ensure that only trusted plugin files are uploaded and loaded by the application to prevent security risks.</li>
+<li><strong>Dependency Management</strong>: Handle dependencies carefully to avoid version conflicts and ensure that all required assemblies are properly loaded.</li>
+</ul>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions to the Lionk Plugin Blazor Library are welcome! Please fork the repository, create a branch, and submit a pull request with your enhancements. For detailed contribution guidelines, please refer to the project�s repository.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Plugin.Blazor/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

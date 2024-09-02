@@ -1,0 +1,1548 @@
+{
+  "source_base_path": "C:/Users/Colinos/Documents/repo/Lionk",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Abstraction.IUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Abstraction.IUserRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Abstraction.IUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Abstraction.IUserService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Abstraction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.User.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.UserAuthenticationStateProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.UserAuthenticationStateProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.UserFileHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.UserFileHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.UserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.UserService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.UserServiceRazor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.UserServiceRazor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Identity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Utils.PasswordUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Utils.PasswordUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Auth.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Auth.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.BaseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.BaseComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.BaseCyclicComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.BaseCyclicComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.BaseExecutableComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.BaseExecutableComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.ComponentFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.ComponentFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.ComponentRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.ComponentRegister.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.ComponentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.ComponentService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.ComponentTypeDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.ComponentTypeDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.CycleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.CycleState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.CyclicComputationMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.CyclicComputationMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.CyclicComputationMethodExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.CyclicComputationMethodExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.CyclicExecutorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.CyclicExecutorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.ICyclicExecutorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.ICyclicExecutorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.Cyclic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.Cyclic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.IComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.IComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.IComponentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.IComponentService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.ICyclicComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.ICyclicComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.IExecutableComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.IExecutableComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.IMeasurableComponent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.IMeasurableComponent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.DataModel.Measure-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.DataModel.Measure-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.DataModel.MeasureEventArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.DataModel.MeasureEventArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.DataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.DataModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Dialog.ComponentDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Dialog.ComponentDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Dialog.SimpleQuestionDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Dialog.SimpleQuestionDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Dialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Dialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Model.Component.ComponentContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Model.Component.ComponentContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Model.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Model.Component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.NamedElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.NamedElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Observable.ObservableElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Observable.ObservableElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Observable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Observable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.ComponentList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.ComponentList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.IComponentInstanceList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.IComponentInstanceList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.ListSearcher-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.ListSearcher-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Service.CyclicExecutorHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Service.CyclicExecutorHostedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicComponent.CyclicComponentCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicComponent.CyclicComponentCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CycleTimeGraph.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorStatusCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.CyclicExecutorView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.ToggleCyclicExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.Views.CyclicExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor._imports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor._imports.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.Razor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.Razor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.TypeRegister.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.TypeRegister.Factory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.TypeRegister.ITypesProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.TypeRegister.ITypesProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.TypeRegister.TypesEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.TypeRegister.TypesEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.TypeRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.TypeRegister.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ComponentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ComponentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ComponentViewConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ComponentViewConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ComponentViewDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ComponentViewDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ComponentViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ComponentViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ContainerView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ContainerView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.CyclicComponentConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.CyclicComponentConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.CyclicComputationMethodExtensionInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.CyclicComputationMethodExtensionInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.DynamicComponentWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.DynamicComponentWrapper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.IViewLocatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.IViewLocatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.IViewRegistryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.IViewRegistryService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.LoadingComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.LoadingComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.NoComponentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.NoComponentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ViewContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ViewContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ViewLocatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ViewLocatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ViewOfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ViewOfAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.ViewRegistryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.ViewRegistryService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.View.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.View.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.ILoggerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.ILoggerFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.IStandardLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.IStandardLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.LogService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.LogService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.LogSeverity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.LogSeverity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.Serilog.SerilogFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.Serilog.SerilogFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.Serilog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.Serilog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Log.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Content.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Content.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Converter.NotificationPropertiesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Converter.NotificationPropertiesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Converter.NotifierChannelDictionaryConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Converter.NotifierChannelDictionaryConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Converter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Converter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Email.EmailChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Email.EmailChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Email.EmailRecipients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Email.EmailRecipients.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Email.SmtpConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Email.SmtpConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Email.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Email.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Event.NotificationEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Event.NotificationEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Event.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.IChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.IChannel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.INotifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.INotifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.IRecipient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.IRecipient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Notification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.NotificationFileHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.NotificationFileHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.NotificationHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.NotificationHistory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.NotificationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.NotificationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.Severity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.Severity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Notification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Blazor.FileUploadService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Blazor.FileUploadService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Blazor.PluginCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Blazor.PluginCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Blazor.PluginUploader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Blazor.PluginUploader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Blazor._Imports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Blazor._Imports.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Blazor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Blazor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Dependency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Dependency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.IPluginManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.IPluginManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.Plugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.Plugin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.PluginManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.PluginManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Plugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Plugin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.ComponentWhichGoToError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.ComponentWhichGoToError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.Counter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.Counter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.CyclicCounter.CounterConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.CyclicCounter.CounterConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.CyclicCounter.CounterView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.CyclicCounter.CounterView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.CyclicCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.CyclicCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.TestComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.TestComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Utils.ConfigurationUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Utils.ConfigurationUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Utils.FileHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Utils.FileHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Utils.FolderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Utils.FolderType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lionk.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lionk.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Best-practices/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Best-practices/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Best-practices/applyStylecop.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Best-practices/applyStylecop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Mockup/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Mockup/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/RaspberryDeploy.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/RaspberryDeploy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Workflow/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Workflow/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/architectureDescription.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/architectureDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/processDevelopment.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/processDevelopment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/projectDescription.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/projectDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/technicalSpecification.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/technicalSpecification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unitTests.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unitTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/userstories.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/userstories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/App/LionkApp/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/App/LionkApp/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Auth.Razor/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Auth.Razor/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Auth/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Auth/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Core.Razor/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Core.Razor/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Core/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Core/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Logger/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Logger/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Notification/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Notification/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Plugin.Blazor/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Plugin.Blazor/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Plugin/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Plugin/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/Lib/Lionk.Utils/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/Lib/Lionk.Utils/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

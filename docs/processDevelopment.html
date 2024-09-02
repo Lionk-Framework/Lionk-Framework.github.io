@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>General Process | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="General Process | Lionk ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/processDevelopment.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="general-process">General Process</h1>
+
+<h3 id="1-initial-planning-phase">1. <strong>Initial Planning Phase</strong></h3>
+<ul>
+<li><strong>Defining Objectives and Initial Architecture</strong>: Establish clear project objectives and an initial system architecture for Li/onk Core, considering the integration of various components such as sensors, displays, and other smart home devices.</li>
+<li><strong>Creating the Product Backlog</strong>: Compile all necessary features, tasks, and improvements into a product backlog. Use user stories to describe features from the end-users' perspective.</li>
+</ul>
+<h3 id="2-iterative-development-with-scrum">2. <strong>Iterative Development with SCRUM</strong></h3>
+<ul>
+<li><strong>Sprints</strong>: Divide the development process into 1- to 2-week sprints. Each sprint begins with a planning meeting where the team selects tasks from the backlog to complete during the sprint. As an example, the first sprint is planned using github project, issues and Kanban. It's available here : <a href="https://github.com/orgs/Lionk-Framework/projects/1">Project</a></li>
+<li><strong>Continuous Development and Testing</strong>: Apply pair programming and continuous integration to maintain code quality and respond quickly to changes. Encourage test-first programming to ensure each feature is properly tested before integration.</li>
+<li><strong>Sprint Review and Retrospective</strong>: At the end of each sprint, hold a sprint review with stakeholders to demonstrate developed features and receive direct feedback. Follow this with a sprint retrospective to identify process improvements.</li>
+</ul>
+<h3 id="3-validation-and-continuous-delivery">3. <strong>Validation and Continuous Delivery</strong></h3>
+<ul>
+<li><strong>Regular Deployments</strong>: Ensure regular deployments of functional software versions for continuous evaluation by end users, adjusting the product based on feedback and changing requirements.</li>
+<li><strong>Data-Driven Improvements</strong>: Use collected data (e.g., statistics on dangerous situations) to continuously improve the product.</li>
+<li><strong>Automatic workflow</strong>: Implement automatic testing and deployment workflows to streamline the development process and ensure consistent quality.</li>
+<li><strong>Feedback Loop</strong>: Establish a feedback using channels such as github issues.</li>
+</ul>
+<h3 id="4-adaptation-and-scalability">4. <strong>Adaptation and Scalability</strong></h3>
+<ul>
+<li><strong>Continuous Evaluation</strong>: Integrate regular checkpoints to assess if the project aligns with long-term goals and user needs.</li>
+<li><strong>Flexibility</strong>: Be prepared to adapt development plans and product features in response to technological changes and user feedback.</li>
+</ul>
+<h3 id="5-first-plugin-developement">5. <strong>First plugin developement</strong></h3>
+<pre><code>- **Plugin Development**: Create a simple plugin to demonstrate the process and provide a foundation for future plugin development.
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/docs/processDevelopment.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

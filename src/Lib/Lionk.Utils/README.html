@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Lionk Configuration Utilities Library | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Lionk Configuration Utilities Library | Lionk ">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Utils/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lionk-configuration-utilities-library">Lionk Configuration Utilities Library</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The Lionk Configuration Utilities Library provides a set of utility methods to manage file operations within a defined directory structure for applications. This library is designed to simplify file management tasks such as reading, writing, copying, and deleting files across various designated folders such as configuration, logs, data, and temporary directories. It ensures that these directories are created and managed consistently across the application lifecycle.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>File Management</strong>: Perform common file operations like saving, reading, copying, appending, and deleting files.</li>
+<li><strong>Directory Management</strong>: Automatically ensures required directories exist, using predefined folder types.</li>
+<li><strong>Asynchronous Operations</strong>: Support for asynchronous file saving to improve application responsiveness.</li>
+<li><strong>Error Handling</strong>: Built-in error handling for safe file deletions.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the Lionk Configuration Utilities Library, use the NuGet package manager console:</p>
+<pre><code class="lang-bash">Install-Package Lionk.Utils
+</code></pre>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="1-folder-types">1. Folder Types</h3>
+<p>The library uses the <code>FolderType</code> enumeration to identify various folders used by the application. These include:</p>
+<ul>
+<li><strong>Config</strong>: Stores configuration files.</li>
+<li><strong>Logs</strong>: Stores log files.</li>
+<li><strong>Data</strong>: Stores data files.</li>
+<li><strong>Plugin</strong>: Stores plugin-related files.</li>
+<li><strong>Temp</strong>: Stores temporary files.</li>
+</ul>
+<p>These folders are automatically created at the application's base directory upon the first use of the library.</p>
+<h3 id="2-setting-up-configurationutils">2. Setting Up ConfigurationUtils</h3>
+<p>The <code>ConfigurationUtils</code> class provides static methods for managing files within the predefined folder structure. It uses a dictionary to map each <code>FolderType</code> to its corresponding path within the application�s base directory.</p>
+<h4 id="example-of-initialization">Example of Initialization</h4>
+<p>The static constructor ensures that all required directories are created if they do not already exist:</p>
+<pre><code class="lang-csharp">using Lionk.Utils;
+
+// Directories are created when the class is first accessed
+ConfigurationUtils.AppendFile(&quot;example.txt&quot;, &quot;Hello, World!&quot;, FolderType.Config);
+</code></pre>
+<h3 id="3-managing-files">3. Managing Files</h3>
+<h4 id="saving-a-file">Saving a File</h4>
+<p>You can save content to a file using the <code>SaveFile</code> method. If the file already exists, it will be overwritten:</p>
+<pre><code class="lang-csharp">ConfigurationUtils.SaveFile(&quot;settings.json&quot;, &quot;{ 'setting': 'value' }&quot;, FolderType.Config);
+</code></pre>
+<p>For asynchronous saving, use:</p>
+<pre><code class="lang-csharp">await ConfigurationUtils.SaveFileAsync(&quot;settings.json&quot;, &quot;{ 'setting': 'value' }&quot;, FolderType.Config);
+</code></pre>
+<h4 id="reading-a-file">Reading a File</h4>
+<p>To read the contents of a file, use the <code>ReadFile</code> method. If the file does not exist, an empty string is returned:</p>
+<pre><code class="lang-csharp">string configContent = ConfigurationUtils.ReadFile(&quot;settings.json&quot;, FolderType.Config);
+Console.WriteLine(configContent);
+</code></pre>
+<h4 id="copying-a-file">Copying a File</h4>
+<p>Copy a file to one of the predefined folders using the <code>CopyFileToFolder</code> method. This method checks if the destination file already exists before attempting to copy:</p>
+<pre><code class="lang-csharp">ConfigurationUtils.CopyFileToFolder(&quot;sourceFile.txt&quot;, FolderType.Data);
+</code></pre>
+<h4 id="deleting-a-file">Deleting a File</h4>
+<p>You can delete a file with the <code>DeleteFile</code> method. To safely attempt deletion, use <code>TryDeleteFile</code>, which returns a boolean indicating success:</p>
+<pre><code class="lang-csharp">ConfigurationUtils.DeleteFile(&quot;old-config.json&quot;, FolderType.Config);
+
+// Attempting safe deletion
+bool wasDeleted = ConfigurationUtils.TryDeleteFile(&quot;temp-file.txt&quot;, FolderType.Temp);
+Console.WriteLine(wasDeleted ? &quot;File deleted.&quot; : &quot;Failed to delete file.&quot;);
+</code></pre>
+<h4 id="checking-if-a-file-exists">Checking if a File Exists</h4>
+<p>Check for the existence of a file using <code>FileExists</code>:</p>
+<pre><code class="lang-csharp">bool fileExists = ConfigurationUtils.FileExists(&quot;log.txt&quot;, FolderType.Logs);
+Console.WriteLine(fileExists ? &quot;File exists.&quot; : &quot;File does not exist.&quot;);
+</code></pre>
+<h4 id="appending-content-to-a-file">Appending Content to a File</h4>
+<p>To append content to an existing file or create it if it doesn't exist, use the <code>AppendFile</code> method:</p>
+<pre><code class="lang-csharp">ConfigurationUtils.AppendFile(&quot;log.txt&quot;, &quot;New log entry&quot;, FolderType.Logs);
+</code></pre>
+<h3 id="4-directory-management-with-filehelper">4. Directory Management with FileHelper</h3>
+<p>The library includes the <code>FileHelper</code> class, which provides utility methods for managing directories, such as ensuring directories exist:</p>
+<pre><code class="lang-csharp">using Lionk.Utils;
+
+FileHelper.CreateDirectoryIfNotExists(ConfigurationUtils.GetFolderPath(FolderType.Temp));
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Error Handling</strong>: Use <code>TryDeleteFile</code> for operations where file deletions are not critical to avoid exceptions.</li>
+<li><strong>Asynchronous Methods</strong>: Prefer asynchronous file operations (<code>SaveFileAsync</code>) in scenarios where file I/O might block the main thread or affect application performance.</li>
+</ul>
+<h2 id="security-considerations">Security Considerations</h2>
+<ul>
+<li><strong>File Path Validation</strong>: Always validate file paths to prevent security vulnerabilities such as path traversal attacks.</li>
+<li><strong>Access Permissions</strong>: Ensure the application has appropriate permissions for the file system to perform the required operations in all specified directories.</li>
+</ul>
+<h2 id="contribution">Contribution</h2>
+<p>Contributions are welcome! Please fork the repository, create a branch, and submit a pull request with your improvements or bug fixes. For detailed contribution guidelines, refer to the project�s repository.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/Lib/Lionk.Utils/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

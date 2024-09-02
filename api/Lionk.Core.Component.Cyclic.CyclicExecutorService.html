@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CyclicExecutorService | Lionk </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CyclicExecutorService | Lionk ">
+      
+      <meta name="description" content="Service responsible for executing cyclic components and managing their execution cycle.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Lionk-Framework/Lionk/new/api-documentation/apiSpec/new?filename=Lionk_Core_Component_Cyclic_CyclicExecutorService.md&amp;value=---%0Auid%3A%20Lionk.Core.Component.Cyclic.CyclicExecutorService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Lionk">
+            Lionk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService">
+
+
+
+  <h1 id="Lionk_Core_Component_Cyclic_CyclicExecutorService" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService" class="text-break">
+Class CyclicExecutorService  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lionk.html">Lionk</a>.<a class="xref" href="Lionk.Core.html">Core</a>.<a class="xref" href="Lionk.Core.Component.html">Component</a>.<a class="xref" href="Lionk.Core.Component.Cyclic.html">Cyclic</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Lionk.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Service responsible for executing cyclic components and managing their execution cycle.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CyclicExecutorService : ObservableElement, INotifyPropertyChanged, ICyclicExecutorService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Lionk.Core.Observable.ObservableElement.html">ObservableElement</a></div>
+      <div><span class="xref">CyclicExecutorService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="Lionk.Core.Component.Cyclic.ICyclicExecutorService.html">ICyclicExecutorService</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_PropertyChanged">ObservableElement.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_OnPropertyChanged_System_String_">ObservableElement.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lionk.Core.Observable.ObservableElement.html#Lionk_Core_Observable_ObservableElement_SetField__1___0____0_System_String_">ObservableElement.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService__ctor_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService__ctor_Lionk_Core_Component_IComponentService_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.#ctor(Lionk.Core.Component.IComponentService)">
+  CyclicExecutorService(IComponentService)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Lionk.Core.Component.Cyclic.CyclicExecutorService.html">CyclicExecutorService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CyclicExecutorService(IComponentService componentService)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>componentService</code> <a class="xref" href="Lionk.Core.Component.IComponentService.html">IComponentService</a></dt>
+    <dd><p>The service that provides access to components.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Components_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Components*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Components" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Components">
+  Components
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the collection of cyclic components managed by the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ICyclicComponent&gt; Components { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Lionk.Core.Component.ICyclicComponent.html">ICyclicComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_LastExecutionTime_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_LastExecutionTime" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.LastExecutionTime">
+  LastExecutionTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the last execution time of the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan LastExecutionTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_MaxCycleTime_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_MaxCycleTime" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.MaxCycleTime">
+  MaxCycleTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the maximum cycle time. This is the maximum time between the start of two consecutive cycles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan MaxCycleTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_MeanCycleTime_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_MeanCycleTime" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.MeanCycleTime">
+  MeanCycleTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the mean cycle time. This is the average time between the start of two consecutive cycles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan MeanCycleTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_State_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.State*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_State" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current state of the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CycleState State { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lionk.Core.Component.Cyclic.CycleState.html">CycleState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_WatchDogTimeout_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_WatchDogTimeout" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.WatchDogTimeout">
+  WatchDogTimeout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the watchdog timeout. If a component's execution exceeds this duration, the service will take appropriate action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public TimeSpan WatchDogTimeout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Abort_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Abort" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Abort">
+  Abort()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Abort method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Abort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Pause_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Pause" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Pause">
+  Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses the cyclic execution service, halting the execution of components without stopping the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Resume_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Resume" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Resume">
+  Resume()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resumes the cyclic execution service from a paused state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Start_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Start*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Start" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the cyclic execution service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Stop_" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop*"></a>
+
+  <h3 id="Lionk_Core_Component_Cyclic_CyclicExecutorService_Stop" data-uid="Lionk.Core.Component.Cyclic.CyclicExecutorService.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the cyclic execution service, including all ongoing component executions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Lionk-Framework/Lionk/blob/api-documentation/src/lib/Lionk.Core/Model/Services/CyclicExecutorService/CyclicExecutorService.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
