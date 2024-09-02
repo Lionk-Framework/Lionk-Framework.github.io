@@ -691,8 +691,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | Lionk",
-    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Li/onk Core | Lionk",
+    "keywords": "Li/onk Core ◦ Connecting Components Seamlessly! Lionk Li/onk Core is a modular platform developed in .NET designed to enable the management and integration of various components through plugins. The project is crafted to cater to end users (operators and administrators) as well as plugin developers, offering maximum flexibility and extensibility. The primary goal is to enhance the quality of life in home environments by allowing seamless integration and management of various components. This page is the official development documentation for the Li/onk Core project."
   },
   "src/App/LionkApp/README.html": {
     "href": "src/App/LionkApp/README.html",
